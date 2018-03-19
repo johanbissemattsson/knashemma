@@ -4,10 +4,17 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "exenv": "^1.2.2",
     "gatsby": "^1.9.236",
     "gatsby-link": "^1.6.39",
+    "gatsby-plugin-favicon": "^2.1.1",
+    "gatsby-plugin-google-analytics": "^1.0.24",
     "gatsby-plugin-react-helmet": "^2.0.8",
-    "react-helmet": "^5.2.0"
+    "gatsby-source-prismic": "^0.1.4",
+    "normalize.css": "^8.0.0",
+    "prismic-dom": "^2.0.6",
+    "react-helmet": "^5.2.0",
+    "webfontloader": "^1.6.28"
   },
   "keywords": [
     "gatsby"
