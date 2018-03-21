@@ -8,6 +8,8 @@ import Footer from '../components/Footer';
 
 import 'normalize.css';
 import './index.css';
+import 'hamburgers/dist/hamburgers.css';
+import 'slick-carousel/slick/slick.css';
 
 export default class TemplateWrapper extends Component {
   componentWillMount() {
@@ -28,7 +30,7 @@ export default class TemplateWrapper extends Component {
     return (
       <div className='site-container'>
         <Helmet
-          title="Knas Hemma – en ideell ungdomsförening som arbetar nationellt"
+          title="Knas Hemma"
           meta={[
             { name: 'description', content: 'Knas hemma är en ideell ungdomsförening som arbetar nationellt. Den främsta målgruppen för Knas hemma är ungdomar och unga vuxna i åldrarna ca 13-30 år, som antingen bor i eller har bott i familjehem, HVB-hem, eller annat boende för samhällsplacerade barn eller unga.' },
             { name: 'keywords', content: 'knas, hemma, ideell, ungdomsföreing, nationell, ungdomar, ungdom, unga vuxna, familjehem, HVB-hem' },
