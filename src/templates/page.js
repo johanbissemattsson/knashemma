@@ -2,6 +2,16 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import Content, { HTMLContent } from '../components/Content';
 
+export const PageTemplate = () => {
+  return (
+    <p>hej</p>
+  );
+}
+
+export default PageTemplate;
+
+
+/*
 export const PageTemplate = ({ title, content, contentComponent, main, side }) => {
   const PageContent = contentComponent || Content;
 
@@ -50,3 +60,4 @@ export const PageQuery = graphql`
     }
   }
 `
+*/
