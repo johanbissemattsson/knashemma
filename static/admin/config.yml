@@ -34,7 +34,8 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: 'index-page'}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: 'Sections', name: 'body', widget: 'list', fields: [
+      - {label: "Main", name: "body", widget: "markdown"}      
+      - {label: 'Sections', name: 'sections', widget: 'list', fields: [
           {label: 'Section', name: 'section', widget: 'object', fields: [
             {label: 'Header', name: sectionHeader, widget: string},
             {label: 'Featured Image', name: sectionFeaturedImage, widget: image},
