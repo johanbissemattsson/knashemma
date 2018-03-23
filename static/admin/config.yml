@@ -13,8 +13,10 @@ collections:
     folder: 'src/pages'
     extension: 'md'
     filter: {field: "templateKey", value: 'page'}
-    slug: '{{slug}}'        
+    slug: '{{slug}}'      
     create: true
+    editor:
+      preview: false    
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: 'page'}
       - {label: "Title", name: "title", widget: "string"}
@@ -27,11 +29,12 @@ collections:
     filter: {field: "templateKey", value: 'index-page'}
     create: true
     delete: false
+    editor:
+      preview: false
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: 'index-page'}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Main", name: "body", widget: "markdown"}
-      - {label: 'Sections', name: 'sections', widget: 'list', fields: [
+      - {label: 'Sections', name: 'body', widget: 'list', fields: [
           {label: 'Section', name: 'section', widget: 'object', fields: [
             {label: 'Header', name: sectionHeader, widget: string},
             {label: 'Featured Image', name: sectionFeaturedImage, widget: image},
