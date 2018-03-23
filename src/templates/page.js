@@ -1,23 +1,23 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import Content, { HTMLContent } from '../components/Content';
 
 export const PageTemplate = ({ title, content, contentComponent, main, side }) => {
   const PageContent = contentComponent || Content;
 
-  return (
+return (
     <div className='page-container'>
-    <article className='page'>
-      <div className='page-sections'>
-        <section>
-          <h2>{title}</h2>
-          <PageContent className="content" content={main} />
-        </section>
-        <section>
-          {side}
-        </section>
-      </div>
-    </article>
-
+      <article className='page'>
+        <div className='page-sections'>
+          <section>
+            <h2>{title}</h2>
+            <PageContent className="content" content={main} />
+          </section>
+          <section>
+            <ReactMarkdown source={side} />
+          </section>
+        </div>
+      </article>
     </div>
   );
 }

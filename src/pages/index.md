@@ -1,7 +1,7 @@
 ---
 templateKey: 'index-page'
 path: /index
-title: Hejhej!
+title: Index page
 section1:
   title: Om Knas hemma
   description: Knas hemma är en ungdomsdriven ideell förening som arbetar nationellt. Den främsta målgruppen för Knas hemma är ungdomar och unga vuxna i åldrarna ca 13–30 år, som antingen bor i eller har bott i familjehem, HVB-hem, eller annat boende för samhällsplacerade barn eller unga.
