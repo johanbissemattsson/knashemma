@@ -17,10 +17,8 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: page"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Main", name: "main", widget: "markdown"}
-      - {label: "Side", name: "side", widget: "markdown"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      
+      - {label: "Main", name: "body", widget: "markdown"}
+      - {label: "Side", name: "side", widget: "markdown"}      
   - name: 'index-page'
     label: 'Index page'
     files:
@@ -31,6 +29,22 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+          - {
+              label: 'Sections',
+              name: 'sections',
+              widget: 'list',
+              fields: {
+                - label: 'Section',
+                - name: 'section',
+                - widget: 'object',
+                - fields: {
+                  - {label: 'Header', name: sectionHeader, widget: string}
+                  - {label: 'Featured Image', name: sectionFeaturedImage, widget: image}
+                  - {label: 'Link', name: sectionLink, widget: 'relation', collection: 'pages', searchFields: 'name', valueField: 'name'}
+                  - {label: 'Content', name: sectionBody, widget: 'markdown'}
+                }
+              }
+            }
           - {label: "Section 1", name: "section1", widget: object, fields:[
               {label: Heading, name: titleSection1, widget: string},
               {label: Description, name: descriptionSection1, widget: text},

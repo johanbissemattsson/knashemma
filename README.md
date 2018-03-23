@@ -52,6 +52,10 @@ If met with error ```Cannot find module '../build/Release/sharp.node``` then ins
 sudo apt install libvips 
 ```
 
+If met with error ```Error: librsvg-2.so.2: cannot enable executable stack as shared object requires: Invalid argument``` then run following command and try again.
+```execstack -c node_modules/sharp/vendor/lib/librsvg-2.so.2```
+https://github.com/gatsbyjs/gatsby/issues/3917
+
 ## Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)

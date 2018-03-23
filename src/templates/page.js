@@ -14,7 +14,11 @@ return (
             <PageContent className="content" content={main} />
           </section>
           <section>
+          <div className='info-box-container'>
+            <div className='info-box'>
             <ReactMarkdown source={side} />
+            </div>
+          </div>
           </section>
         </div>
       </article>
