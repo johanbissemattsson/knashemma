@@ -38,6 +38,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.11.1"
+    "node-gyp": "^3.6.2",
+    "prettier": "^1.11.1",
+    "sharp": "^0.20.1"
   }
 }

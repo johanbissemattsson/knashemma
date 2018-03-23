@@ -47,6 +47,11 @@ followed by
 yarn global add sharp
 ```
 
+If met with error ```Cannot find module '../build/Release/sharp.node``` then install libvips (which sharp uses)
+```
+sudo apt install libvips 
+```
+
 ## Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)

@@ -61,13 +61,13 @@ class Header extends React.Component {
             </button>
             <div className={'site-nav-menu-container'} >
               <Menu styles={ styles } menuClassName={'site-nav-menu'} itemListClassName={'site-nav-menu-item-list'} width={'100%'} right isOpen={this.state.menuOpen} bodyClassName={'site-nav-menu-open'} customBurgerIcon={false} customCrossIcon={false} onStateChange={(state) => this.handleStateChange(state)}>
-                <Link to='/page/' className='menu-item' onClick={() => this.closeMenu()} onFocus={() => {!this.state.menuOpen && this.openMenu()}}>Om Knas Hemma</Link>
-                <Link to='/page/' className='menu-item' onClick={() => this.closeMenu()}>Ambassadörer</Link>
-                <Link to='/page/' className='menu-item' onClick={() => this.closeMenu()}>Delaktighet och rättigheter</Link>
-                <Link to='/page/' className='menu-item' onClick={() => this.closeMenu()}>Engagera dig!</Link>
-                <Link to='/page/' className='menu-item' onClick={() => this.closeMenu()}>Anlita Knas Hemma!</Link>
-                <Link to='/page/' className='menu-item' onClick={() => this.closeMenu()}>Kontakt</Link>
-                <Link to='/page/' className='menu-item' onClick={() => this.closeMenu()}>Knas hemma in English</Link>
+                <Link to='/om-knas-hemma/' className='menu-item' onClick={() => this.closeMenu()} onFocus={() => {!this.state.menuOpen && this.openMenu()}}>Om Knas Hemma</Link>
+                <Link to='/ambassadorer/' className='menu-item' onClick={() => this.closeMenu()}>Ambassadörer</Link>
+                <Link to='/delaktighet-och-rattigheter/' className='menu-item' onClick={() => this.closeMenu()}>Delaktighet och rättigheter</Link>
+                <Link to='/engagera-dig/' className='menu-item' onClick={() => this.closeMenu()}>Engagera dig!</Link>
+                <Link to='/anlita-knas-hemma/' className='menu-item' onClick={() => this.closeMenu()}>Anlita Knas Hemma!</Link>
+                <Link to='/kontakt/' className='menu-item' onClick={() => this.closeMenu()}>Kontakt</Link>
+                <Link to='/in-english/' className='menu-item' onClick={() => this.closeMenu()}>Knas hemma in English</Link>
                 <div className='menu-footer'>
                   <div className='site-nav-menu-footer-container'>
                     <footer className='site-nav-menu-footer'>
