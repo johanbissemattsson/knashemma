@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import { slide as Menu } from 'react-burger-menu';
 import { connect, dispatch} from 'react-redux';
+import { canUseDOM } from 'exenv';
 
 import { TOGGLE_IMAGESLIDERS } from '../../actionTypes';
 import Footer from '../Footer';
@@ -112,4 +113,4 @@ const mapDispatchToProps = dispatch => ({
   dispatchToggleImageSliders: () => dispatch({ type: TOGGLE_IMAGESLIDERS}),  
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default canUseDOM ? connect(mapStateToProps, mapDispatchToProps)(Header) : Header;
