@@ -28,7 +28,7 @@ collections:
     folder: 'src/pages'
     extension: 'md'
     filter: {field: "templateKey", value: 'index-page'}
-    create: true
+    create: false
     delete: false
     editor:
       preview: false
