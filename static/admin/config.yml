@@ -19,6 +19,7 @@ collections:
       preview: false    
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: 'page'}
+      - {label: "UID", name: "uid", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Main", name: "body", widget: "markdown"}
       - {label: "Side", name: "side", widget: "markdown"}
@@ -39,7 +40,7 @@ collections:
           {label: 'Section', name: 'section', widget: 'object', fields: [
             {label: 'Header', name: sectionHeader, widget: string},
             {label: 'Featured Image', name: sectionFeaturedImage, widget: image},
-            {label: 'Link', name: sectionLink, widget: 'relation', collection: 'pages', searchFields: ['slug'], valueField: 'slug'},
+            {label: 'Link', name: sectionLink, widget: 'relation', collection: 'pages', searchFields: ['uid'], valueField: 'uid'},
             {label: 'Content', name: sectionBody, widget: 'markdown'}
           ]}
         ]}   
