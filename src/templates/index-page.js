@@ -5,7 +5,6 @@ import Content, { HTMLContent } from '../components/Content';
 
 export const IndexPageTemplate = ({ title, content, contentComponent, section1, section2, section3, section4 }) => {
   const PageContent = contentComponent || Content;
-  console.log(section1);
   return (
     <div className='page-container'>
       <article className='index page'>

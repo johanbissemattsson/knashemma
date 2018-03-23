@@ -3,9 +3,7 @@ import Content, { HTMLContent } from '../components/Content';
 
 export const PageTemplate = ({ title, content, contentComponent, main, side }) => {
   const PageContent = contentComponent || Content;
-  console.log(content);
 
-  console.log(main);
   return (
     <div className='page-container'>
     <article className='page'>
