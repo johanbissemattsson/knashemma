@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: aaa
+title: Index
 sections:
   - section:
       sectionBody: aaegeagea
