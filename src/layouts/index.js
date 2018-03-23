@@ -26,7 +26,6 @@ export default class TemplateWrapper extends Component {
 
   render() {
     const { children } = this.props;
-
     return (
       <div className='site-container'>
         <Helmet
