@@ -37,10 +37,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Main", name: "body", widget: "markdown"}      
       - {label: 'Sections', name: 'sections', widget: 'list', collapsed: false, expandItems: true, fields: [
-          {label: 'Section', name: 'section', widget: 'object', fields: [
-            {label: 'Header', name: sectionHeader, widget: string},
-            {label: 'Featured Image', name: sectionFeaturedImage, widget: image},
-            {label: 'Link', name: sectionLink, widget: 'relation', collection: 'pages', searchFields: ['uid'], valueField: 'uid'},
-            {label: 'Content', name: sectionBody, widget: 'markdown'}
-          ]}
+          {label: 'Header', name: sectionHeader, widget: string},
+          {label: 'Featured Image', name: sectionFeaturedImage, widget: image},
+          {label: 'Link', name: sectionLink, widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'},
+          {label: 'Content', name: sectionBody, widget: 'markdown'}
         ]}   
