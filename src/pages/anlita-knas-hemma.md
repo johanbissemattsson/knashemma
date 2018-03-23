@@ -1,8 +1,7 @@
 ---
-templateKey: 'page'
-path: /anlita-knas-hemma
+templateKey: page
 title: Anlita Knas hemma
-main: hejmain
+uid: anlita-knas-hemma
 side: hejside
 ---
 Knas hemma är en ungdomsdriven ideell förening som arbetar och finns nationellt. Vi som är med i Knas hemma är ungdomar och unga vuxna i åldrarna ca 13 - 30 år, som antingen bor i eller har bott i familjehem, HVB-hem, eller annat boende för samhällsplacerade barn eller unga. Knas hemma arbetar med att förändra samhället genom att påverka, utbilda och sprida kunskap om barn och ungdomar med erfarenhet av placeringar.

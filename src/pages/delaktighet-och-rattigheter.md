@@ -1,8 +1,7 @@
 ---
-templateKey: 'page'
-path: /delaktighet-och-rattigheter
+templateKey: page
 title: Knas hemmas metod – Byt perspektiv
-main: hejmain
+uid: delaktighet-och-rattigheter
 side: hejside
 ---
 2015 bjöd Knas hemma in konstnären, Andrea Hvistendahl och hennes konstverk, Our Move, för att tillsammans med våra ungdomar utveckla en delaktighetsmetod i syfte att stärka samhällsplacerade barns och ungas rättigheter, röster och delaktighet.

@@ -1,7 +1,7 @@
 ---
 templateKey: page
 title: Om Knas hemma
-main: ddadaaaad
+uid: om-knas-hemma
 side: |-
   ## Rubrik
 
