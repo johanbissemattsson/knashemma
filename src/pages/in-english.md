@@ -1,8 +1,7 @@
 ---
-templateKey: 'page'
-path: /in-english
+templateKey: page
 title: Knas hemma in english
-main: hejmain
+uid: in-english
 side: hejside
 ---
 Knas hemma: Young People’s perspectives on Foster Care, is a national youth organisation working with children's rights and perspectives in foster care for the purpose of strengthening their voices, participation and rights within the social services and foster care. We engage young people from all over Sweden between 13 – 30 years of age. Knas hemma use creative tools and Communication for Development (C4D) as a method to increase awareness and to build capacity amongst young people by using; Minecraft, film, storytelling and other participatory methods. 
