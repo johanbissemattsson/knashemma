@@ -1,8 +1,7 @@
 ---
-templateKey: 'page'
-path: /kontakt
+templateKey: page
 title: Kontakta oss!
-main: hejmain
+uid: kontakt
 side: hejside
 ---
 **Ring oss:** [070-946 66 43](tel:+0709466643)  
