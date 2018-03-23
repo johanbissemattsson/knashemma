@@ -1,13 +1,15 @@
 ---
-templateKey: 'page'
-path: /om-knas-hemma
+templateKey: page
 title: Om Knas hemma
-main: >
-  hejmain om knasadagaaaaaaaaaaaeageg
-  - jegajkgealgelgegklegklel
-  - oiegjiogjeroigejgioe
-  ## keakgeakgke
-side: hejside om sagegaegeageaide
+main: ddadaaaad
+side: |-
+  ## Rubrik
+
+  Detta är ett test för att se om _sidebaren _kan funka?
+
+  med **markdown**?
+
+  Hoppas!
 ---
 Knas hemma är en ungdomsdriven ideell förening som arbetar och finns nationellt. Vi som är med i Knas hemma är ungdomar och unga vuxna i åldrarna ca 13 - 30 år, som antingen bor i eller har bott i familjehem, HVB-hem, eller annat boende för samhällsplacerade barn eller unga. Knas hemma arbetar med att förändra samhället genom att påverka, utbilda och sprida kunskap om barn och ungdomar med erfarenhet av placeringar.
 
