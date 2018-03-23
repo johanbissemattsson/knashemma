@@ -34,14 +34,16 @@ collections:
               name: 'sections',
               widget: 'list',
               fields: {
-                - label: 'Section',
-                - name: 'section',
-                - widget: 'object',
-                - fields: {
-                  - {label: 'Header', name: sectionHeader, widget: string}
-                  - {label: 'Featured Image', name: sectionFeaturedImage, widget: image}
-                  - {label: 'Link', name: sectionLink, widget: 'relation', collection: 'pages', searchFields: 'name', valueField: 'name'}
-                  - {label: 'Content', name: sectionBody, widget: 'markdown'}
+                - {
+                  label: 'Section',
+                  name: 'section',
+                  widget: 'object',
+                  fields: {
+                    - {label: 'Header', name: sectionHeader, widget: string}
+                    - {label: 'Featured Image', name: sectionFeaturedImage, widget: image}
+                    - {label: 'Link', name: sectionLink, widget: 'relation', collection: 'pages', searchFields: 'name', valueField: 'name'}
+                    - {label: 'Content', name: sectionBody, widget: 'markdown'}
+                  }
                 }
               }
             }
