@@ -233,6 +233,7 @@ img {
   }
   .index.page .page-sections section {
     flex: 1;
+    max-width: 47.7%;
   }
 }
 

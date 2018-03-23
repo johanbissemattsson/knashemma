@@ -1,17 +1,66 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import ReactMarkdown from 'react-markdown';
+
 import ImageSlider from '../components/ImageSlider';
-import Content, { HTMLContent } from '../components/Content';
 
-
-export const IndexPageTemplate = () => {
+export const IndexPageTemplate = ( {title, sections }) => {
   return (
-    <p>hej</p>
+    <div className='page-container'>
+      <article className='index page'>
+        <ImageSlider />
+        <div className='page-sections'>
+          {sections && sections.map((section) => 
+            <section>
+              <header className='section-header'>
+                {section.sectionLink ? 
+                  <Link to={section.sectionLink}>
+                    <img src='' width='120' height='100' alt={section.sectionHeader} />
+                    <h3>{section.sectionHeader}</h3>
+                  </Link>
+                :
+                  <div>
+                    <img src='' width='120' height='100' alt='hej' />
+                    <h3>{section.sectionHeader}</h3>
+                  </div>
+                }
+              </header>
+              <ReactMarkdown source={section.sectionBody.replace(/\\/, '  ')} />
+            </section>
+          )}
+        </div>
+      </article>
+    </div>    
   );
 }
 
-export default IndexPageTemplate;
+export default ({ data }) => {
+  const { markdownRemark: post } = data;
 
+  return (
+    <IndexPageTemplate
+      title={post.frontmatter.title}
+      sections={post.frontmatter.sections}
+      content={post.html}
+    />
+  );
+}
+
+export const IndexPageQuery = graphql`
+  query IndexPageQuery($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
+        title
+        sections {
+          sectionHeader
+          sectionLink
+          sectionBody
+        }
+      }
+    }
+  }
+`
 
 /*
 export const IndexPageTemplate = ({ title, content, contentComponent, section1, section2, section3, section4 }) => {
