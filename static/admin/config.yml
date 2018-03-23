@@ -38,7 +38,7 @@ collections:
           {label: 'Section', name: 'section', widget: 'object', fields: [
             {label: 'Header', name: sectionHeader, widget: string},
             {label: 'Featured Image', name: sectionFeaturedImage, widget: image},
-            {label: 'Link', name: sectionLink, widget: 'relation', collection: 'pages', searchFields: ['name'], valueField: 'name'},
+            {label: 'Link', name: sectionLink, widget: 'relation', collection: 'pages', searchFields: ['name', 'title'], valueField: 'title'},
             {label: 'Content', name: sectionBody, widget: 'markdown'}
           ]}
         ]}   
