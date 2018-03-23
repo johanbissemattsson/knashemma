@@ -21,7 +21,6 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "UID", name: "uid", widget: "string", pattern: ['^[a-zA-Z0-9_-]*$', 'Cannot have special characters']}
       - {label: "Main", name: "mainBody", widget: "markdown"}
-      - {label: "Side", name: "side", widget: "markdown", required: false}
       - {label: 'Side items', name: 'sideitems', widget: 'list', fields: [
           {label: 'Content', name: sideItemBody, widget: 'markdown', required: false},
           {label: 'Background color', name: sideItemBackgroundColor, widget: 'select', default: 'lightblue', options: [
