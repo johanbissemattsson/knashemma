@@ -3,6 +3,17 @@ import Link from 'gatsby-link';
 import ImageSlider from '../components/ImageSlider';
 import Content, { HTMLContent } from '../components/Content';
 
+
+export const IndexPageTemplate = () => {
+  return (
+    <p>hej</p>
+  );
+}
+
+export default IndexPageTemplate;
+
+
+/*
 export const IndexPageTemplate = ({ title, content, contentComponent, section1, section2, section3, section4 }) => {
   const PageContent = contentComponent || Content;
   return (
@@ -102,3 +113,4 @@ export const IndexPageQuery = graphql`
     }
   }
 `
+*/
