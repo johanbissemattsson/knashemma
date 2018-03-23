@@ -29,12 +29,11 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: 'index-page'}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
       - {label: 'Sections', name: 'sections', widget: 'list', fields: [
           {label: 'Section', name: 'section', widget: 'object', fields: [
             {label: 'Header', name: sectionHeader, widget: string},
             {label: 'Featured Image', name: sectionFeaturedImage, widget: image},
-            {label: 'Link', name: sectionLink, widget: 'relation', collection: 'pages', searchFields: 'name', valueField: 'name'},
+            {label: 'Link', name: sectionLink, widget: 'relation', collection: 'pages', searchFields: ['name'], valueField: 'name'},
             {label: 'Content', name: sectionBody, widget: 'markdown'}
           ]}
         ]}   
