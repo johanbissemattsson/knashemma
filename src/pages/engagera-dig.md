@@ -1,8 +1,7 @@
 ---
-templateKey: 'page'
-path: /engagera-dig
+templateKey: page
 title: Engagera dig i Knas hemma
-main: hejmain
+uid: engagera-dig
 side: hejside
 ---
 Du som antingen bor i, eller har erfarenhet av att bo i familjehem, jourhem, HVB-hem eller annan institution kan bli medlem och engagerar dig i vårt arbete runt om i Sverige. 
