@@ -20,7 +20,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: 'page'}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "UID", name: "uid", widget: "string", pattern: ['^[a-zA-Z0-9_-]*$']}
+      - {label: "UID", name: "uid", widget: "string", pattern: ['^[a-zA-Z0-9_-]*$', 'Cannot have special characters']}
       - {label: "Main", name: "body", widget: "markdown"}
       - {label: "Side", name: "side", widget: "markdown"}
   - name: 'index-page'
