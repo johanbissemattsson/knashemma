@@ -22,7 +22,20 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "UID", name: "uid", widget: "string", pattern: ['^[a-zA-Z0-9_-]*$', 'Cannot have special characters']}
       - {label: "Main", name: "mainBody", widget: "markdown"}
-      - {label: "Side", name: "side", widget: "markdown"}
+      - {label: "Side", name: "side", widget: "markdown", required: false}
+      - {label: 'Side items', name: 'sideitems', widget: 'list', fields: [
+          {label: 'Content', name: sideItemBody, widget: 'markdown', required: false},
+          {label: 'Background color', name: sideItemBackgroundColor, widget: 'select', default: 'lightblue', options: [
+            {label: 'Light blue', value: lightblue},
+            {label: 'Pink', value: pink},
+            {label: 'Orange', value: orange},
+            {label: 'Black', value: black},
+            {label: 'Green', value: green},
+            {label: 'Dark blue', value: darkblue},
+            {label: 'Purple', value: purple},            
+            {label: 'Grey', value: grey},
+          ]},
+        ]}
   - name: 'index-page'
     label: 'Index'
     folder: 'src/pages'
@@ -35,10 +48,10 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: 'index-page'}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Main", name: "body", widget: "markdown"}      
+      - {label: "Main", name: "body", widget: "markdown", required: false}      
       - {label: 'Sections', name: 'sections', widget: 'list', fields: [
           {label: 'Header', name: sectionHeader, widget: string},
           {label: 'Featured Image', name: sectionFeaturedImage, widget: image},
           {label: 'Link', name: sectionLink, widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'},
-          {label: 'Content', name: sectionBody, widget: 'markdown'}
+          {label: 'Content', name: sectionBody, widget: 'markdown', required: false}
         ]}   
