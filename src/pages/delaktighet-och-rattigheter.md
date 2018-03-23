@@ -2,7 +2,7 @@
 templateKey: page
 title: Delaktighet och rättigheter
 uid: delaktighet-och-rattigheter
-side: hejside
+side: ' '
 ---
 # Knas hemmas metod – Byt perspektiv
 
