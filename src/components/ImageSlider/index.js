@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import Slider from 'react-slick';
 import { connect } from 'react-redux';
+import { canUseDOM } from 'exenv';
 
 import { ACTIVATE_IMAGESLIDER, DISABLE_IMAGESLIDER } from '../../actionTypes';
 
@@ -76,4 +77,4 @@ const mapStateToProps = state => ({
   imageSliders: state.imageSliders
 });
 
-export default connect(mapStateToProps)(ImageSlider);
+export default canUseDOM ? connect(mapStateToProps)(ImageSlider) : ImageSlider;
