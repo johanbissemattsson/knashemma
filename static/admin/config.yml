@@ -60,8 +60,8 @@ collections:
     editor:
       preview: false
     fields:
-      - {label: 'Nav Menu', name: 'navmenu', widget: 'list', fields: [
-          {label: 'Menu item', name: 'sectionLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'}
+      - {label: 'Nav Menu', name: 'navMenu', widget: 'list', fields: [
+          {label: 'Menu item', name: 'navMenuItem', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'}
         ]}
       - {label: 'Footer', name: 'footer', widget: 'object', fields: [
           {label: 'Address field', name: 'address', widget: 'markdown'},
