@@ -80,5 +80,8 @@ mainBody: >-
   * För att bli medlem, skicka ett mejl (info@knashemma.se) till oss idag.
 
   * Årsavgiften kostar ?: Swisha oss redan idag.
+sideItems:
+  - sideItemBackgroundColor: '#abc1a5'
+    sideItemBody: Hej
 ---
 
