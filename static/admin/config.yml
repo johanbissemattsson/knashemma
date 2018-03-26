@@ -20,19 +20,26 @@ collections:
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'UID', name: 'uid', widget: 'string', pattern: ['^[a-zA-Z0-9_-]*$', 'Cannot have special characters']}
       - {label: 'Main', name: 'mainBody', widget: 'markdown'}
-      - {label: 'Side items', name: 'sideItems', widget: 'list', required: false, fields: [
-          {label: 'Content', name: sideItemBody, widget: 'markdown', required: false},
-          {label: 'Background color', name: sideItemBackgroundColor, widget: 'select', default: '#28ffff', options: [
-            {label: 'Light blue', value: '#28ffff'},
-            {label: 'Pink', value: '#fa6efe'},
-            {label: 'Orange', value: '#efb741'},
-            {label: 'Black', value: '#000'},
-            {label: 'Green', value: '#28ff00'},
-            {label: 'Dark blue', value: '#2800ff'},
-            {label: 'Purple', value: '#b017d3'},            
-            {label: 'Grey', value: '#abc1a5'},
-          ]},
-        ]}
+      - label: 'Side items'
+        name: 'sideItems'
+        widget: 'list'
+        required: false
+        fields:
+          - label: 'Side item'
+            name: 'side-item'
+            widget: 'object'
+            fields:
+            - {label: 'Content', name: sideItemBody, widget: 'markdown', required: false}
+            - {label: 'Background color', name: sideItemBackgroundColor, widget: 'select', default: '#28ffff', options: [
+                {label: 'Light blue', value: '#28ffff'},
+                {label: 'Pink', value: '#fa6efe'},
+                {label: 'Orange', value: '#efb741'},
+                {label: 'Black', value: '#000'},
+                {label: 'Green', value: '#28ff00'},
+                {label: 'Dark blue', value: '#2800ff'},
+                {label: 'Purple', value: '#b017d3'},            
+                {label: 'Grey', value: '#abc1a5'},
+            ]}
   - name: 'index-page'
     label: 'Index'
     folder: 'src/pages'
