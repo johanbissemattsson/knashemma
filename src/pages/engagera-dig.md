@@ -24,7 +24,7 @@ mainBody: >-
   Såhär går det till.
 
 
-  ### Medlem
+  ## Medlem
 
 
   * Du som antingen bor i, eller har erfarenhet av att bo i familjehem, jourhem,
@@ -42,7 +42,7 @@ mainBody: >-
   fler som tror på samma sak.
 
 
-  ### Varför medlem?
+  ## Varför medlem?
 
 
   * Du stöttar vårt arbete och hjälper på så vis andra barn och ungdomar i
@@ -57,7 +57,7 @@ mainBody: >-
   * Du får komma med idéer och förslag på hur Knas hemma kan utvecklas.
 
 
-  ### Ambassadör (medlem och engagerad):
+  ## Ambassadör (medlem och engagerad):
 
 
   * För att bli ambassadör måste du bli medlem och vara mellan 18 år till 30
@@ -69,7 +69,7 @@ mainBody: >-
   * För att bli ambassadör ska du vara en förebild för andra barn och ungdomar.
     Läs mer om våra ambassadörer (länk sid. 2).
 
-  ### Stödmedlemmar och sponsring:
+  ## Stödmedlemmar och sponsring:
 
 
   * Personer äldre än 30 år kan bli stödmedlemmar utan rösträtt på årsmöte. 
