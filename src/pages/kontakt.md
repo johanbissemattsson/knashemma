@@ -18,7 +18,7 @@ mainBody: |-
   [BOiU](#)
 sideItems:
   - sideItemBody: |-
-      # Vi som jobbar på Knas hemma är:
+      ## Vi som jobbar på Knas hemma är:
 
       **Andreas Svensson**\
       Ordförande i Knas hemma\
