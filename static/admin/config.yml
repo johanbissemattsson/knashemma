@@ -2,7 +2,6 @@ backend:
   name: git-gateway
   branch: master
 
-publish_mode: editorial_workflow
 media_folder: static/media/uploads
 public_folder: /media/uploads
 
@@ -11,45 +10,61 @@ collections:
     label: 'Pages'
     folder: 'src/pages'
     extension: 'md'
-    filter: {field: "templateKey", value: 'page'}
+    filter: {field: 'templateKey', value: 'page'}
     slug: '{{slug}}'      
     create: true
     editor:
       preview: false    
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: 'page'}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "UID", name: "uid", widget: "string", pattern: ['^[a-zA-Z0-9_-]*$', 'Cannot have special characters']}
-      - {label: "Main", name: "mainBody", widget: "markdown"}
+      - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'page'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'UID', name: 'uid', widget: 'string', pattern: ['^[a-zA-Z0-9_-]*$', 'Cannot have special characters']}
+      - {label: 'Main', name: 'mainBody', widget: 'markdown'}
       - {label: 'Side items', name: 'sideitems', widget: 'list', fields: [
           {label: 'Content', name: sideItemBody, widget: 'markdown', required: false},
-          {label: 'Background color', name: sideItemBackgroundColor, widget: 'select', default: 'lightblue', options: [
-            {label: 'Light blue', value: lightblue},
-            {label: 'Pink', value: pink},
-            {label: 'Orange', value: orange},
-            {label: 'Black', value: black},
-            {label: 'Green', value: green},
-            {label: 'Dark blue', value: darkblue},
-            {label: 'Purple', value: purple},            
-            {label: 'Grey', value: grey},
+          {label: 'Background color', name: sideItemBackgroundColor, widget: 'select', default: '#28ffff', options: [
+            {label: 'Light blue', value: '#28ffff'},
+            {label: 'Pink', value: '#fa6efe'},
+            {label: 'Orange', value: '#efb741'},
+            {label: 'Black', value: '#000'},
+            {label: 'Green', value: '#28ff00'},
+            {label: 'Dark blue', value: '#2800ff'},
+            {label: 'Purple', value: '#b017d3'},            
+            {label: 'Grey', value: '#abc1a5'},
           ]},
         ]}
   - name: 'index-page'
     label: 'Index'
     folder: 'src/pages'
     extension: 'md'
-    filter: {field: "templateKey", value: 'index-page'}
+    filter: {field: 'templateKey', value: 'index-page'}
     create: false
     delete: false
     editor:
       preview: false
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: 'index-page'}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Main", name: "body", widget: "markdown", required: false}      
+      - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Main', name: 'body', widget: 'markdown', required: false}      
       - {label: 'Sections', name: 'sections', widget: 'list', fields: [
-          {label: 'Header', name: sectionHeader, widget: string},
-          {label: 'Featured Image', name: sectionFeaturedImage, widget: image},
-          {label: 'Link', name: sectionLink, widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'},
-          {label: 'Content', name: sectionBody, widget: 'markdown', required: false}
-        ]}   
+          {label: 'Header', name: 'sectionHeader', widget: string},
+          {label: 'Featured Image', name: 'sectionFeaturedImage', widget: image},
+          {label: 'Link', name: 'sectionLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'},
+          {label: 'Content', name: 'sectionBody', widget: 'markdown', required: false}
+        ]}
+  - name: 'settings'
+      label: 'Settings'
+      file: src/settings/settings.md
+      create: false
+      delete: false
+      editor:
+        preview: false
+      fields: {
+        - {label: 'Nav Menu', name: 'navmenu', widget: 'list', fields: [
+            {label: 'Menu item', name: 'sectionLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'},
+        ]}
+        - {label: 'Footer', name: 'footer', widget: 'object', fields: [
+            - {label: 'Address field', name: 'address', widget: 'markdown'}
+            - {label: 'Social field', name: 'social', widget: 'markdown'}            
+        ]}
+      }
