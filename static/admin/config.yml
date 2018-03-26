@@ -26,7 +26,7 @@ collections:
         required: false
         fields: [
           {label: 'Content', name: sideItemBody, widget: 'markdown', required: false},
-          {label: 'Image (replaces content)', name: 'sideItemImage', widget: image, required: false},
+          {label: 'Image (replaces content)', name: 'sideItemImage', widget: image},
           {label: 'Background color', name: sideItemBackgroundColor, widget: 'select', default: '#28ffff', options: [
                 {label: 'Light blue', value: '#28ffff'},
                 {label: 'Pink', value: '#fa6efe'},
