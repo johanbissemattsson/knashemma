@@ -56,6 +56,10 @@ mainBody: >-
 
   Please contact us for further information and collaboration!
 sideItems:
-  - sideItemBody: Hej
+  - sideItemBackgroundColor: '#fa6efe'
+    sideItemBody: |-
+      ## Detta är en sidoruta
+
+      En sidoruta som det går att ändra färg på, eller ha bilder i.
 ---
 
