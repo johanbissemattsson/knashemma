@@ -4,6 +4,7 @@ title: Kontakta oss!
 uid: kontakt
 mainBody: Taaa
 sideItems:
-  - sideItemBody: Aegageage
+  - side-item:
+      sideItemBody: egaegaegeag
 ---
 
