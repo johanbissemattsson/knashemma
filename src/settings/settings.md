@@ -4,8 +4,8 @@ navMenu:
   - navMenuItem: ambassadorer
 footer:
   - adress: >-
-    Hej
+      Hej
   - social: >-
-    Svejs
+      Svejs
 ---
  
