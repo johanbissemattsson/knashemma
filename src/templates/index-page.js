@@ -25,7 +25,7 @@ export const IndexPageTemplate = ( {title, sections }) => {
                   </div>
                 }
               </header>
-              <ReactMarkdown source={section.sectionBody.replace(/\\/, '  ')} />
+              <ReactMarkdown source={section.sectionBody.replace(/\\/g, '  ')} />
             </section>
           )}
         </div>
