@@ -20,7 +20,7 @@ collections:
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'UID', name: 'uid', widget: 'string', pattern: ['^[a-zA-Z0-9_-]*$', 'Cannot have special characters']}
       - {label: 'Main', name: 'mainBody', widget: 'markdown'}
-      - {label: 'Side items', name: 'sideitems', widget: 'list', fields: [
+      - {label: 'Side items', name: 'sideitems', widget: 'list', required: false, fields: [
           {label: 'Content', name: sideItemBody, widget: 'markdown', required: false},
           {label: 'Background color', name: sideItemBackgroundColor, widget: 'select', default: '#28ffff', options: [
             {label: 'Light blue', value: '#28ffff'},
@@ -58,13 +58,14 @@ collections:
       - label: 'Navigation'
         name: 'navigation'
         file: 'src/settings/navigation.md'
-        editor:
-          preview: false
         fields:
-          - {label: 'Nav Menu', name: 'navMenu', widget: 'list', fields: [
-              {label: 'Menu item', name: 'navMenuItem', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'}
-            ]}
-          - {label: 'Footer', name: 'footer', widget: 'object', fields: [
-              {label: 'Address field', name: 'address', widget: 'markdown'},
-              {label: 'Social field', name: 'social', widget: 'markdown'}
-          ]}
+          - label: 'Nav Menu'
+            name: 'navMenu'
+            widget: 'list'
+            fields:
+              - label: 'Menu item'
+                name: 'navMenuItem'
+                widget: 'relation'
+                collection: 'pages'
+                searchFields: ['uid', 'title']
+                valueField: 'uid'
