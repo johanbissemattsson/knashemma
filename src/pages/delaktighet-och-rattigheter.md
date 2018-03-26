@@ -33,6 +33,9 @@ mainBody: >-
   Läs mer under Anlita Knas hemma
 sideItems:
   - sideItemBackgroundColor: '#b017d3'
-    sideItemBody: Hej
+    sideItemBody: |-
+      ## Detta är en sidoruta
+
+      En sidoruta som det går att ändra färg på, eller ha bilder i.
 ---
 
