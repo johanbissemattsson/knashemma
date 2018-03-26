@@ -37,10 +37,6 @@ collections:
                 {label: 'Grey', value: '#abc1a5'},
             ]}
         ]
-  - name: 'index'
-    label: 'Index'
-    editor:
-      preview: false
     files:
       - label: 'Index'
         name: 'indexpage'
@@ -55,7 +51,7 @@ collections:
               {label: 'Link', name: 'sectionLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'},
               {label: 'Content', name: 'sectionBody', widget: 'markdown', required: false}
             ]}
-          - {label: 'Optional footer image', name: 'footerImage', widget: 'image', required: false}
+          - {label: 'Optional footer image', name: 'footerImage', widget: 'image', required: false}        
   - name: 'settings'
     label: 'Settings'
     editor:
@@ -63,7 +59,7 @@ collections:
     files:
       - label: 'Footer'
         name: 'footer'
-        file: 'src/pages/settings/footer.md'
+        file: 'src/settings/footer.md'
         fields:
           - label: 'Address field'
             name: 'body'
@@ -73,7 +69,7 @@ collections:
             widget: 'markdown'
       - label: 'Navigation'
         name: 'navigation'
-        file: 'src/pages/settings/navigation.md'
+        file: 'src/settings/navigation.md'
         fields:
           - label: 'Nav Menu items'
             name: 'navMenu'
