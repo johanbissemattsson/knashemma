@@ -26,5 +26,8 @@ mainBody: >-
   inspirera. Vi kommer gärna till er och delar med oss av våra erfarenheter,
   utbildar i delaktighet och genom att skapa nya sätt att mötas på kan vi
   tillsammans skapa innehåll och goda samarbeten.
+sideItems:
+  - sideItemBackgroundColor: '#efb741'
+    sideItemBody: Hej
 ---
 
