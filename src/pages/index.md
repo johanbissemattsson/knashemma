@@ -6,7 +6,7 @@ sections:
       Knas hemma är en ungdomsdriven ideell förening som arbetar nationellt. Den
       främsta målgruppen för Knas hemma är ungdomar och unga vuxna i åldrarna ca
       13–30 år, som antingen bor i eller har bott i familjehem, HVB-hem, eller
-      annat boende för samhällsplacerade barn eller unga.\
+      annat boende för samhällsplacerade barn eller unga.
 
       [Läs mer](/om-knas-hemma/)
     sectionHeader: Om Knas hemma
@@ -17,7 +17,7 @@ sections:
       vara med och skapa en ny barnrättsorganisation för att göra det bättre för
       barn och ungdomar som bor i olika placeringar. Idag är Knas hemma en
       ideell förening där styrelsen består av ungdomsambassadörer och medlemmar
-      i Knas hemma.\
+      i Knas hemma.
 
       [Läs mer](ambassadorer)
     sectionHeader: Ambassadörer
@@ -30,7 +30,7 @@ sections:
       perspektiv, i statliga rapporter, ge input på textmaterial samt via våra
       föreläsningar och utbildningspaket för socialtjänst, på
       familjehemsutbildningar, på universitet och högskolor etc. Vi kommer gärna
-      och föreläser och inspirerar er!\
+      och föreläser och inspirerar er!
 
       [Läs mer](anlita-knas-hemma)
     sectionHeader: Anlita Knas hemma
@@ -40,7 +40,7 @@ sections:
       lyfta barns och ungas delaktighet och röster inom Socialtjänst,
       familjehem, HVB-hem, samt andra aktörer som träffar målgruppen. Det
       handlar om att engagera barn och ungdomar genom att lyssna på hur de
-      själva identifierar problem, föreslår lösningar och agera utifrån dem.\
+      själva identifierar problem, föreslår lösningar och agera utifrån dem.
 
       [Läs mer](delaktighet-och-rattigheter)
     sectionHeader: Delaktighet och rättigheter
