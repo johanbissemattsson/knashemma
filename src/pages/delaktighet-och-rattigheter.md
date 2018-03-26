@@ -3,7 +3,9 @@ templateKey: page
 title: Delaktighet och rättigheter
 uid: delaktighet-och-rattigheter
 mainBody: >-
-  # Knas hemmas metod – Byt perspektiv
+  # Knas hemmas metod  
+
+  # – Byt perspektiv
 
 
   2015 bjöd Knas hemma in konstnären, Andrea Hvistendahl och hennes konstverk,
