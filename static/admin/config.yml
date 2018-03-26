@@ -10,7 +10,6 @@ collections:
     label: 'Pages'
     folder: 'src/pages'
     extension: 'md'
-    filter: {field: 'templateKey', value: 'page'}
     slug: '{{slug}}'      
     create: true
     editor:
@@ -38,27 +37,29 @@ collections:
                 {label: 'Grey', value: '#abc1a5'},
             ]}
         ]
-  - name: 'index-page'
-    label: 'Index'
-    folder: 'src/pages'
-    extension: 'md'
-    filter: {field: 'templateKey', value: 'index-page'}
-    create: false
-    delete: false
+  - name: 'Index'
+    label: 'index'
     editor:
       preview: false
-    fields:
-      - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page'}
-      - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Main', name: 'body', widget: 'markdown', required: false}      
-      - {label: 'Sections', name: 'sections', widget: 'list', fields: [
-          {label: 'Header', name: 'sectionHeader', widget: string},
-          {label: 'Featured Image', name: 'sectionFeaturedImage', widget: image},
-          {label: 'Link', name: 'sectionLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'},
-          {label: 'Content', name: 'sectionBody', widget: 'markdown', required: false}
-        ]}
+    files:
+      - label: 'Index'
+        name: 'index'
+        file: 'src/index/index.md'
+        fields:
+          - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page'}
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Main', name: 'body', widget: 'markdown', required: false}      
+          - {label: 'Sections', name: 'sections', widget: 'list', fields: [
+              {label: 'Header', name: 'sectionHeader', widget: 'string'},
+              {label: 'Featured Image', name: 'sectionFeaturedImage', widget: 'image'},
+              {label: 'Link', name: 'sectionLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'},
+              {label: 'Content', name: 'sectionBody', widget: 'markdown', required: false}
+            ]}
+          - {label: 'Optional footer image', name: 'footerImage', widget: 'image', required: false}
   - name: 'settings'
     label: 'Settings'
+    editor:
+      preview: false    
     files:
       - label: 'Footer'
         name: 'footer'
