@@ -19,19 +19,20 @@ mainBody: |-
   [Allmänna Arvsfonden](#)[\
   BOiU](#)
 sideItems:
-  - sideItemBody: |-
+  - sideItemBackgroundColor: '#efb741'
+    sideItemBody: |-
       ## Vi som jobbar på Knas hemma är:
 
-      **Andreas Svensson**
-      Ordförande i Knas hemma
-      <mailto:andreas@knashemma.se>
+      **Andreas Svensson**\
+      Ordförande i Knas hemma[\
+      andreas@knashemma.se](mailto:andreas@knashemma.se)
 
-      **Emiliya Larsson**
-      Projektledare
-      [emiliya@knashemma.se](emiliya@knashemma.se)
+      **Emiliya Larsson**\
+      Projektledare[\
+      emiliya@knashemma.se](emiliya@knashemma.se)
 
-      **Anna Sabelström**
-      Verksamhetsledare/utvecklare
-      [anna@knashemma.se](anna@knashemma.se)
+      **Anna Sabelström**\
+      Verksamhetsledare/utvecklare[\
+      anna@knashemma.se](anna@knashemma.se)
 ---
 
