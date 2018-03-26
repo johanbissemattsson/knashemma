@@ -37,8 +37,8 @@ collections:
                 {label: 'Grey', value: '#abc1a5'},
             ]}
         ]
-  - name: 'Index'
-    label: 'index'
+  - name: 'index'
+    label: 'Index'
     editor:
       preview: false
     files:
