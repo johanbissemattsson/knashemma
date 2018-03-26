@@ -28,6 +28,9 @@ mainBody: >-
   tillsammans skapa innehåll och goda samarbeten.
 sideItems:
   - sideItemBackgroundColor: '#efb741'
-    sideItemBody: Hej
+    sideItemBody: |-
+      ## Detta är en sidoruta
+
+      En sidoruta som det går att ändra färg på, eller ha bilder i.
 ---
 
