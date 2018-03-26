@@ -7,6 +7,7 @@ sideItems:
   - side-item:
       sideItemBody: aegaegeageg
   - side-item:
+      sideItemBackgroundColor: '#28ff00'
       sideItemBody: afeaefaegaegea
 ---
 
