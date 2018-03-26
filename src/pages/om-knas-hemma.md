@@ -28,14 +28,9 @@ mainBody: >-
   ## Knas hemma arbetar med att:
 
 
-  Single-origin coffee is coffee grown within a single known geographic origin.
-  Sometimes, this is a single farm or a specific collection of beans from a
-  single country. The name of the coffee is then usually the place it was grown
-  to whatever degree available.
+  Informera och utbilda placerade barn och ungdomar om deras rättigheter, så att
+  de själva kan påverka och vara med och bestämma.
 
-
-  * Informera och utbilda placerade barn och ungdomar om deras rättigheter, så
-  att de själva kan påverka och vara med och bestämma.
 
   * Lyfta fram barns och ungas egna perspektiv och erfarenheter av placering i
   familjehem och HVB-hem och arbeta för barns och ungas delaktighet i samhället.
