@@ -1,6 +1,6 @@
 ---
 templateKey: page
-title: Knas hemma in english
+title: Knas hemma in English
 uid: in-english
 mainBody: >-
   # Knas hemma
@@ -16,7 +16,7 @@ mainBody: >-
   and other participatory methods. 
 
 
-  ### Ambassador’s programme for social change
+  ## Ambassador’s programme for social change
 
 
   To further enhance young people's voices and participation in foster care, we
@@ -34,7 +34,7 @@ mainBody: >-
   conferences and in other collaborative projects.
 
 
-  ### We offer:
+  ## We offer:
 
 
   * participatory methods
@@ -44,7 +44,7 @@ mainBody: >-
   * dialogues and up to date knowledge from young people’s own perspectives
 
 
-  ### We collaborate and educate:
+  ## We collaborate and educate:
 
 
   * the Social Services and Foster Care 
@@ -55,5 +55,7 @@ mainBody: >-
 
 
   Please contact us for further information and collaboration!
+sideItems:
+  - sideItemBody: Hej
 ---
 
