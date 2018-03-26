@@ -4,7 +4,7 @@ title: Kontakta oss!
 uid: kontakt
 mainBody: Taaa
 sideItems:
-  - side-item:
-      sideItemBody: egaegaegeag
+  - sideItemBackgroundColor: '#fa6efe'
+    sideItemBody: Bla bla
 ---
 
