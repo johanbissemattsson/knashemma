@@ -11,13 +11,13 @@ mainBody: |-
   ### Följ och Gilla oss här:
 
   [Facebook](https://www.facebook.com)\
-  [Twitter](https://www.twitter.com)[\
+  [Twitter](https://www.twitter.com)\
   Instagram](https://www.instagram.com)
 
   ### Med stöd av/Loggor:
 
-  [Allmänna Arvsfonden](#)[\
-  BOiU](#)
+  [Allmänna Arvsfonden](#)\
+  [BOiU](#)
 sideItems:
   - sideItemBackgroundColor: '#efb741'
     sideItemBody: |-
