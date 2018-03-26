@@ -82,6 +82,9 @@ mainBody: >-
   * Årsavgiften kostar ?: Swisha oss redan idag.
 sideItems:
   - sideItemBackgroundColor: '#abc1a5'
-    sideItemBody: Hej
+    sideItemBody: |-
+      ## Detta är en sidoruta
+
+      En sidoruta som det går att ändra färg på, eller ha bilder i.
 ---
 
