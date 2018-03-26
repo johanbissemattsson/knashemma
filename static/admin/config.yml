@@ -53,18 +53,18 @@ collections:
           {label: 'Content', name: 'sectionBody', widget: 'markdown', required: false}
         ]}
   - name: 'settings'
-      label: 'Settings'
-      file: src/settings/settings.md
-      create: false
-      delete: false
-      editor:
-        preview: false
-      fields: {
-        - {label: 'Nav Menu', name: 'navmenu', widget: 'list', fields: [
-            {label: 'Menu item', name: 'sectionLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'},
+    label: 'Settings'
+    file: src/settings/settings.md
+    create: false
+    delete: false
+    editor:
+      preview: false
+    fields: {
+      - {label: 'Nav Menu', name: 'navmenu', widget: 'list', fields: [
+          {label: 'Menu item', name: 'sectionLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'},
         ]}
-        - {label: 'Footer', name: 'footer', widget: 'object', fields: [
-            - {label: 'Address field', name: 'address', widget: 'markdown'}
-            - {label: 'Social field', name: 'social', widget: 'markdown'}            
+      - {label: 'Footer', name: 'footer', widget: 'object', fields: [
+          - {label: 'Address field', name: 'address', widget: 'markdown'}
+          - {label: 'Social field', name: 'social', widget: 'markdown'}            
         ]}
       }
