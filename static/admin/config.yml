@@ -9,6 +9,7 @@ collections:
   - name: 'pages'
     label: 'Pages'
     folder: 'src/pages'
+    filter: {field: 'templateKey', value: 'page'}
     extension: 'md'
     slug: '{{slug}}'      
     create: true
@@ -37,21 +38,25 @@ collections:
                 {label: 'Grey', value: '#abc1a5'},
             ]}
         ]
-    files:
-      - label: 'Index'
-        name: 'indexpage'
-        file: 'src/pages/index/index.md'
-        fields:
-          - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page'}
-          - {label: 'Title', name: 'title', widget: 'string'}
-          - {label: 'Main', name: 'body', widget: 'markdown', required: false}      
-          - {label: 'Sections', name: 'sections', widget: 'list', fields: [
-              {label: 'Header', name: 'sectionHeader', widget: 'string'},
-              {label: 'Featured Image', name: 'sectionFeaturedImage', widget: 'image'},
-              {label: 'Link', name: 'sectionLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'},
-              {label: 'Content', name: 'sectionBody', widget: 'markdown', required: false}
-            ]}
-          - {label: 'Optional footer image', name: 'footerImage', widget: 'image', required: false}        
+  - name: 'index-page'
+    label: 'Index'
+    folder: 'src/pages'
+    extension: 'md'
+    filter: {field: 'templateKey', value: 'index-page'}
+    create: false
+    delete: false
+    editor:
+      preview: false
+    fields:
+      - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Main', name: 'body', widget: 'markdown', required: false}      
+      - {label: 'Sections', name: 'sections', widget: 'list', fields: [
+          {label: 'Header', name: 'sectionHeader', widget: string},
+          {label: 'Featured Image', name: 'sectionFeaturedImage', widget: image},
+          {label: 'Link', name: 'sectionLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'},
+          {label: 'Content', name: 'sectionBody', widget: 'markdown', required: false}
+        ]}
   - name: 'settings'
     label: 'Settings'
     editor:
