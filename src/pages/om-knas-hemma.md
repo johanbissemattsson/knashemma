@@ -107,8 +107,24 @@ mainBody: >-
   dåligt, kommer vi att hänvisa personen vidare till andra hjälporganisation och
   kontakter.
 sideItems:
-  - sideItemBody: Side item
-  - sideItemBackgroundColor: '#28ff00'
-    sideItemBody: Haaaaa
+  - sideItemBody: >-
+      ## Etik och värdegrund
+
+
+      Knas hemma tror att:
+
+
+      * unga människor kan hjälpa varandra.
+
+      * unga människor är en viktig samhällsgrupp som bidrar till
+      samhällsförändring och demokratiutveckling.
+
+      * unga människor behöver uttrycka sina erfarenheter och upplevelser i
+      olika former och på olika sätt. alla perspektiv behövs i ett samhälle –
+      både positiva och negativa perspektiv.
+
+      * unga kan bidra till att stärka barns och ungas position i samhället och
+      att förändra dagens lagar, förhållningssätt eller arbetsmetoder på längre
+      sikt.
 ---
 
