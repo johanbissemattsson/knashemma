@@ -216,6 +216,26 @@ img {
 }
 
 @media only screen and (min-width: 720px) {
+  .page .content {
+    display: flex;
+    margin: 0 -1.15%;
+  }
+  
+  .page main,
+  .page aside {
+    flex: 1;
+    margin: 0;
+    padding: 0 1.15%;
+  }
+  
+  .page .main-content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .index.page {
+    flex-direction: column;
+  }
+
   .page-sections {
     display: flex;
     margin: 0 -1.15%;
