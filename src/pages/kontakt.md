@@ -12,7 +12,7 @@ mainBody: |-
 
   [Facebook](https://www.facebook.com)\
   [Twitter](https://www.twitter.com)\
-  Instagram](https://www.instagram.com)
+  [Instagram](https://www.instagram.com)
 
   ## Med stöd av/Loggor:
 
