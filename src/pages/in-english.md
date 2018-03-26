@@ -3,6 +3,9 @@ templateKey: page
 title: Knas hemma in english
 uid: in-english
 mainBody: >-
+  # Knas hemma
+
+
   Knas hemma: Young People’s perspectives on Foster Care, is a national youth
   organisation working with children's rights and perspectives in foster care
   for the purpose of strengthening their voices, participation and rights within
@@ -14,6 +17,7 @@ mainBody: >-
 
 
   ### Ambassador’s programme for social change
+
 
   To further enhance young people's voices and participation in foster care, we
   have initiated a leadership programme for young adults where they become our
@@ -30,22 +34,24 @@ mainBody: >-
   conferences and in other collaborative projects.
 
 
-  ### We offer: 
-
-  - participatory methods
-
-  - creative workshops
-
-  - dialogues and up to date knowledge from young people’s own perspectives
+  ### We offer:
 
 
-  ### We collaborate and educate: 
+  * participatory methods
 
-  - the Social Services and Foster Care 
+  * creative workshops
 
-  - young people nationally 
+  * dialogues and up to date knowledge from young people’s own perspectives
 
-  - international collaborations and exchanges 
+
+  ### We collaborate and educate:
+
+
+  * the Social Services and Foster Care 
+
+  * young people nationally 
+
+  * international collaborations and exchanges 
 
 
   Please contact us for further information and collaboration!
