@@ -22,38 +22,41 @@ mainBody: >-
   till föreningens utveckling och kunskap.
 
 
-  ### Knas hemma arbetar med att:
+  ## Knas hemma arbetar med att:
+
 
   Single-origin coffee is coffee grown within a single known geographic origin.
   Sometimes, this is a single farm or a specific collection of beans from a
   single country. The name of the coffee is then usually the place it was grown
   to whatever degree available.
 
-  - Informera och utbilda placerade barn och ungdomar om deras rättigheter, så
+
+  * Informera och utbilda placerade barn och ungdomar om deras rättigheter, så
   att de själva kan påverka och vara med och bestämma.
 
-  - Lyfta fram barns och ungas egna perspektiv och erfarenheter av placering i
+  * Lyfta fram barns och ungas egna perspektiv och erfarenheter av placering i
   familjehem och HVB-hem och arbeta för barns och ungas delaktighet i samhället.
 
-  - Utbilda nya medlemmar i barnets rättigheter och stärka dem genom delaktighet
+  * Utbilda nya medlemmar i barnets rättigheter och stärka dem genom delaktighet
   i organisationen.
 
-  - Utbilda "Trygga ambassadörer" som företräder Knas hemma och är positiva
+  * Utbilda "Trygga ambassadörer" som företräder Knas hemma och är positiva
   förebilder för andra.
 
-  - Föreläsa och utbilda socialtjänst, familjehem, studenter och andra aktörer
+  * Föreläsa och utbilda socialtjänst, familjehem, studenter och andra aktörer
   som möter målgruppen.
 
-  - Utveckla kreativa metoder för ett ökat barn- och ungdomsperspektiv och
+  * Utveckla kreativa metoder för ett ökat barn- och ungdomsperspektiv och
   delaktighet i samhällsvården.
 
-  - Vara en röst för målgruppen barn och unga i samhällsvård – genom att lyssna
+  * Vara en röst för målgruppen barn och unga i samhällsvård – genom att lyssna
   till barns och ungas erfarenheter.
 
-  - Organisera unga som vill engagera sig i Knas hemma.
+  * Organisera unga som vill engagera sig i Knas hemma.
 
 
-  ### Vision och målsättning
+  ## Vision och målsättning
+
 
   Vår vision och målsättning är att barn och unga ska få kunskap om barnets
   rättigheter i familjehem/HVB-hem och vara delaktiga i de beslut som rör dem
@@ -64,46 +67,48 @@ mainBody: >-
   lösningar och agerar utifrån dem.
 
 
-  ### Detta gör vi inte
+  ## Detta gör vi inte
 
-  - Vi hjälper inte vuxna, familjer eller enskilda barn och unga i utredningar
+
+  * Vi hjälper inte vuxna, familjer eller enskilda barn och unga i utredningar
   eller specifika "problem".
 
-  - Vi går aldrig in och medlar i eventuella konflikter mellan barn- och unga,
+  * Vi går aldrig in och medlar i eventuella konflikter mellan barn- och unga,
   familjer eller andra parter.
 
-  - Vi anser oss inte vara en brukarförening. Vi är en ungdomsrättsorganisation.
+  * Vi anser oss inte vara en brukarförening. Vi är en ungdomsrättsorganisation.
 
 
-  ### Etisk policy
+  ## Etisk policy
 
-  - Vår värdegrund baseras på alla människors lika värde och allas rätt till
+
+  * Vår värdegrund baseras på alla människors lika värde och allas rätt till
   frihet, demokrati och social trygghet. vi anser att alla ska behandlas lika
   oavsett kön, ålder, hudfärg, sexuell läggning, kroppslig funktionsförmåga,
   livssituation eller bakgrund.
 
-  - Vårt arbeta genomsyras av FN:s konvention om barnets rättigheter. vi strävar
+  * Vårt arbeta genomsyras av FN:s konvention om barnets rättigheter. vi strävar
   efter att arbeta och utvecklas långsiktigt och med ett hållbarhetsperspektiv.
 
-  - Vi agerar aldrig utan att vi först fått medgivande av dig som deltar i Knas
+  * Vi agerar aldrig utan att vi först fått medgivande av dig som deltar i Knas
   hemma (detta berör t.ex. publicering av egna produktioner samt bilder på
   nätet).
 
-  - Vi samarbetar gärna men med förutsättning att ni delar samma värdegrunder
+  * Vi samarbetar gärna men med förutsättning att ni delar samma värdegrunder
   och perspektiv som beskrivs här.
 
-  - Valet av anonymitet och sekretess diskuteras i samråd med de unga som är
+  * Valet av anonymitet och sekretess diskuteras i samråd med de unga som är
   medlemmar i Knas hemma.
 
-  - Vi månar och värnar om alla ungdomar som är delaktiga i Knas hemma.
+  * Vi månar och värnar om alla ungdomar som är delaktiga i Knas hemma.
 
-  - Etiska problem och frågeställningar som eventuellt uppstår diskuteras
+  * Etiska problem och frågeställningar som eventuellt uppstår diskuteras
   kontinuerligt i vår Senior Advisory-grupp.
 
-  - Vi anser att barn- och unga är aktiva aktörer i samhället och med stor
+  * Vi anser att barn- och unga är aktiva aktörer i samhället och med stor
   autonomi, vilket genomsyrar vår barn- och ungdomssyn.
 
-  - Om en ungdom befinner sig i en svår situation i livet och mår väldigt
+  * Om en ungdom befinner sig i en svår situation i livet och mår väldigt
   dåligt, kommer vi att hänvisa personen vidare till andra hjälporganisation och
   kontakter.
 sideItems:
