@@ -43,8 +43,8 @@ collections:
       preview: false
     files:
       - label: 'Index'
-        name: 'index'
-        file: 'src/index/index.md'
+        name: 'indexpage'
+        file: 'src/pages/index/index.md'
         fields:
           - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page'}
           - {label: 'Title', name: 'title', widget: 'string'}
@@ -63,7 +63,7 @@ collections:
     files:
       - label: 'Footer'
         name: 'footer'
-        file: 'src/settings/footer.md'
+        file: 'src/pages/settings/footer.md'
         fields:
           - label: 'Address field'
             name: 'body'
@@ -73,7 +73,7 @@ collections:
             widget: 'markdown'
       - label: 'Navigation'
         name: 'navigation'
-        file: 'src/settings/navigation.md'
+        file: 'src/pages/settings/navigation.md'
         fields:
           - label: 'Nav Menu items'
             name: 'navMenu'
