@@ -8,13 +8,13 @@ mainBody: |-
   **Ring oss:** [070-946 66 43](tel:+0709466643)\
   **Mejla oss:** <mailto:info@knashemma.se>
 
-  ### Följ och Gilla oss här:
+  ## Följ och Gilla oss här:
 
   [Facebook](https://www.facebook.com)\
   [Twitter](https://www.twitter.com)\
   Instagram](https://www.instagram.com)
 
-  ### Med stöd av/Loggor:
+  ## Med stöd av/Loggor:
 
   [Allmänna Arvsfonden](#)\
   [BOiU](#)
