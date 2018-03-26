@@ -10,8 +10,8 @@ export const IndexPageTemplate = ( {title, sections }) => {
       <article className='index page'>
         <ImageSlider />
         <div className='page-sections'>
-          {sections && sections.map((section) => 
-            <section>
+          {sections && sections.map((section, index) => 
+            <section key={index}>
               <header className='section-header'>
                 {section.sectionLink ? 
                   <Link to={section.sectionLink}>
