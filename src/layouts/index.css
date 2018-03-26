@@ -22,6 +22,10 @@ a:hover {
   color: #fa6efe;
 }
 
+h1 {
+  margin: 0;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -221,6 +225,10 @@ img {
     margin: 0 -1.15%;
   }
   
+  .side-item-container:first-child {
+    margin-top: 0;
+  }
+
   .page main,
   .page aside {
     flex: 1;
@@ -257,8 +265,13 @@ img {
   }
 }
 
+.side-item-container:last-child {
+  margin-bottom: 0;
+}
+
 .side-item-container {
   padding: 1.236842105263158em;
+  margin: 1.236842105263158em 0;
 }
 
 .side-item-container.inverted {
@@ -275,8 +288,8 @@ img {
 
 
 h3 {
-  font-size: 1.368421052631579em;
-  line-height: 0.9038461538461538;
+  font-size: 1em;
+  line-height: 1.236842105263158;
 }
 
 .page-sections section h3 {
@@ -396,10 +409,6 @@ h3 {
   z-index: 10000;
 }
 
-aside {
-  font-size: 0.875em;
-}
-
 .page .page-sections section > *:first-child {
   margin-top: 0;
 }
@@ -412,6 +421,10 @@ aside {
   margin-bottom: 0;
 }
 
+.page .side-item-content {
+  font-size: 0.875em;
+}
+
 .page .side-item-content > *:first-child {
   margin-top: 0;
 }
@@ -422,7 +435,7 @@ aside {
 
 .page h2 {
   font-size: 1em;
-  margin: 1.855263157894737em 0 0.618421052631579em 0;
+  margin: 1.236842105263158em 0 0.618421052631579em 0;
 }
 
 .page aside h2 {
