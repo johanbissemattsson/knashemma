@@ -54,7 +54,7 @@ collections:
         ]}
   - name: 'settings'
     label: 'Settings'
-    file: src/settings/settings.md
+    file: 'src/settings/settings.md'
     create: false
     delete: false
     editor:
