@@ -29,5 +29,8 @@ mainBody: >-
   Knas hemma utbildar socialtjänsten, socionomstudenter och andra aktörer i
   metoden och har implementerat vårt delaktighetsarbete på flera håll i Sverige.
   Läs mer under Anlita Knas hemma
+sideItems:
+  - sideItemBackgroundColor: '#b017d3'
+    sideItemBody: Hej
 ---
 
