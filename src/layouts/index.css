@@ -274,6 +274,11 @@ img {
   margin: 1.236842105263158em 0;
 }
 
+.side-item-image-container {
+  margin: 1.236842105263158em 0;
+
+}
+
 .side-item-container.inverted {
   color: #fff;
 }

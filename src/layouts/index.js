@@ -16,11 +16,6 @@ export default class TemplateWrapper extends Component {
     if (canUseDOM) {
       const WebFont = require('webfontloader');
       
-      WebFont.load({
-        google: {
-          families: ['Open Sans:300:700', 'Material Icons']
-        }
-      });
     }
   }
 
