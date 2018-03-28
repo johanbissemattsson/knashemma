@@ -129,6 +129,7 @@ sideItems:
       * unga kan bidra till att stärka barns och ungas position i samhället och
       att förändra dagens lagar, förhållningssätt eller arbetsmetoder på längre
       sikt.
+    sideItemImage: /media/uploads/byggerenfamilj.png
   - sideItemImage: /media/uploads/byggerenfamilj.png
 ---
 
