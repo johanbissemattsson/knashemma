@@ -34,5 +34,6 @@ sideItems:
       **Anna Sabelström**\
       Verksamhetsledare/utvecklare\
       [anna@knashemma.se](anna@knashemma.se)
+    sideItemImage: /media/uploads/byggerenfamilj.png
 ---
 
