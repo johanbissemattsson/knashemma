@@ -28,8 +28,8 @@ collections:
         fields: [
           {label: 'Content', name: sideItemBody, widget: 'markdown', required: false},
           {label: 'Allow HTML elements', name: 'allowHtml', widget: 'boolean', default: false}
-          {label: 'Image (replaces content)', name: 'sideItemImage', widget: image},
-          {label: 'Image alt text', name: 'sideItemImageAlt', widget: string},
+          {label: 'Image (replaces content)', name: 'sideItemImage', widget: 'image'},
+          {label: 'Image alt text', name: 'sideItemImageAlt', widget: 'string'},
           {label: 'Background color', name: sideItemBackgroundColor, widget: 'select', default: '#28ffff', options: [
                 {label: 'Light blue', value: '#28ffff'},
                 {label: 'Pink', value: '#fa6efe'},
