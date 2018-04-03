@@ -53,12 +53,14 @@ collections:
     fields:
       - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page'}
       - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Main', name: 'body', widget: 'markdown', required: false}      
+      - {label: 'Main', name: 'body', widget: 'markdown', required: false}
+      - {label: 'Allow HTML elements', name: 'allowHtml', widget: 'boolean', default: false}    
       - {label: 'Sections', name: 'sections', widget: 'list', fields: [
           {label: 'Header', name: 'sectionHeader', widget: string},
           {label: 'Featured Image', name: 'sectionFeaturedImage', widget: image},
           {label: 'Link', name: 'sectionLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'},
-          {label: 'Content', name: 'sectionBody', widget: 'markdown', required: false}
+          {label: 'Content', name: 'sectionBody', widget: 'markdown', required: false},
+          {label: 'Allow HTML elements', name: 'allowHtml', widget: 'boolean', default: false}
         ]}
   - name: 'settings'
     label: 'Settings'
