@@ -53,12 +53,11 @@ collections:
     fields:
       - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page'}
       - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Image slider', name: 'imageSlider', widget: 'list', fields: [
+      - {label: 'Header images', name: 'imageSlider', widget: 'list', fields: [
           {label: 'Image', name: 'imageSliderImage', widget: 'image'},
           {label: 'Image alt text', name: 'imageSliderImageAlt', widget: 'string'},
         ]}
-      - {label: 'Main', name: 'body', widget: 'markdown', required: false}
-      - {label: 'Allow HTML elements', name: 'allowHtml', widget: 'boolean', default: false}
+      - {label: 'Main', name: 'body', widget: 'hidden', required: false}
       - {label: 'Sections', name: 'sections', widget: 'list', fields: [
           {label: 'Header', name: 'sectionHeader', widget: string},
           {label: 'Featured Image', name: 'sectionFeaturedImage', widget: image},
