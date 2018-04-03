@@ -20,6 +20,7 @@ export const PageTemplate = ({ title, content, contentComponent, sideItems, main
                   const backgroundColor = item.sideItemBackgroundColor ? item.sideItemBackgroundColor : null;
                   const sideItemBody = item.sideItemBody;
                   if (item.sideItemImage) {
+                    //console.log(item.sideItemImage);
                     return (
                     <div key={index} className={'side-item-image-container'}>
                       <img src={item.sideItemImage} />
@@ -44,8 +45,8 @@ export const PageTemplate = ({ title, content, contentComponent, sideItems, main
 /*className={'nav-button hamburger hamburger--squeeze ' + (this.state.menuOpen ? 'is-active' : '')}*/
 
 export default ({ data }) => {
-  const { markdownRemark: page, imageSharp } = data;
-  console.warn(data);
+  const { markdownRemark: page, allImageSharp} = data;
+  console.warn(allImageSharp);
   return (
     <PageTemplate
       contentComponent={HTMLContent}
@@ -61,6 +62,9 @@ export const PageQuery = graphql`
   query PageQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         mainBody
@@ -69,6 +73,11 @@ export const PageQuery = graphql`
           sideItemBackgroundColor
           sideItemImage
         }
+      }
+    }
+    file {
+      childImageSharp {
+        id
       }
     }
   }
