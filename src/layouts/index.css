@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'Calibre Regular';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/CalibreWeb-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/CalibreWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/CalibreWeb-Regular.woff') format('woff'), /* Modern Browsers */
+}
+@font-face {
+  font-family: 'Calibre Semibold';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/CalibreWeb-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/CalibreWeb-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/CalibreWeb-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/CalibreWeb-Semibold.woff') format('woff'), /* Modern Browsers */
+}
+
 body {
   font-family: 'Calibre Regular', sans-serif;
   font-size: 16px;
@@ -24,6 +43,10 @@ a:hover {
 
 h1 {
   margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-family: 'Calibre Semibold', sans-serif;
 }
 
 img {
@@ -189,7 +212,7 @@ img {
 }
 
 .index.page .page-sections {
-  margin: 0;
+  margin: 2.47368421052630em 0 0 0;
 }
 
 .index.page .page-sections section {
@@ -207,7 +230,7 @@ img {
 
   .index.page .page-sections {
     display: flex;
-    margin: 0 -1.15%;
+    margin: 2.47368421052630em -1.15% 0 -1.15%;
     flex-wrap: wrap;
   }
 
@@ -246,7 +269,7 @@ img {
 
   .page-sections {
     display: flex;
-    margin: 0 -1.15%;
+    margin: 2.47368421052630em -1.15% 0 -1.15%;
   }
   
   .page-sections section {
@@ -275,7 +298,7 @@ img {
 }
 
 .side-item-image-container {
-  margin: 1.236842105263158em 0;
+  margin: 0 0 1.236842105263158em 0;
 
 }
 
@@ -449,7 +472,8 @@ h3 {
 
 .image-slider {
   background: grey;
-  margin-bottom: 1.236842105263158em;
+  margin: 0;
+  min-height: 256px;
 }
 
 .image-slider.inactive {
@@ -458,13 +482,13 @@ h3 {
 
 .slick-prev, .slick-next {
   position: absolute;
-  top: 50%;
   display: block;
+  top: 100%;
   width: 20px;
   height: 20px;
   padding: 0;
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  -ms-transform: translate(0, -100%);
+  transform: translate(0, -100%);
   cursor: pointer;
   border: none;
   outline: none;
@@ -472,6 +496,10 @@ h3 {
   z-index: 9;
   padding: 24px;
   box-sizing: content-box;
+}
+
+.slick-prev {
+  right: 48px;
 }
 
 .slick-next {

@@ -15,7 +15,12 @@ export default class TemplateWrapper extends Component {
   componentWillMount() {
     if (canUseDOM) {
       const WebFont = require('webfontloader');
-      
+      WebFont.load({
+        custom: {
+          families: ['Calibre Regular', 'Calibre Semibold'],
+          urls: ['/index.css']
+        }
+      });
     }
   }
 

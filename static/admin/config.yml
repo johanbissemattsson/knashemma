@@ -20,14 +20,14 @@ collections:
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'UID', name: 'uid', widget: 'string', pattern: ['^[a-zA-Z0-9_-]*$', 'Cannot have special characters']}
       - {label: 'Main', name: 'mainBody', widget: 'markdown'}
-      - {label: 'Allow HTML elements', name: 'allowHtml', widget: 'boolean', default: false}
+      - {label: 'Allow HTML elements', name: 'allowHtml', widget: 'boolean', default: false, required: false}
       - label: 'Side items'
         name: 'sideItems'
         widget: 'list'
         required: false
         fields: [
           {label: 'Content', name: sideItemBody, widget: 'markdown', required: false},
-          {label: 'Allow HTML elements', name: 'allowHtml', widget: 'boolean', default: false},
+          {label: 'Allow HTML elements', name: 'allowHtml', widget: 'boolean', default: false, required: false},
           {label: 'Image (replaces content)', name: 'sideItemImage', widget: 'image'},
           {label: 'Image alt text', name: 'sideItemImageAlt', widget: 'string'},
           {label: 'Background color', name: sideItemBackgroundColor, widget: 'select', default: '#28ffff', options: [
@@ -63,7 +63,7 @@ collections:
           {label: 'Featured Image', name: 'sectionFeaturedImage', widget: image},
           {label: 'Link', name: 'sectionLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'},
           {label: 'Content', name: 'sectionBody', widget: 'markdown', required: false},
-          {label: 'Allow HTML elements', name: 'allowHtml', widget: 'boolean', default: false}
+          {label: 'Allow HTML elements', name: 'allowHtml', widget: 'boolean', default: false, required: false}
         ]}
       - {label: 'Footer image', name: 'footerImage', widget: image}
       - {label: 'Footer image alt text', name: 'footerImageAlt', widget: string} 

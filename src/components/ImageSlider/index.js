@@ -70,7 +70,8 @@ class ImageSlider extends React.Component {
 
 const styles = {
   slider: {
-    backgroundColor: 'red'
+    backgroundColor: 'red',
+    minHeight: '320px'
   }
 }
 const mapStateToProps = state => ({
