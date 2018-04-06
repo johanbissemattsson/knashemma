@@ -1,17 +1,28 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import { injectGlobal } from "styled-components";
+import * as fonts from './fonts';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
 import 'normalize.css';
 import './index.css';
 import 'hamburgers/dist/hamburgers.css';
 import 'slick-carousel/slick/slick.css';
 
-export default class TemplateWrapper extends Component {
+injectGlobal`
+  @font-face {
+    font-family: 'Calibre Regular';
+    font-style: normal;
+    font-weight: 300;
+    src: url(${fonts.CalibreWebRegularEOT});
+    src: url(${fonts.CalibreWebRegularWOFF2}) format('woff2'),
+      url(${fonts.CalibreWebRegularWOFF}) format('woff'),
+  }
+`
 
+export default class TemplateWrapper extends Component {
   render() {
     const { children } = this.props;
     return (
