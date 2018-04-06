@@ -471,7 +471,7 @@ h3 {
   font-size: 1.575em;
 }
 
-.image-slider {
+.image-slider, .slick-list, .slick-track {
   margin: 0;
   max-height: 510px;
 }
