@@ -18,7 +18,6 @@ export default class TemplateWrapper extends Component {
       WebFont.load({
         custom: {
           families: ['Calibre Regular', 'Calibre Semibold'],
-          urls: ['/index.css']
         }
       });
     }
