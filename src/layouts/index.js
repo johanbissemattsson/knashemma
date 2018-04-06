@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { canUseDOM } from 'exenv';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -12,16 +11,6 @@ import 'hamburgers/dist/hamburgers.css';
 import 'slick-carousel/slick/slick.css';
 
 export default class TemplateWrapper extends Component {
-  componentWillMount() {
-    if (canUseDOM) {
-      const WebFont = require('webfontloader');
-      WebFont.load({
-        custom: {
-          families: ['Calibre Regular', 'Calibre Semibold'],
-        }
-      });
-    }
-  }
 
   render() {
     const { children } = this.props;

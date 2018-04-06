@@ -2,20 +2,20 @@
   font-family: 'Calibre Regular';
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/CalibreWeb-Regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/CalibreWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/CalibreWeb-Regular.woff') format('woff'), /* Modern Browsers */
+  src: url('./fonts/CalibreWeb-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/CalibreWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/CalibreWeb-Regular.woff') format('woff'), /* Modern Browsers */
 }
 
 @font-face {
   font-family: 'Calibre Semibold';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/CalibreWeb-Regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CalibreWeb-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/CalibreWeb-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/CalibreWeb-Semibold.woff') format('woff'), /* Modern Browsers */
+  src: url('./fonts/CalibreWeb-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/CalibreWeb-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/CalibreWeb-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/CalibreWeb-Semibold.woff') format('woff'), /* Modern Browsers */
 }
 
 body {
