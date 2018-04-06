@@ -479,6 +479,11 @@ h3 {
   z-index: -1;
 }
 
+.slick-slider {
+  max-height: 510px;
+  margin-top: 1.236842105263158em;
+}
+
 .slick-prev, .slick-next {
   position: absolute;
   display: block;

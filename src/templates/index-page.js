@@ -15,12 +15,12 @@ export const IndexPageTemplate = ( {title, sections }) => {
               <header className='section-header'>
                 {section.sectionLink ? 
                   <Link to={section.sectionLink}>
-                    <img src='' width='120' height='100' alt={section.sectionHeader} />
+                    <img src={'/media/uploads/Startsidebild0' + (index + 1) + '.jpg'} width='251' height='183' alt={section.sectionHeader} />
                     <h3>{section.sectionHeader}</h3>
                   </Link>
                 :
                   <div>
-                    <img src='' width='120' height='100' alt='hej' />
+                    <img src='/media/uploads/Startsidebild01.jpg' width='251' height='183' alt='hej' />
                     <h3>{section.sectionHeader}</h3>
                   </div>
                 }

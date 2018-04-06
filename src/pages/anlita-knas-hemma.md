@@ -114,6 +114,6 @@ sideItems:
       ## Detta är en sidoruta
 
       En sidoruta som det går att ändra färg på, eller ha bilder i.
-    sideItemImage: /media/uploads/byggerenfamilj.png
+    sideItemImage: 
 ---
 
