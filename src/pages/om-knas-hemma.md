@@ -131,6 +131,6 @@ sideItems:
       att förändra dagens lagar, förhållningssätt eller arbetsmetoder på längre
       sikt.
     sideItemImage: ''
-  - sideItemImage: /media/uploads/byggerenfamilj.png
+  - sideItemImage: /media/uploads/utbildning.jpg
 ---
 
