@@ -473,6 +473,7 @@ h3 {
 
 .image-slider {
   margin: 0;
+  max-height: 510px;
 }
 
 .image-slider.inactive {
