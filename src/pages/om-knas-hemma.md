@@ -109,6 +109,7 @@ mainBody: >-
   * Om en ungdom befinner sig i en svår situation i livet och mår väldigt
   dåligt, kommer vi att hänvisa personen vidare till andra hjälporganisation och
   kontakter.
+allowHtml: false
 sideItems:
   - sideItemBody: >-
       ## Etik och värdegrund
@@ -129,7 +130,7 @@ sideItems:
       * unga kan bidra till att stärka barns och ungas position i samhället och
       att förändra dagens lagar, förhållningssätt eller arbetsmetoder på längre
       sikt.
-    sideItemImage: /media/uploads/byggerenfamilj.png
+    sideItemImage: ''
   - sideItemImage: /media/uploads/byggerenfamilj.png
 ---
 
