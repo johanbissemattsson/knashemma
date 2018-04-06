@@ -56,13 +56,9 @@ class ImageSlider extends React.Component {
 
     return (        
       <Slider {...sliderSettings} className={imageSliders && !imageSliders.get('isActive') ? 'image-slider inactive' : 'image-slider active'}>
-        <div><h3>1</h3></div>
-        <div><h3>2</h3></div>
-        <div><h3>3</h3></div>
-        <div><h3>4</h3></div>
-        <div><h3>5</h3></div>
-        <div><h3>6</h3></div>
-        <div><h3>7</h3></div>
+        <div><img src='/media/uploads/ImageSliderImage01.png' alt='Bild 1'/></div>
+        <div><img src='/media/uploads/ImageSliderImage02.png' alt='Bild 2'/></div>
+        <div><img src='/media/uploads/ImageSliderImage03.png' alt='bild 3'/></div>
       </Slider>
     );
   }

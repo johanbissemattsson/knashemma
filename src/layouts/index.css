@@ -472,9 +472,7 @@ h3 {
 }
 
 .image-slider {
-  background: grey;
   margin: 0;
-  min-height: 256px;
 }
 
 .image-slider.inactive {
@@ -516,7 +514,7 @@ h3 {
 
 .image-slider .slick-prev:hover svg ,
 .image-slider .slick-next:hover svg {
-  fill: #fa6efe;
+  fill: #2800ff;
   transform: scale(2);
 }
 .site-nav-menu-container .bm-overlay {
@@ -585,4 +583,8 @@ h3 {
     padding: 0.5em;
     margin: 0 -0.5em;
   }
+}
+
+.footer-image {
+  margin-top: 1.236842105263158em;
 }

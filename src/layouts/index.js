@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { injectGlobal } from "styled-components";
-import * as fonts from './fonts';
+import CalibreWebRegularEOT from "./fonts/CalibreWeb-Regular.eot";
+import CalibreWebRegularWOFF from "./fonts/CalibreWeb-Regular.woff";
+import CalibreWebRegularWOFF2 from "./fonts/CalibreWeb-Regular.woff2";
+import CalibreWebSemiboldEOT from "./fonts/CalibreWeb-Semibold.eot";
+import CalibreWebSemiboldWOFF from "./fonts/CalibreWeb-Semibold.woff";
+import CalibreWebSemiboldWOFF2 from "./fonts/CalibreWeb-Semibold.woff2";
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -16,9 +21,9 @@ injectGlobal`
     font-family: 'Calibre Regular';
     font-style: normal;
     font-weight: 300;
-    src: url(${fonts.CalibreWebRegularEOT});
-    src: url(${fonts.CalibreWebRegularWOFF2}) format('woff2'),
-      url(${fonts.CalibreWebRegularWOFF}) format('woff'),
+    src: url(${CalibreWebRegularEOT});
+    src: url(${CalibreWebRegularWOFF2}) format('woff2'),
+      url(${CalibreWebRegularWOFF}) format('woff'),
   }
 `
 

@@ -29,6 +29,9 @@ export const IndexPageTemplate = ( {title, sections }) => {
             </section>
           )}
         </div>
+        <div className='footer-image'>
+          <img src='/media/uploads/FooterImage.png' alt='Footer image'/>
+        </div>
       </article>
     </div>    
   );
