@@ -65,8 +65,8 @@ collections:
           {label: 'Content', name: 'sectionBody', widget: 'markdown', required: false},
           {label: 'Allow HTML elements', name: 'allowHtml', widget: 'boolean', default: false, required: false}
         ]}
-      - {label: 'Footer image', name: 'footerImage', widget: image}
-      - {label: 'Footer image alt text', name: 'footerImageAlt', widget: string} 
+      - {label: 'Footer image', name: 'footerImage', widget: image, required: false}
+      - {label: 'Footer image alt text', name: 'footerImageAlt', widget: string, required: false} 
   - name: 'settings'
     label: 'Settings'
     editor:
