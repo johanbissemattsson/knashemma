@@ -1,7 +1,7 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
+exports.createPages = ({ boundActionCreators, graphql}) => {
   const { createPage } = boundActionCreators
 
   return graphql(`
@@ -16,6 +16,13 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             frontmatter {
               templateKey
             }
+          }
+        }
+      }
+      allFile {
+        edges {
+          node {
+            id
           }
         }
       }
@@ -42,15 +49,46 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   })
 }
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators
-
+exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
+  const { createNodeField, createParentChildLink } = boundActionCreators;
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    const slug = createFilePath({ node, getNode });
+    const sideImages = new Array();
+    if (node.frontmatter && node.frontmatter.sideItems) {
+      node.frontmatter.sideItems.map((sideItem, index) => {
+        const files = node;
+        // IMPORTANT! Check that 'gatsby-source-filesystem' for images are before pages
+        if (sideItem.sideItemImage) {
+          const imageAbsolutePath = path.join(__dirname, 'static', sideItem.sideItemImage)
+          .split(path.sep)
+          .join('/');
+
+          sideImages.push({relativePath: sideItem.sideItemImage, absolutePath: imageAbsolutePath});
+          const fileNode = getNodes().find(n => n.absolutePath === imageAbsolutePath);
+          if (fileNode != null) {
+            // Find ImageSharp node corresponding to the File node
+            const imageSharpNodeId = fileNode.children.find(n => n.endsWith('>> ImageSharp'));
+            const imageSharpNode = getNodes().find(n => n.id === imageSharpNodeId);
+            
+            createParentChildLink({ parent: node, child: imageSharpNode });
+          }
+        }
+      })
+    }
+
+    createNodeField({
+      name: `sideImages`,
+      node,
+      value: sideImages,
+    });
+
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value: slug,
     })
   }
 }
+
+
+

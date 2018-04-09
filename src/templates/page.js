@@ -3,7 +3,8 @@ import ReactMarkdown from 'react-markdown';
 
 import Content, { HTMLContent } from '../components/Content';
 
-export const PageTemplate = ({ title, content, contentComponent, sideItems, mainBody }) => {
+export const PageTemplate = ({ title, content, contentComponent, sideItems, mainBody, sideImages }) => {
+  console.warn(sideImages);
   const PageContent = contentComponent || Content;
     return (
     <div className='page-container'>
@@ -45,8 +46,9 @@ export const PageTemplate = ({ title, content, contentComponent, sideItems, main
 /*className={'nav-button hamburger hamburger--squeeze ' + (this.state.menuOpen ? 'is-active' : '')}*/
 
 export default ({ data }) => {
-  const { markdownRemark: page, allImageSharp} = data;
-  console.warn(allImageSharp);
+  const { markdownRemark: page, fields} = data;
+  console.log(page.childImageSharp);
+  
   return (
     <PageTemplate
       contentComponent={HTMLContent}
@@ -54,6 +56,7 @@ export default ({ data }) => {
       content={page.frontmatter.mainBody}
       mainBody={page.frontmatter.mainBody}
       sideItems={page.frontmatter.sideItems}
+      sideImages={page.fields.sideImages}
     />
   );
 }
@@ -63,7 +66,20 @@ export const PageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       fields {
-        slug
+        slug,
+        sideImages {
+          relativePath
+          absolutePath
+        }
+      }
+      childImageSharp {
+        id
+        sizes {
+          srcSet
+        }
+        resolutions {
+          srcSet
+        }
       }
       frontmatter {
         title
@@ -75,10 +91,8 @@ export const PageQuery = graphql`
         }
       }
     }
-    file {
-      childImageSharp {
-        id
-      }
-    }
   }
 `
+
+
+
