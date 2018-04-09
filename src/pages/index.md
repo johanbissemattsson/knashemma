@@ -1,6 +1,13 @@
 ---
 templateKey: index-page
 title: Index
+imageSlider:
+  - imageSliderImage: /media/uploads/ImageSliderImage01.png
+    imageSliderImageAlt: Bild 1
+  - imageSliderImage: /media/uploads/ImageSliderImage02.png
+    imageSliderImageAlt: Bild 2
+  - imageSliderImage: /media/uploads/ImageSliderImage03.png
+    imageSliderImageAlt: Bild 3
 sections:
   - sectionBody: >-
       Knas hemma är en ungdomsdriven ideell förening som arbetar nationellt. Den
@@ -9,6 +16,7 @@ sections:
       annat boende för samhällsplacerade barn eller unga.\
 
       [Läs mer](/om-knas-hemma/)
+    sectionFeaturedImage: /media/uploads/Startsidebild01.jpg
     sectionHeader: Om Knas hemma
     sectionLink: om-knas-hemma
   - sectionBody: >-
@@ -20,6 +28,7 @@ sections:
       i Knas hemma.\
 
       [Läs mer](ambassadorer)
+    sectionFeaturedImage: /media/uploads/Startsidebild02.jpg
     sectionHeader: Ambassadörer
     sectionLink: ambassadorer
   - sectionBody: >-
@@ -33,6 +42,7 @@ sections:
       och föreläser och inspirerar er!\
 
       [Läs mer](anlita-knas-hemma)
+    sectionFeaturedImage: /media/uploads/Startsidebild03.jpg
     sectionHeader: Anlita Knas hemma
     sectionLink: anlita-knas-hemma
   - sectionBody: >-
@@ -43,7 +53,10 @@ sections:
       själva identifierar problem, föreslår lösningar och agera utifrån dem.\
 
       [Läs mer](delaktighet-och-rattigheter)
+    sectionFeaturedImage: /media/uploads/Startsidebild04.jpg
     sectionHeader: Delaktighet och rättigheter
     sectionLink: delaktighet-och-rattigheter
+footerImage: /media/uploads/FooterImage.png
+footerImageAlt: Sidfotsbild
 ---
  
