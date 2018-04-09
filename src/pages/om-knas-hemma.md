@@ -132,5 +132,7 @@ sideItems:
       sikt.
     sideItemImage: ''
   - sideItemImage: /media/uploads/utbildning.jpg
+  - sideItemBody: ''
+    sideItemImage: /media/uploads/Startsidebild04.jpg
 ---
 
