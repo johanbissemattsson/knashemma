@@ -7,7 +7,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/layouts/fonts`,
+        path: `${__dirname}/static/fonts`,
         name: 'fonts',
       },
     },       
