@@ -10,6 +10,13 @@ module.exports = {
         path: `${__dirname}/static/fonts`,
         name: 'fonts',
       },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/layouts/fonts`,
+        name: 'morefonts',
+      },
     },       
     {
       resolve: 'gatsby-source-filesystem',

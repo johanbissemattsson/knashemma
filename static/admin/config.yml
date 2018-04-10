@@ -20,16 +20,14 @@ collections:
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'UID', name: 'uid', widget: 'string', pattern: ['^[a-zA-Z0-9_-]*$', 'Cannot have special characters']}
       - {label: 'Main', name: 'mainBody', widget: 'markdown'}
-      - {label: 'Allow HTML elements', name: 'allowHtml', widget: 'boolean', default: false, required: false}
       - label: 'Side items'
         name: 'sideItems'
         widget: 'list'
         required: false
         fields: [
           {label: 'Content', name: sideItemBody, widget: 'markdown', required: false},
-          {label: 'Allow HTML elements', name: 'allowHtml', widget: 'boolean', default: false, required: false},
-          {label: 'Image (replaces content)', name: 'sideItemImage', widget: 'image'},
-          {label: 'Image alt text', name: 'sideItemImageAlt', widget: 'string'},
+          {label: 'Image (replaces content)', name: 'sideItemImage', widget: 'image', required: false},
+          {label: 'Image alt text', name: 'sideItemImageAlt', widget: 'string', required: false},
           {label: 'Background color', name: sideItemBackgroundColor, widget: 'select', default: '#28ffff', options: [
                 {label: 'Light blue', value: '#28ffff'},
                 {label: 'Pink', value: '#fa6efe'},
@@ -61,9 +59,8 @@ collections:
       - {label: 'Sections', name: 'sections', widget: 'list', fields: [
           {label: 'Header', name: 'sectionHeader', widget: string},
           {label: 'Featured Image', name: 'sectionFeaturedImage', widget: image},
-          {label: 'Link', name: 'sectionLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid'},
+          {label: 'Link', name: 'sectionLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid', required: false},
           {label: 'Content', name: 'sectionBody', widget: 'markdown', required: false},
-          {label: 'Allow HTML elements', name: 'allowHtml', widget: 'boolean', default: false, required: false}
         ]}
       - {label: 'Footer image', name: 'footerImage', widget: image, required: false}
       - {label: 'Footer image alt text', name: 'footerImageAlt', widget: string, required: false} 

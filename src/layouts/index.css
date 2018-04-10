@@ -2,10 +2,10 @@
   font-family: "Calibre Regular";
   font-style: normal;
   font-weight: 300;
-  src: url('./CalibreWeb-Regular.eot');
-  src: url('./CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'),
-       url('./CalibreWeb-Regular.woff2') format('woff2'),
-       url('./CalibreWeb-Regular.woff') format('woff'),
+  src: url('./fonts/CalibreWeb-Regular.eot');
+  src: url('./fonts/CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/CalibreWeb-Regular.woff2') format('woff2'),
+       url('./fonts/CalibreWeb-Regular.woff') format('woff'),
 }
 
 @font-face {
