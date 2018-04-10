@@ -3,11 +3,11 @@ templateKey: index-page
 title: Index
 imageSlider:
   - imageSliderImage: /media/uploads/bildsnurrebild01.png
-    imageSliderImageAlt: Bild 1
+    imageSliderImageAlt: Bildsnurrebild 1
   - imageSliderImage: /media/uploads/bildsnurrebild02.png
-    imageSliderImageAlt: Bild 2
+    imageSliderImageAlt: Bildsnurrebild 2
   - imageSliderImage: /media/uploads/bildsnurrebild03.gif
-    imageSliderImageAlt: Bild 3
+    imageSliderImageAlt: Bildsnurrebild 3
 sections:
   - sectionBody: >-
       Knas hemma är en ungdomsdriven ideell förening som arbetar nationellt. Den
