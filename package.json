@@ -6,6 +6,7 @@
   "dependencies": {
     "exenv": "^1.2.2",
     "gatsby": "^1.9.236",
+    "gatsby-image": "^1.0.43",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-catch-links": "^1.0.19",
     "gatsby-plugin-favicon": "^2.1.1",
@@ -13,6 +14,7 @@
     "gatsby-plugin-netlify-cms": "^1.0.12",
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-plugin-sharp": "^1.6.41",
+    "gatsby-remark-autolink-headers": "^1.4.16",
     "gatsby-remark-images": "^1.5.60",
     "gatsby-source-filesystem": "^1.5.27",
     "gatsby-transformer-remark": "^1.7.37",
@@ -27,9 +29,7 @@
     "react-slick": "^0.21.0",
     "redux": "^3.7.2",
     "remark-parse": "^5.0.0",
-    "slick-carousel": "^1.8.1",
-    "styled-components": "^3.2.5",
-    "webfontloader": "^1.6.28"
+    "slick-carousel": "^1.8.1"
   },
   "keywords": [
     "gatsby"

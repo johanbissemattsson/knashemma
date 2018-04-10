@@ -53,13 +53,3 @@ module.exports = {
     'gatsby-plugin-catch-links',
   ],
 };
-
-/*
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/media/img`,
-        name: 'images',
-      },
-    },
-*/

@@ -1,21 +1,21 @@
 @font-face {
-  font-family: "Calibre";
+  font-family: 'Calibre';
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/CalibreWeb-Regular.eot');
-  src: url('../fonts/CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/CalibreWeb-Regular.woff2') format('woff2'),
-       url('../fonts/CalibreWeb-Regular.woff') format('woff'),
+  src: url('../fonts/CalibreWeb-Semibold.eot');
+  src: url('../fonts/CalibreWeb-Regular.eot') format('embedded-opentype'),
+  url('../fonts/CalibreWeb-Regular.woff2') format('woff2'),
+  url('../fonts/CalibreWeb-Regular.woff') format('woff')
 }
 
 @font-face {
-  font-family: "CalibreSemibold";
+  font-family: 'Calibre Semibold';
   font-style: normal;
   font-weight: 600;
-  src: url('./fonts/CalibreWeb-Semibold.eot');
-  src: url('./fonts/CalibreWeb-Semibold.eot?#iefix') format('embedded-opentype'),
-       url('./fonts/CalibreWeb-Semibold.woff2') format('woff2'),
-       url('./fonts/CalibreWeb-Semibold.woff') format('woff'),
+  src: url('../fonts/CalibreWeb-Semibold.eot');
+  src: url('../fonts/CalibreWeb-Semibold.eot') format('embedded-opentype'),
+  url('../fonts/CalibreWeb-Semibold.woff2') format('woff2'),
+  url('../fonts/CalibreWeb-Semibold.woff') format('woff')
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, strong {
-  font-family: 'CalibreSemibold', sans-serif;
+  font-family: 'Calibre Semibold', sans-serif;
 }
 
 @media only screen and (min-width: 360px) {
@@ -53,7 +53,7 @@ h1 {
 
 @media only screen and (min-width: 1024px) {
   h1 {
-    font-size: 1.75em;
+    font-size: 2em;
   }
 }
 
@@ -500,7 +500,7 @@ h3 {
 
 .slick-slider {
   opacity: 0;
-  transition: opacity 0.25s;
+  transition: opacity 0.5s;
   max-height: 510px !important;
   margin-top: 1.236842105263158em;
 }
