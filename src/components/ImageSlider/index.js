@@ -39,6 +39,19 @@ function SamplePrevArrow(props) {
 }
 
 class ImageSlider extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      hasMounted: false
+    };
+  }
+
+
+
+  componentDidMount() {
+    this.setState({hasMounted: true});
+  }
   render () {
     const { imageSliders } = this.props;
 
@@ -55,10 +68,10 @@ class ImageSlider extends React.Component {
     }
 
     return (        
-      <Slider {...sliderSettings} className={imageSliders && !imageSliders.get('isActive') ? 'image-slider inactive' : 'image-slider active'}>
-        <div><img src='/media/uploads/Bildsnurrebild01.png' alt='Bild 1'/></div>
-        <div><img src='/media/uploads/Bildsnurrebild02.png' alt='Bild 2'/></div>
-        <div><img src='/media/uploads/Bildsnurrebild03.gif' alt='Bild 3'/></div>
+      <Slider {...sliderSettings} className={imageSliders && !imageSliders.get('isActive') ? 'image-slider inactive ' + (this.state.hasMounted ? 'mounted' : 'not-mounted') : 'image-slider active ' + (this.state.hasMounted ? 'mounted' : 'not-mounted')}>
+        <div><img src='/media/uploads/bildsnurrebild01.png' alt='Bild 1'/></div>
+        <div><img src='/media/uploads/bildsnurrebild02.png' alt='Bild 2'/></div>
+        <div><img src='/media/uploads/bildsnurrebild03.gif' alt='Bild 3'/></div>
       </Slider>
     );
   }
