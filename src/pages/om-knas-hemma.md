@@ -109,7 +109,6 @@ mainBody: >-
   * Om en ungdom befinner sig i en svår situation i livet och mår väldigt
   dåligt, kommer vi att hänvisa personen vidare till andra hjälporganisation och
   kontakter.
-allowHtml: false
 sideItems:
   - sideItemBody: >-
       ## Etik och värdegrund
@@ -133,6 +132,6 @@ sideItems:
     sideItemImage: ''
   - sideItemImage: /media/uploads/utbildning.jpg
   - sideItemBody: ''
-    sideItemImage: /media/uploads/Startsidebild04.jpg
+    sideItemImage: /media/uploads/workshop.jpg
 ---
 
