@@ -56,6 +56,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
     const sideImages = new Array();
     //const sideImageSharpNodesId = new Array();
 
+
     if (node.frontmatter && node.frontmatter.sideItems) {
       node.frontmatter.sideItems.map((sideItem, index) => {
         // IMPORTANT! Check that 'gatsby-source-filesystem' for images are before pages
@@ -70,7 +71,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
             sideImages.push({relativePath: sideItem.sideItemImage, absolutePath: imageAbsolutePath, id: fileNode.children.find(n => n.endsWith('>> ImageSharp'))});
 
             //sideImageSharpNodesId.push(imageSharpNodeId);
-
+            //createParentChildLink({ parent: node, child: getNodes().find(n => n.id === nid) });
           }
         }
       })
