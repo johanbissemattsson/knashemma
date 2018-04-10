@@ -30,7 +30,7 @@ export const IndexPageTemplate = ( {title, sections }) => {
           )}
         </div>
         <div className='footer-image'>
-          <img src='/media/uploads/FooterImage.png' alt='Footer image'/>
+          <img src='/media/uploads/Sidfotsbild.png' alt='Footer image'/>
         </div>
       </article>
     </div>    
