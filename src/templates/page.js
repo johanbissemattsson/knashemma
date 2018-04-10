@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import Img from "gatsby-image";
 
 import Content, { HTMLContent } from '../components/Content';
 
@@ -24,7 +25,7 @@ export const PageTemplate = ({ title, content, contentComponent, sideItems, main
                     //console.log(item.sideItemImage);
                     return (
                     <div key={index} className={'side-item-image-container'}>
-                      <img src={item.sideItemImage} />
+                      <Img sizes={sideImages.sizes} alt='glöeamgekgmakg'/>
                     </div>
                     );
                   } else {
@@ -46,8 +47,9 @@ export const PageTemplate = ({ title, content, contentComponent, sideItems, main
 /*className={'nav-button hamburger hamburger--squeeze ' + (this.state.menuOpen ? 'is-active' : '')}*/
 
 export default ({ data }) => {
-  const { markdownRemark: page, fields} = data;
+  const { markdownRemark: page, allFile, fields} = data;
   console.log(page.childImageSharp);
+  console.log(data.multipleImages);
   
   return (
     <PageTemplate
@@ -56,13 +58,20 @@ export default ({ data }) => {
       content={page.frontmatter.mainBody}
       mainBody={page.frontmatter.mainBody}
       sideItems={page.frontmatter.sideItems}
-      sideImages={page.fields.sideImages}
+      sideImages={page.childImageSharp}
     />
   );
 }
 
 export const PageQuery = graphql`
   query PageQuery($id: String!) {
+    allFile {
+      edges {
+        node {
+          id
+        }
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       html
       fields {
@@ -76,9 +85,9 @@ export const PageQuery = graphql`
         id
         sizes {
           srcSet
-        }
-        resolutions {
-          srcSet
+          srcSetWebp
+          base64
+          aspectRatio
         }
       }
       frontmatter {
