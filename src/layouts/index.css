@@ -500,7 +500,7 @@ h3 {
 
 .slick-slider {
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.25s;
   max-height: 510px !important;
   margin-top: 1.236842105263158em;
 }
