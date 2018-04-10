@@ -48,6 +48,7 @@ a:hover {
 
 h1 {
   margin: 0;
+  font-size: 1.75em;
 }
 
 img {
@@ -82,12 +83,16 @@ img {
 
 .page {
   margin: 96px auto 0 auto;
-  padding: 1.236842105263158em 0;
+  padding: 1.236842105263158em 0 4.947368421052632em 0;
 }
 
 @media only screen and (min-width: 720px) {
   .page {
-    padding: 2.473684210526316em 0;
+    padding: 2.473684210526316em 0 4.947368421052632em 0;
+  }
+
+  .index.page {
+    padding: 1.236842105263158em 0 4.947368421052632em 0;
   }
 }
 .site-footer,
@@ -358,10 +363,10 @@ h3 {
 }
 
 .site-nav .menu-item {
-  padding: 1em;
-  margin: 0 -1em;
+  padding: 0.75em;
+  margin: 0 -0.75em;
   width: 100%;
-  transition: padding 0.5s, border 0.5s, background-color 0.33s;
+  transition: padding 0.5s, border 0.5s;
   border: 1px solid rgba(250, 110, 254, 0);
   box-sizing: content-box;
   font-weight: bold;
@@ -369,11 +374,13 @@ h3 {
 
 .site-nav .menu-item:hover {
   text-decoration: none;
-  background: rgba(255,255,255,0.125);
+  color: #4c4c4c;
 }
 
 .site-nav .menu-item:focus {
   border: 1px solid #fff;
+  color: #4c4c4c;
+
 }
 
 .menu-footer, .site-nav-menu-footer{
@@ -467,13 +474,9 @@ h3 {
   margin: 1.236842105263158em 0 0.618421052631579em 0;
 }
 
-.page aside h2 {
-  font-size: 1.575em;
-}
-
 .image-slider, .slick-list, .slick-track {
   margin: 0;
-  max-height: 510px;
+  max-height: 510px !important;
 }
 
 .image-slider.inactive {
@@ -481,8 +484,13 @@ h3 {
 }
 
 .slick-slider {
-  max-height: 510px;
+  max-height: 510px !important;
   margin-top: 1.236842105263158em;
+}
+
+.slick-slide {
+  padding-left: 1px;
+  box-sizing: border-box;
 }
 
 .slick-prev, .slick-next {
@@ -521,7 +529,7 @@ h3 {
 .image-slider .slick-prev:hover svg ,
 .image-slider .slick-next:hover svg {
   fill: #2800ff;
-  transform: scale(2);
+  transform: scale(1.5);
 }
 .site-nav-menu-container .bm-overlay {
   background: #fa6efe !important;
@@ -578,19 +586,20 @@ h3 {
 @media only screen and (min-width: 720px) and (min-height: 720px) {
   .site-nav .menu-item {
     font-size: 1.25em;
-    padding: 0.75em;
-    margin: 0 -0.75em;
+    padding: 0.5em;
+    margin: 0 -0.5em;
   }
 }
 
 @media only screen and (min-width: 960px) and (min-height: 960px) {
   .site-nav .menu-item {
     font-size: 2em;
-    padding: 0.5em;
-    margin: 0 -0.5em;
+    padding: 0.425em;
+    margin: 0 -0.425em;
   }
 }
 
 .footer-image {
-  margin-top: 1.236842105263158em;
+  margin-top: 2.473684210526316em;
 }
+
