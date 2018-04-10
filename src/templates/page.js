@@ -4,8 +4,7 @@ import Img from "gatsby-image";
 
 import Content, { HTMLContent } from '../components/Content';
 
-export const PageTemplate = ({ title, content, contentComponent, sideItems, mainBody, sideImages }) => {
-  console.warn(sideImages);
+export const PageTemplate = ({ title, content, contentComponent, sideItems, mainBody, sideItemImages }) => {
   const PageContent = contentComponent || Content;
     return (
     <div className='page-container'>
@@ -21,11 +20,12 @@ export const PageTemplate = ({ title, content, contentComponent, sideItems, main
                 {sideItems.map((item, index) => {
                   const backgroundColor = item.sideItemBackgroundColor ? item.sideItemBackgroundColor : null;
                   const sideItemBody = item.sideItemBody;
-                  if (item.sideItemImage) {
-                    //console.log(item.sideItemImage);
+
+                  if (item.sideItemImageSizes) {
+                    //<Img sizes={sideImages.sizes} alt='glöeamgekgmakg'/>
                     return (
                     <div key={index} className={'side-item-image-container'}>
-                      <Img sizes={sideImages.sizes} alt='glöeamgekgmakg'/>
+                      <Img sizes={item.sideItemImageSizes} alt='glöeamgekgmakg'/>
                     </div>
                     );
                   } else {
@@ -44,21 +44,43 @@ export const PageTemplate = ({ title, content, contentComponent, sideItems, main
   );
 }
 
-/*className={'nav-button hamburger hamburger--squeeze ' + (this.state.menuOpen ? 'is-active' : '')}*/
 
 export default ({ data }) => {
   const { markdownRemark: page, allFile, fields} = data;
-  console.log(page.childImageSharp);
-  console.log(data.multipleImages);
+  const sideItemImages = new Array();
+
+  if (page.fields && page.fields.sideImages && page.fields.sideImages.length) {
+    page.fields.sideImages.map((sideImage, index) => {
+      const sharp = allFile.edges.find((af) => {
+        if (af.node.childImageSharp && af.node.childImageSharp.id === sideImage.id) {
+          return af.node.childImageSharp;
+        }
+      });
+      sharp && sideItemImages.push({absolutePath: sideImage.absolutePath, relativePath: sideImage.relativePath, id: sideImage.id, sizes: sharp.node.childImageSharp.sizes});
+    });
+  };
   
+  let sideItemsWithImages = new Array();
+  if ( page.frontmatter.sideItems && sideItemImages) {
+     page.frontmatter.sideItems.map((item, index) => {
+      const imageSizes = sideItemImages.find((ef) => {
+        if (ef.relativePath === item.sideItemImage) {
+          console.log(item);
+          sideItemsWithImages.push({sideItemBackgroundColor: item.sideItemBackgroundColor, sideItemBody: item.sideItemBody, sideItemImageSizes: ef.sizes});
+        }
+      });
+    })
+
+  }
+
   return (
     <PageTemplate
       contentComponent={HTMLContent}
       title={page.frontmatter.title}
       content={page.frontmatter.mainBody}
       mainBody={page.frontmatter.mainBody}
-      sideItems={page.frontmatter.sideItems}
-      sideImages={page.childImageSharp}
+      sideItems={sideItemsWithImages}
+      sideItemImages={sideItemImages}
     />
   );
 }
@@ -69,6 +91,15 @@ export const PageQuery = graphql`
       edges {
         node {
           id
+          childImageSharp {
+            id
+            sizes {
+              srcSet
+              aspectRatio
+              base64
+              src
+            }
+          }
         }
       }
     }
@@ -79,15 +110,7 @@ export const PageQuery = graphql`
         sideImages {
           relativePath
           absolutePath
-        }
-      }
-      childImageSharp {
-        id
-        sizes {
-          srcSet
-          srcSetWebp
-          base64
-          aspectRatio
+          id
         }
       }
       frontmatter {
