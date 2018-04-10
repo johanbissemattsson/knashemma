@@ -2,11 +2,11 @@
 templateKey: index-page
 title: Index
 imageSlider:
-  - imageSliderImage: /media/uploads/ImageSliderImage01.png
+  - imageSliderImage: /media/uploads/bildsnurrebild01.png
     imageSliderImageAlt: Bild 1
-  - imageSliderImage: /media/uploads/ImageSliderImage02.png
+  - imageSliderImage: /media/uploads/bildsnurrebild02.png
     imageSliderImageAlt: Bild 2
-  - imageSliderImage: /media/uploads/ImageSliderImage03.png
+  - imageSliderImage: /media/uploads/bildsnurrebild03.gif
     imageSliderImageAlt: Bild 3
 sections:
   - sectionBody: >-
@@ -56,7 +56,7 @@ sections:
     sectionFeaturedImage: /media/uploads/Startsidebild04.jpg
     sectionHeader: Delaktighet och rättigheter
     sectionLink: delaktighet-och-rattigheter
-footerImage: /media/uploads/FooterImage.png
+footerImage: /media/uploads/sidfotsbild.png
 footerImageAlt: Sidfotsbild
 ---
  
