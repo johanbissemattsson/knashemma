@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'Calibre Regular';
+  font-family: "Calibre Regular";
   font-style: normal;
   font-weight: 300;
-  src: url('/static/fonts/CalibreWeb-Regular.eot');
-  src: url('/static/fonts/CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'),
-       url('/static/fonts/CalibreWeb-Regular.woff2') format('woff2'),
-       url('/static/fonts/CalibreWeb-Regular.woff') format('woff'),
+  src: url('./CalibreWeb-Regular.eot');
+  src: url('./CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'),
+       url('./CalibreWeb-Regular.woff2') format('woff2'),
+       url('./CalibreWeb-Regular.woff') format('woff'),
 }
 
 @font-face {
-  font-family: 'Calibre Semibold';
+  font-family: "Calibre Semibold";
   font-style: normal;
   font-weight: 600;
   src: url('./fonts/CalibreWeb-Regular.eot');
