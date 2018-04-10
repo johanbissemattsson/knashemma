@@ -53,8 +53,8 @@ class ImageSlider extends React.Component {
     this.setState({hasMounted: true});
   }
   render () {
-    const { imageSliders } = this.props;
-
+    const { imageSliders, images } = this.props;
+    console.log(this.props);
     const sliderSettings = {
       className: 'image-slider',
       dots: false,
@@ -69,9 +69,11 @@ class ImageSlider extends React.Component {
 
     return (        
       <Slider {...sliderSettings} className={imageSliders && !imageSliders.get('isActive') ? 'image-slider inactive ' + (this.state.hasMounted ? 'mounted' : 'not-mounted') : 'image-slider active ' + (this.state.hasMounted ? 'mounted' : 'not-mounted')}>
-        <div><img src='/media/uploads/bildsnurrebild01.png' alt='Bild 1'/></div>
-        <div><img src='/media/uploads/bildsnurrebild02.png' alt='Bild 2'/></div>
-        <div><img src='/media/uploads/bildsnurrebild03.gif' alt='Bild 3'/></div>
+        {images.map((imageSlide, index) => 
+          <div key={index} className={'slide-container'}>
+            <img src={imageSlide.imageSliderImage} alt={imageSlide.imageSliderImageAlt} />
+          </div>
+        )}
       </Slider>
     );
   }

@@ -4,23 +4,23 @@ import ReactMarkdown from 'react-markdown';
 
 import ImageSlider from '../components/ImageSlider';
 
-export const IndexPageTemplate = ( {title, sections }) => {
+export const IndexPageTemplate = ( {title, sections, imageSlider, footerImage }) => {
   return (
     <div className='page-container'>
       <article className='index page'>
-        <ImageSlider />
+        <ImageSlider images={imageSlider}/>
         <div className='page-sections'>
           {sections && sections.map((section, index) => 
             <section key={index}>
               <header className='section-header'>
                 {section.sectionLink ? 
                   <Link to={section.sectionLink}>
-                    <img src={'/media/uploads/Startsidebild0' + (index + 1) + '.jpg'} width='251' height='183' alt={section.sectionHeader} />
+                    {section.sectionFeaturedImage && <img src={section.sectionFeaturedImage} alt={section.sectionHeader} />}
                     <h3>{section.sectionHeader}</h3>
                   </Link>
                 :
                   <div>
-                    <img src='/media/uploads/Startsidebild01.jpg' width='251' height='183' alt='hej' />
+                    {section.sectionFeaturedImage && <img src={section.sectionFeaturedImage} alt={section.sectionHeader} />}
                     <h3>{section.sectionHeader}</h3>
                   </div>
                 }
@@ -29,9 +29,11 @@ export const IndexPageTemplate = ( {title, sections }) => {
             </section>
           )}
         </div>
-        <div className='footer-image'>
-          <img src='/media/uploads/Sidfotsbild.png' alt='Footer image'/>
-        </div>
+        {footerImage &&
+          <div className='footer-image'>
+            <img src={footerImage.img} alt={footerImage.alt}/>
+          </div>
+        }
       </article>
     </div>    
   );
@@ -45,6 +47,8 @@ export default ({ data }) => {
       title={post.frontmatter.title}
       sections={post.frontmatter.sections}
       content={post.html}
+      imageSlider={post.frontmatter.imageSlider}
+      footerImage={{img: post.frontmatter.footerImage, alt: post.frontmatter.footerImageAlt }}
     />
   );
 }
@@ -55,11 +59,18 @@ export const IndexPageQuery = graphql`
       html
       frontmatter {
         title
+        imageSlider {
+          imageSliderImage
+          imageSliderImageAlt
+        }
         sections {
           sectionHeader
           sectionLink
           sectionBody
+          sectionFeaturedImage
         }
+        footerImage
+        footerImageAlt
       }
     }
   }
