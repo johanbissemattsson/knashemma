@@ -54,7 +54,6 @@ class ImageSlider extends React.Component {
   }
   render () {
     const { imageSliders, images } = this.props;
-    console.log(this.props);
     const sliderSettings = {
       className: 'image-slider',
       dots: false,
@@ -67,9 +66,9 @@ class ImageSlider extends React.Component {
       prevArrow: <SamplePrevArrow />
     }
 
-    return (        
+    return (
       <Slider {...sliderSettings} className={imageSliders && !imageSliders.get('isActive') ? 'image-slider inactive ' + (this.state.hasMounted ? 'mounted' : 'not-mounted') : 'image-slider active ' + (this.state.hasMounted ? 'mounted' : 'not-mounted')}>
-        {images.map((imageSlide, index) => 
+        {images && images.map((imageSlide, index) => 
           <div key={index} className={'slide-container'}>
             <img src={imageSlide.imageSliderImage} alt={imageSlide.imageSliderImageAlt} />
           </div>
