@@ -35,6 +35,23 @@ p {
   margin: 0.618421052631579em 0;
 }
 
+.content  ul {
+  margin: 0.618421052631579em 0;
+  padding-left: 1em;
+  list-style: none;
+}
+
+.content ul li:before {
+  display: inline-block;
+  content: '\2013';
+  width: 1em;
+  margin-left: -1em;
+}
+
+.content li {
+  margin-bottom: 0.618421052631579em;
+}
+
 @media only screen and (min-width: 360px) {
   body {
     font-size: 19px;
@@ -320,7 +337,7 @@ img {
 }
 
 .side-item-image-container {
-  margin: 0 0 1.236842105263158em 0;
+  margin: 1.236842105263158em 0;
 
 }
 
@@ -491,12 +508,6 @@ h3 {
   max-height: 510px !important;
 }
 
-ul {
-  margin: 0.618421052631579em 0;
-}
-li {
-  margin-bottom: 0.618421052631579em;
-}
 .image-slider.inactive {
   z-index: -1;
 }
