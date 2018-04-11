@@ -1,10 +1,15 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import ReactMarkdown from 'react-markdown';
+import Remark from 'remark';
+import html from 'remark-html';
 
 import ImageSlider from '../components/ImageSlider';
+import Content, { HTMLContent } from '../components/Content';
 
-export const IndexPageTemplate = ( {title, sections, imageSlider, footerImage }) => {
+export const IndexPageTemplate = ( { content, contentComponent, title, sections, imageSlider, footerImage }) => {
+  const PageContent = contentComponent || Content;
+  const convertMarkdownToHtml = ((markdownString) => Remark().use(html).processSync(markdownString.replace(/\\/g, '  '), ((err, file) => err ? {contents: '' } : file)).contents);
+
   return (
     <div className='page-container'>
       <article className='index page'>
@@ -25,7 +30,7 @@ export const IndexPageTemplate = ( {title, sections, imageSlider, footerImage })
                   </div>
                 }
               </header>
-              <ReactMarkdown source={section.sectionBody.replace(/\\/g, '  ')} />
+              <PageContent content={convertMarkdownToHtml(section.sectionBody)} />
             </section>
           )}
         </div>
@@ -49,6 +54,7 @@ export default ({ data }) => {
       content={post.html}
       imageSlider={post.frontmatter.imageSlider}
       footerImage={{img: post.frontmatter.footerImage, alt: post.frontmatter.footerImageAlt }}
+      contentComponent={HTMLContent}
     />
   );
 }
