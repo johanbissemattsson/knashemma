@@ -59,7 +59,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
     const sideImages = new Array();
     //const sideImageSharpNodesId = new Array();
 
-    let images = new Array();
+
     if (node.frontmatter && node.frontmatter.sideItems) {
       node.frontmatter.sideItems.map((sideItem, index) => {
         // IMPORTANT! Check that 'gatsby-source-filesystem' for images are before pages
@@ -73,7 +73,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
             const imageSharpNodeId = fileNode.children.find((n) => n.endsWith('>> ImageSharp'));
             const imageSharpNode = getNodes().find(n => {if (n.id === imageSharpNodeId) { console.log(n);return n;}}); 
             console.log(fileNode.children);
-            images.push(fileNode.children.find((n, index) => n.endsWith('>> ImageSharp')));
+            createParentChildLink({ parent: node, child: imageSharpNode});
           
             sideImages.push({relativePath: sideItem.sideItemImage, absolutePath: imageAbsolutePath, imageNode: imageSharpNode, id: fileNode.children.find((n, index) => {
 
@@ -83,9 +83,6 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
 
             //sideImageSharpNodesId.push(imageSharpNodeId);
             //createParentChildLink({ parent: node, child: getNodes().find(n => n.id === nid) });
-   
-            //createParentChildLink([{ parent: node, child: images}, ]);
-
           }
         }
       })
@@ -108,7 +105,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
 
     if (sideImages.length ) {
       createNodeField({
-        name: `sideImages___NODE`,
+        name: `sideImages`,
         node,
         value: sideImages,
       });
