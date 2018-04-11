@@ -2,6 +2,12 @@
 templateKey: page
 title: Om Knas hemma
 uid: om-knas-hemma
+imageSlider:
+  - imageSliderImage: /media/uploads/bildsnurrebild03.gif
+    imageSliderImageAlt: Bild 1
+    imageSliderImageLink: ''
+  - imageSliderImage: /media/uploads/bildsnurrebild02.png
+    imageSliderImageAlt: Bild 2
 mainBody: >-
   # Om Knas hemma
 
