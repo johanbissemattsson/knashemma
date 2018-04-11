@@ -67,7 +67,7 @@ class ImageSlider extends React.Component {
     }
 
     return (
-      <Slider {...sliderSettings} className={imageSliders && !imageSliders.get('isActive') ? 'image-slider inactive ' + (this.state.hasMounted ? 'mounted' : 'not-mounted') : 'image-slider active ' + (this.state.hasMounted ? 'mounted' : 'not-mounted')}>
+      <Slider {...sliderSettings} className={imageSliders && !imageSliders.get('isActive') ? 'image-slider inactive ': 'image-slider active'}>
         {images && images.map((imageSlide, index) => 
           <div key={index} className={'slide-container'}>
             {imageSlide.imageSliderImageLink ?

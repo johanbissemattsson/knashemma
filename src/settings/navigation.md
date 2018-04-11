@@ -1,4 +1,5 @@
 ---
+templateKey: settings-navigation
 navMenu:
   - navMenuItem: om-knas-hemma
   - navMenuItem: ambassadorer

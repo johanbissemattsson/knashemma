@@ -74,6 +74,7 @@ collections:
         name: 'footer'
         file: 'src/settings/footer.md'
         fields:
+          - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'setting-footer'}
           - label: 'Address field'
             name: 'body'
             widget: 'markdown'
@@ -84,6 +85,7 @@ collections:
         name: 'navigation'
         file: 'src/settings/navigation.md'
         fields:
+          - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'setting-navigation'}
           - label: 'Nav Menu items'
             name: 'navMenu'
             widget: 'list'

@@ -1,4 +1,5 @@
 ---
+templateKey: settings-footer
 social: |-
   [Facebook](https://www.facebook.com/knashemma/)
   [Instagram](https://www.instagram.com)

@@ -1,18 +1,21 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 import Img from "gatsby-image";
+import Remark from 'remark';
+import html from 'remark-html';
 
 import Content, { HTMLContent } from '../components/Content';
 
-export const PageTemplate = ({ title, content, contentComponent, sideItems, mainBody, sideImages }) => {
+export const PageTemplate = ({ title, content, contentComponent, sideItems, mainBody }) => {
   const PageContent = contentComponent || Content;
+  const convertMarkdownToHtml = ((markdownString) => Remark().use(html).processSync(markdownString.replace(/\\/g, '  '), ((err, file) => err ? {contents: '' } : file)).contents);
+
     return (
     <div className='page-container'>
       <article className='page'>
           <div className='content'>
             {mainBody && 
               <main>
-                <ReactMarkdown source={mainBody.replace(/\\/g, '  ')} className='main-content'/>
+                <PageContent className='main-content' content={convertMarkdownToHtml(mainBody)} />
               </main>
             }
             {sideItems && 
@@ -29,7 +32,7 @@ export const PageTemplate = ({ title, content, contentComponent, sideItems, main
                   } else {
                   return (
                   <div key={index} className={'side-item-container ' + (backgroundColor && (backgroundColor === '#000' || backgroundColor === '#2800ff' || backgroundColor === '#b017d3') ? 'inverted' : '')} style={{backgroundColor: backgroundColor ? backgroundColor : '#28ffff'}}>
-                    <ReactMarkdown className='side-item-content' source={sideItemBody} />
+                    <PageContent className='side-item-content' content={convertMarkdownToHtml(sideItemBody)} />
                   </div>
                   )}}
 
@@ -46,7 +49,7 @@ export const PageTemplate = ({ title, content, contentComponent, sideItems, main
 
 export default ({ data }) => {
   const { markdownRemark: page, allFile, fields} = data;
-  
+  console.log(data);
   return (
     <PageTemplate
       contentComponent={HTMLContent}
@@ -54,8 +57,6 @@ export default ({ data }) => {
       content={page.frontmatter.mainBody}
       mainBody={page.frontmatter.mainBody}
       sideItems={page.frontmatter.sideItems}
-      sideImages={page.childImageSharp}
-
     />
   );
 }
@@ -69,6 +70,26 @@ export const PageQuery = graphql`
         }
       }
     }
+    allImageSharp {
+      edges {
+        node {
+          id
+          sizes {
+            base64
+            tracedSVG
+            aspectRatio
+            src
+            srcSet
+            srcWebp
+            srcSetWebp
+            sizes
+            originalImg
+            originalName
+          }
+          
+        }
+      }
+    }    
     markdownRemark(id: { eq: $id }) {
       html
       fields {
@@ -76,6 +97,7 @@ export const PageQuery = graphql`
         sideImages {
           relativePath
           absolutePath
+          id
         }
       }
 

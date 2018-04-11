@@ -522,12 +522,7 @@ h3 {
   z-index: -1;
 }
 
-.slick-slider.mounted {
-  opacity: 1;
-}
-
 .slick-slider {
-  opacity: 0;
   transition: opacity 0.25s;
   max-height: 510px !important;
   margin-top: 0.618421052631579;
@@ -538,7 +533,6 @@ h3 {
     margin-top: 1.236842105263158em;
   }
 }
-
 
 .slick-slide {
   padding-left: 1px;
