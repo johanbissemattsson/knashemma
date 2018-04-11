@@ -19,6 +19,11 @@ collections:
       - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'page'}
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'UID', name: 'uid', widget: 'string', pattern: ['^[a-zA-Z0-9_-]*$', 'Cannot have special characters']}
+      - {label: 'Header images', name: 'imageSlider', widget: 'list', required: false, fields: [
+          {label: 'Image', name: 'imageSliderImage', widget: 'image', required: false},
+          {label: 'Image alt text', name: 'imageSliderImageAlt', widget: 'string', required: false},
+          {label: 'Link', name: 'imageSliderImageLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid', required: false},          
+        ]}      
       - {label: 'Main', name: 'mainBody', widget: 'markdown'}
       - label: 'Side items'
         name: 'sideItems'
