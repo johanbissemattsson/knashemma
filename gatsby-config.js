@@ -25,13 +25,27 @@ module.exports = {
         name: 'pages',
       },
     }, 
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/settings`,
+        name: 'settings',
+      },
+    },  
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          `gatsby-remark-autolink-headers`,
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              // Set the name option to the same
+              // name you set for gatsby-source-filesystem
+              name: 'images', // default
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
