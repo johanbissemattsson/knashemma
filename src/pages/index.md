@@ -8,6 +8,7 @@ imageSlider:
     imageSliderImageAlt: Bildsnurrebild 2
   - imageSliderImage: /media/uploads/bildsnurrebild03.gif
     imageSliderImageAlt: Bildsnurrebild 3
+    imageSliderImageLink: om-knas-hemma
 sections:
   - sectionBody: >-
       Knas hemma är en ungdomsdriven ideell förening som arbetar nationellt. Den
