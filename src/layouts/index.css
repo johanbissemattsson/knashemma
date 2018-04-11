@@ -31,6 +31,10 @@ h1, h2, h3, h4, h5, h6, strong {
   font-family: 'Calibre Semibold', sans-serif;
 }
 
+p {
+  margin: 0.618421052631579em 0;
+}
+
 @media only screen and (min-width: 360px) {
   body {
     font-size: 19px;
@@ -229,7 +233,7 @@ img {
 }
 
 .index.page .page-sections section {
-  margin-bottom: 2.473684210526316em;
+  margin-bottom: 1.855263157894737em;
 }
 
 .index.page .section-header img {
@@ -253,7 +257,7 @@ img {
 
   .index.page .page-sections section {
     flex: 1 0 40%;
-    margin: 0;
+    margin-bottom: 1.236842105263158em;
     padding: 0 1.15%;
   }
   
@@ -292,6 +296,7 @@ img {
   .page-sections section {
     flex: 1;
     padding: 0 1.15%;
+    margin-bottom: 0;
   }
 }
 
@@ -338,7 +343,7 @@ h3 {
 }
 
 .page-sections section h3 {
-  margin-bottom: 0.7307692307692308em;
+  margin: 0.641025641025641em 0 0.3653846153846154em 0;
 }
 
 .page-sections section p:first-of-type {
@@ -468,10 +473,6 @@ h3 {
   margin-bottom: 0;
 }
 
-.page .side-item-content {
-  font-size: 0.875em;
-}
-
 .page .side-item-content > *:first-child {
   margin-top: 0;
 }
@@ -490,6 +491,12 @@ h3 {
   max-height: 510px !important;
 }
 
+ul {
+  margin: 0.618421052631579em 0;
+}
+li {
+  margin-bottom: 0.618421052631579em;
+}
 .image-slider.inactive {
   z-index: -1;
 }
