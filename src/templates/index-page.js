@@ -62,6 +62,7 @@ export const IndexPageQuery = graphql`
         imageSlider {
           imageSliderImage
           imageSliderImageAlt
+          imageSliderImageLink
         }
         sections {
           sectionHeader

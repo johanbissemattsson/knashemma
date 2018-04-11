@@ -70,7 +70,13 @@ class ImageSlider extends React.Component {
       <Slider {...sliderSettings} className={imageSliders && !imageSliders.get('isActive') ? 'image-slider inactive ' + (this.state.hasMounted ? 'mounted' : 'not-mounted') : 'image-slider active ' + (this.state.hasMounted ? 'mounted' : 'not-mounted')}>
         {images && images.map((imageSlide, index) => 
           <div key={index} className={'slide-container'}>
-            <img src={imageSlide.imageSliderImage} alt={imageSlide.imageSliderImageAlt} />
+            {imageSlide.imageSliderImageLink ?
+              <Link to={imageSlide.imageSliderImageLink}>
+                <img src={imageSlide.imageSliderImage} alt={imageSlide.imageSliderImageAlt ? imageSlide.imageSliderImageAlt : ''} />
+              </Link>
+              :
+              <img src={imageSlide.imageSliderImage} alt={imageSlide.imageSliderImageAlt ? imageSlide.imageSliderImageAlt : ''} />
+            }
           </div>
         )}
       </Slider>
