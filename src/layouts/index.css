@@ -35,6 +35,10 @@ p {
   margin: 0.618421052631579em 0;
 }
 
+.content {
+  margin-top: 0.618421052631579em;
+}
+
 .content  ul {
   margin: 0.618421052631579em 0;
   padding-left: 1em;
@@ -111,7 +115,7 @@ img {
 
 .page {
   margin: 96px auto 0 auto;
-  padding: 1.236842105263158em 0 4.947368421052632em 0;
+  padding: 1.236842105263158em 0 2.473684210526316em 0;
 }
 
 @media only screen and (min-width: 720px) {
@@ -246,7 +250,13 @@ img {
 }
 
 .index.page .page-sections {
-  margin: 2.47368421052630em 0 0 0;
+  margin: 1.236842105263158em 0 0 0;
+}
+
+@media only screen and (min-width: 720px) {
+  .index.page .page-sections {
+    margin: 2.47368421052630em 0 0 0;
+  }
 }
 
 .index.page .page-sections section {
@@ -520,8 +530,15 @@ h3 {
   opacity: 0;
   transition: opacity 0.25s;
   max-height: 510px !important;
-  margin-top: 1.236842105263158em;
+  margin-top: 0.618421052631579;
 }
+
+@media only screen and (min-width: 720px) {
+  .slick-slider {
+    margin-top: 1.236842105263158em;
+  }
+}
+
 
 .slick-slide {
   padding-left: 1px;
@@ -634,6 +651,13 @@ h3 {
   }
 }
 
+
 .footer-image {
-  margin-top: 2.473684210526316em;
+  margin-top: 1.236842105263158em;
+}
+
+@media only screen and (min-width: 720px) {
+  .footer-image {
+    margin-top: 2.473684210526316em;
+  }
 }
