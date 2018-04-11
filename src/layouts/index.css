@@ -528,9 +528,21 @@ h3 {
   margin-top: 0.618421052631579;
 }
 
+.page .slick-slider {
+  margin-bottom: 1.236842105263158em;
+}
+
+.index.page .slick-slider {
+  margin-bottom: 0;
+}
+
 @media only screen and (min-width: 720px) {
-  .slick-slider {
+  .index.page .slick-slider {
     margin-top: 1.236842105263158em;
+  }
+
+  .page .slick-slider {
+    margin-bottom: 2.473684210526316em;
   }
 }
 

@@ -2,16 +2,18 @@ import React from 'react';
 import Img from "gatsby-image";
 import Remark from 'remark';
 import html from 'remark-html';
+import ImageSlider from '../components/ImageSlider';
 
 import Content, { HTMLContent } from '../components/Content';
 
-export const PageTemplate = ({ title, content, contentComponent, sideItems, mainBody }) => {
+export const PageTemplate = ({ title, content, contentComponent, sideItems, mainBody, imageSlider }) => {
   const PageContent = contentComponent || Content;
   const convertMarkdownToHtml = ((markdownString) => Remark().use(html).processSync(markdownString.replace(/\\/g, '  '), ((err, file) => err ? {contents: '' } : file)).contents);
 
     return (
     <div className='page-container'>
       <article className='page'>
+        {imageSlider && <ImageSlider images={imageSlider}/>}
           <div className='content'>
             {mainBody && 
               <main>
@@ -57,6 +59,7 @@ export default ({ data }) => {
       content={page.frontmatter.mainBody}
       mainBody={page.frontmatter.mainBody}
       sideItems={page.frontmatter.sideItems}
+      imageSlider={page.frontmatter.imageSlider}
     />
   );
 }
@@ -103,6 +106,11 @@ export const PageQuery = graphql`
 
       frontmatter {
         title
+        imageSlider {
+          imageSliderImage
+          imageSliderImageAlt
+          imageSliderImageLink
+        }
         mainBody
         sideItems {
           sideItemBody
