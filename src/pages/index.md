@@ -2,11 +2,11 @@
 templateKey: index-page
 title: Index
 imageSlider:
-  - imageSliderImage: /media/uploads/bildsnurrebild01.png
+  - imageSliderImage: /media/uploads/bildspel.jpg
     imageSliderImageAlt: Bildsnurrebild 1
-  - imageSliderImage: /media/uploads/bildsnurrebild02.png
+  - imageSliderImage: /media/uploads/bildspel2.jpg
     imageSliderImageAlt: Bildsnurrebild 2
-  - imageSliderImage: /media/uploads/bildsnurrebild03.gif
+  - imageSliderImage: /media/uploads/bildspel3.jpg
     imageSliderImageAlt: Bildsnurrebild 3
     imageSliderImageLink: om-knas-hemma
 sections:
@@ -57,7 +57,7 @@ sections:
     sectionFeaturedImage: /media/uploads/Startsidebild04.jpg
     sectionHeader: Delaktighet och rättigheter
     sectionLink: delaktighet-och-rattigheter
-footerImage: /media/uploads/sidfotsbild.png
+footerImage: ''
 footerImageAlt: En sidfotsbild
 ---
  
