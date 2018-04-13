@@ -4,7 +4,7 @@ title: Om Knas hemma
 uid: om-knas-hemma
 imageSlider:
   - imageSliderImage: /media/uploads/bildspel2.jpg
-    imageSliderImageAlt: Bild 1
+    imageSliderImageAlt: Om Knas hemma
     imageSliderImageLink: ''
 mainBody: >-
   # Om Knas hemma
