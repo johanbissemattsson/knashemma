@@ -2,6 +2,8 @@ import React from 'react';
 import Img from "gatsby-image";
 import Remark from 'remark';
 import html from 'remark-html';
+import Helmet from 'react-helmet';
+
 import ImageSlider from '../components/ImageSlider';
 
 import Content, { HTMLContent } from '../components/Content';
@@ -12,6 +14,7 @@ export const PageTemplate = ({ title, content, contentComponent, sideItems, main
 
     return (
     <div className='page-container'>
+      <Helmet title={title + ' | Knas Hemma'} />
       <article className='page'>
         {imageSlider && <ImageSlider images={imageSlider}/>}
           <div className='content'>
