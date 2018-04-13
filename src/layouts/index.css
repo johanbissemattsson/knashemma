@@ -515,7 +515,7 @@ h3 {
 
 .image-slider, .slick-list, .slick-track {
   margin: 0;
-  max-height: 510px !important;
+  max-height: 520px !important;
 }
 
 .image-slider.inactive {
@@ -524,7 +524,7 @@ h3 {
 
 .slick-slider {
   transition: opacity 0.25s;
-  max-height: 510px !important;
+  max-height: 520px !important;
   margin-top: 0.618421052631579;
 }
 

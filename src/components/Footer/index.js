@@ -18,7 +18,7 @@ const Footer = () => (
           <div className='footer-social'>
             <ul>
               <li><a href='https://www.facebook.com/knashemma/'>Facebook</a></li>
-              <li><a href='#'>Instagram</a></li>
+              <li><a href='http://knashemma.netlify.com/'>Instagram</a></li>
             </ul> 
           </div>
         </div>
