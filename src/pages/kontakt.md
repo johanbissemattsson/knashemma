@@ -25,15 +25,14 @@ sideItems:
 
       **Andreas Svensson**\
       Ordförande i Knas hemma\
-      [andreas@knashemma.se](mailto:andreas@knashemma.se)
+      <mailto:andreas@knashemma.se>
 
       **Emiliya Larsson**\
       Projektledare\
       [emiliya@knashemma.se](emiliya@knashemma.se)
 
       **Anna Sabelström**\
-      Verksamhetsledare/utvecklare\
+      Verksamhetsledare\
       [anna@knashemma.se](anna@knashemma.se)
-    sideItemImage: 
 ---
 
