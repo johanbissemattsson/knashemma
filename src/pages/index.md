@@ -57,7 +57,7 @@ sections:
     sectionFeaturedImage: /media/uploads/Startsidebild04.jpg
     sectionHeader: Delaktighet och rättigheter
     sectionLink: delaktighet-och-rattigheter
-footerImage: ''
+footerImage: /media/uploads/banner.jpg
 footerImageAlt: En sidfotsbild
 ---
  
