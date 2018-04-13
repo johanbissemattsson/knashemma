@@ -2,12 +2,12 @@
 templateKey: index-page
 title: Index
 imageSlider:
-  - imageSliderImage: /media/uploads/bildspel.jpg
-    imageSliderImageAlt: Bildsnurrebild 1
-  - imageSliderImage: /media/uploads/bildspel2.jpg
-    imageSliderImageAlt: Bildsnurrebild 2
-  - imageSliderImage: /media/uploads/bildspel3.jpg
-    imageSliderImageAlt: Bildsnurrebild 3
+  - imageSliderImage: /media/uploads/bildspel_new.png
+    imageSliderImageAlt: Välkommen till Knas Hemma (bild 1)
+  - imageSliderImage: /media/uploads/bildspel_new2.png
+    imageSliderImageAlt: Välkommen till Knas Hemma (bild 2)
+  - imageSliderImage: /media/uploads/bildspel_new3.png
+    imageSliderImageAlt: Välkommen till Knas Hemma (bild 3)
     imageSliderImageLink: om-knas-hemma
 sections:
   - sectionBody: >-
