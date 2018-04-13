@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 
 const NotFoundPage = () => (
       <div className='page-container'>
-        <Helmet title={title + 'Knas Hemma'} />
+        <Helmet title={'Knas Hemma'} />
         <div className='page'>
           <h1>Sidan kunde inte hittas</h1>
           <p>Vi ber om ursäkt, men på den här adressen verkar det inte finnas någon sida.</p>
