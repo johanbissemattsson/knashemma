@@ -3,7 +3,7 @@ templateKey: page
 title: Om Knas hemma
 uid: om-knas-hemma
 imageSlider:
-  - imageSliderImage: /media/uploads/bildspel2.jpg
+  - imageSliderImage: /media/uploads/Startsidebild02.jpg
     imageSliderImageAlt: Om Knas hemma
     imageSliderImageLink: ''
 mainBody: >-
