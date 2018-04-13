@@ -134,8 +134,5 @@ sideItems:
       att förändra dagens lagar, förhållningssätt eller arbetsmetoder på längre
       sikt.
     sideItemImage: ''
-  - sideItemImage: /media/uploads/utbildning.jpg
-  - sideItemBody: ''
-    sideItemImage: /media/uploads/workshop.jpg
 ---
 
