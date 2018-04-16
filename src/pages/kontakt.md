@@ -18,6 +18,9 @@ sideItems:
       **Anna Sabelström**\
       Verksamhetsledare\
       [anna@knashemma.se](mailto:anna@knashemma.se)
+metaInformation:
+  metaDescripton: Kontakta eller följ oss på Knas hemma
+  metaKeywords: 'Ring, mejla, Allmänna Arvsfonden, BOiU'
 ---
 # Kontakt
 
