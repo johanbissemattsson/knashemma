@@ -2,9 +2,6 @@
 templateKey: page
 title: Om Knas hemma
 uid: om-knas-hemma
-metaInformation:
-  metaDescripton: a
-  metaKeywords: a
 imageSlider:
   - imageSliderImage: /media/uploads/Startsidebild02.jpg
     imageSliderImageAlt: Om Knas hemma
@@ -32,6 +29,9 @@ sideItems:
     sideItemImage: ''
   - sideItemImage: /media/uploads/utbildning.jpg
     sideItemImageAlt: Hej
+metaInformation:
+  metaDescripton: ''
+  metaKeywords: ''
 ---
 # Om Knas hemma
 
