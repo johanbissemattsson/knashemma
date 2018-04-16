@@ -8,20 +8,19 @@ import ImageSlider from '../components/ImageSlider';
 
 import Content, { HTMLContent } from '../components/Content';
 
-export const PageTemplate = ({ title, content, contentComponent, sideItems, mainBody, imageSlider }) => {
+export const PageTemplate = ({ title, content, contentComponent, sideItems, imageSlider }) => {
   const PageContent = contentComponent || Content;
   const convertMarkdownToHtml = ((markdownString) => Remark().use(html).processSync(markdownString.replace(/\\/g, '  '), ((err, file) => err ? {contents: '' } : file)).contents);
-
     return (
     <div className='page-container'>
       <Helmet title={title + ' | Knas Hemma'} />
       <article className='page'>
         {imageSlider && <ImageSlider images={imageSlider}/>}
           <div className='content'>
-            {mainBody && 
-              <main>
-                <PageContent className='main-content' content={convertMarkdownToHtml(mainBody)} />
-              </main>
+            {content && 
+            <main>
+              <PageContent className='main-content' content={convertMarkdownToHtml(content)} />
+            </main>
             }
             {sideItems && 
               <aside>
@@ -53,14 +52,12 @@ export const PageTemplate = ({ title, content, contentComponent, sideItems, main
 /*className={'nav-button hamburger hamburger--squeeze ' + (this.state.menuOpen ? 'is-active' : '')}*/
 
 export default ({ data }) => {
-  const { markdownRemark: page, allFile, fields} = data;
-  console.log(data);
+  const { markdownRemark: page, fields, content} = data;
   return (
     <PageTemplate
       contentComponent={HTMLContent}
       title={page.frontmatter.title}
-      content={page.frontmatter.mainBody}
-      mainBody={page.frontmatter.mainBody}
+      content={page.html}
       sideItems={page.frontmatter.sideItems}
       imageSlider={page.frontmatter.imageSlider}
     />
@@ -68,34 +65,7 @@ export default ({ data }) => {
 }
 
 export const PageQuery = graphql`
-  query PageQuery($id: String!) {
-    allFile {
-      edges {
-        node {
-          id
-        }
-      }
-    }
-    allImageSharp {
-      edges {
-        node {
-          id
-          sizes {
-            base64
-            tracedSVG
-            aspectRatio
-            src
-            srcSet
-            srcWebp
-            srcSetWebp
-            sizes
-            originalImg
-            originalName
-          }
-          
-        }
-      }
-    }    
+  query PageQuery($id: String!) { 
     markdownRemark(id: { eq: $id }) {
       html
       fields {
@@ -106,7 +76,7 @@ export const PageQuery = graphql`
           id
         }
       }
-
+      html
       frontmatter {
         title
         imageSlider {
@@ -114,7 +84,6 @@ export const PageQuery = graphql`
           imageSliderImageAlt
           imageSliderImageLink
         }
-        mainBody
         sideItems {
           sideItemBody
           sideItemBackgroundColor

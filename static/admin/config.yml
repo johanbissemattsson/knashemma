@@ -21,12 +21,16 @@ collections:
       - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'page'}
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'UID', name: 'uid', widget: 'string', pattern: ['^[a-zA-Z0-9_-]*$', 'Cannot have special characters']}
+      - {label: 'Meta information (for SEO)', name: 'metaInformation', widget: 'object', fields: 
+        - {label: 'Meta page description', name: 'metaDescripton', widget: 'string'}
+        - {label: 'Meta page keywords', name: 'metaKeywords', widget: 'string'}
+      }
       - {label: 'Header images', name: 'imageSlider', widget: 'list', required: false, fields: [
           {label: 'Image', name: 'imageSliderImage', widget: 'image', required: false},
           {label: 'Image alt text', name: 'imageSliderImageAlt', widget: 'string', required: false},
           {label: 'Link', name: 'imageSliderImageLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid', required: false},          
         ]}      
-      - {label: 'Main', name: 'mainBody', widget: 'markdown'}
+      - {label: 'Main', name: 'body', widget: 'markdown'}
       - label: 'Side items'
         name: 'sideItems'
         widget: 'list'
@@ -58,6 +62,9 @@ collections:
     fields:
       - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page'}
       - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Meta information (for SEO)', name: 'metaInformation', widget: 'object', fields: 
+        - {label: 'Meta page description', name: 'metaDescripton', widget: 'string'}
+        - {label: 'Meta page keywords', name: 'metaKeywords', widget: 'string'}      
       - {label: 'Header images', name: 'imageSlider', widget: 'list', fields: [
           {label: 'Image', name: 'imageSliderImage', widget: 'image'},
           {label: 'Image alt text', name: 'imageSliderImageAlt', widget: 'string'},
@@ -81,25 +88,37 @@ collections:
         name: 'footer'
         file: 'src/settings/footer.md'
         fields:
-          - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'setting-footer'}
+          - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'settings-footer'}
           - label: 'Address field'
             name: 'body'
             widget: 'markdown'
-          - label: 'Social field'
-            name: 'social'
-            widget: 'markdown'
+      - label: 'SEO'
+        name: 'seo'
+        file: 'src/settings/seo.md'
+        fields:
+          - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'settings-seo'}
+          - label: 'Meta page description'
+            name: 'description'
+            widget: 'string'
+          - label: 'Meta page keywords/tags (comma-separated)'
+            name: 'keywords'
+            widget: 'string'
       - label: 'Navigation'
         name: 'navigation'
         file: 'src/settings/navigation.md'
         fields:
-          - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'setting-navigation'}
+          - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'settings-navigation'}
           - label: 'Nav Menu items'
             name: 'navMenu'
             widget: 'list'
             fields:
               - label: 'Link'
-                name: 'navMenuItem'
+                name: 'link'
                 widget: 'relation'
                 collection: 'pages'
                 searchFields: ['uid', 'title']
                 valueField: 'uid'
+              - label: 'Link Title'
+                name: 'title'
+                widget: 'string'       
+              

@@ -221,8 +221,8 @@ img {
     padding: 0;
     flex-direction: row;
     font-size: 1em;
-
   }
+  
 
   .footer-address {
     margin-bottom: 0;
@@ -515,6 +515,7 @@ h3 {
 
 .image-slider, .slick-list, .slick-track {
   margin: 0;
+  height: 540px;
   max-height: 540px !important;
 }
 
@@ -524,6 +525,7 @@ h3 {
 
 .slick-slider {
   transition: opacity 0.25s;
+  height: 540px;
   max-height: 540px !important;
   margin-top: 0.618421052631579;
 }
@@ -666,4 +668,53 @@ h3 {
   .footer-image {
     margin-top: 2.473684210526316em;
   }
+}
+
+
+.footer-social-icons-container {
+  flex: 1;
+  padding: 0;
+  margin-top: 1em;
+  margin-left: -1.15%;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-social-icons {
+    float: right;
+    padding: 0 15px;
+  }
+  .site-footer .footer-contact {
+    flex-direction: row !important;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .footer-social-icons-container {
+    margin-top: 0;
+  }
+
+  .site-footer .footer-contact {
+    flex-direction: row;
+  }
+}
+
+.site-footer .footer-contact {
+  flex-direction: column;
+}
+
+.site-footer p {
+  margin-top: 0;
+}
+
+.social-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 0.5em;
+  transition: transform 0.25s cubic-bezier(0.69, -0.5, 0.27, 1.5);
+}
+
+.social-icon:hover {
+  opacity: 0.875;
+  transform: scale(1.125);
+
 }

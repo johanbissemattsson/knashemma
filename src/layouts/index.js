@@ -9,22 +9,22 @@ import './index.css';
 import 'hamburgers/dist/hamburgers.css';
 import 'slick-carousel/slick/slick.css';
 
-
 export default class TemplateWrapper extends Component {
   render() {
-    const { children } = this.props;
+    const { children, data} = this.props;
+    console.log(data);
     return (
       <div className='site-container'>
         <Helmet
-          title="Knas Hemma"
+          title='Knas Hemma'
           meta={[
-            { name: 'description', content: 'Knas hemma är en ideell ungdomsförening som arbetar nationellt. Den främsta målgruppen för Knas hemma är ungdomar och unga vuxna i åldrarna ca 13-30 år, som antingen bor i eller har bott i familjehem, HVB-hem, eller annat boende för samhällsplacerade barn eller unga.' },
-            { name: 'keywords', content: 'knas, hemma, ideell, ungdomsföreing, nationell, ungdomar, ungdom, unga vuxna, familjehem, HVB-hem' },
+            { name: 'description', content: data.seo.frontmatter.description },
+            { name: 'keywords', content: data.seo.frontmatter.keywords },
           ]}
         />
-        <Header />
+        <Header navItems={data.nav.frontmatter.navMenu}/>
         {children()}
-        <Footer />
+        <Footer content={data.footer}/>
       </div>
     );
   }
@@ -33,3 +33,26 @@ export default class TemplateWrapper extends Component {
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
 };
+
+export const allQuery = graphql`
+  query AllQuery {
+    seo: markdownRemark(frontmatter: {templateKey: {eq: "settings-seo"}}) {
+      frontmatter {
+        description
+        keywords
+      }
+    },
+    footer: markdownRemark(frontmatter: {templateKey: {eq: "settings-footer"}}) {
+      html
+    },
+    nav: markdownRemark(frontmatter: {templateKey: {eq: "settings-navigation"}}) {
+      frontmatter {
+        navMenu {
+          link
+          title
+        }
+      }
+    },
+
+  }
+`

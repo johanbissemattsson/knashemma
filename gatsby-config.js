@@ -22,6 +22,7 @@ module.exports = {
         }
       }
     },
+    'gatsby-plugin-nprogress',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -72,7 +73,9 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 590,
             },
-          }  
+          },
+          'gatsby-remark-embed-video',
+          'gatsby-remark-responsive-iframe'
         ],
       },
     },

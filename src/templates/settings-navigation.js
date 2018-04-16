@@ -1,10 +1,9 @@
 import React from 'react';
+import NotFoundPage from '../pages/404';
 
 export const NavigationSettingsTemplate = ({id}) => {
   return (
-    <div className='page-container'>
-        <p>Hejhejhej</p>
-    </div>
+    <NotFoundPage />
   );
 }
 
@@ -22,7 +21,8 @@ export const NavigationSettingsQuery = graphql`
       id
       frontmatter {
         navMenu {
-          navMenuItem
+          link
+          title
         }
       }
       fields {

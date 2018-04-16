@@ -1,10 +1,8 @@
 import React from 'react';
 
 export const FooterSettingsTemplate = ({id}) => {
-    return (
-    <div className='page-container'>
-        <p>Hejhejhej</p>
-    </div>
+  return (
+    <NotFoundPage />
   );
 }
 
@@ -21,9 +19,6 @@ export const FooterSettingsQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
-      frontmatter {
-        social
-      }
       fields {
         slug
       }

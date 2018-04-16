@@ -62,35 +62,37 @@ class Header extends React.Component {
             </button>
             <div className={'site-nav-menu-container'} >
               <Menu styles={ styles } menuClassName={'site-nav-menu'} itemListClassName={'site-nav-menu-item-list'} width={'100%'} right isOpen={this.state.menuOpen} bodyClassName={'site-nav-menu-open'} customBurgerIcon={false} customCrossIcon={false} onStateChange={(state) => this.handleStateChange(state)}>
-                <Link to='/om-knas-hemma/' className='menu-item' onClick={() => this.closeMenu()} onFocus={() => {!this.state.menuOpen && this.openMenu()}}>Om Knas Hemma</Link>
-                <Link to='/ambassadorer/' className='menu-item' onClick={() => this.closeMenu()}>Ambassadörer</Link>
-                <Link to='/delaktighet-och-rattigheter/' className='menu-item' onClick={() => this.closeMenu()}>Delaktighet och rättigheter</Link>
-                <Link to='/engagera-dig/' className='menu-item' onClick={() => this.closeMenu()}>Engagera dig!</Link>
-                <Link to='/anlita-knas-hemma/' className='menu-item' onClick={() => this.closeMenu()}>Anlita Knas Hemma!</Link>
-                <Link to='/kontakt/' className='menu-item' onClick={() => this.closeMenu()}>Kontakt</Link>
-                <Link to='/in-english/' className='menu-item' onClick={() => this.closeMenu()}>Knas hemma in English</Link>
+                {this.props.navItems && 
+                  this.props.navItems.map((item, index) => {
+                    return (
+                      <Link key={index} to={'/' + item.link} className='menu-item' onClick={() => this.closeMenu()} onFocus={() => {!this.state.menuOpen && this.openMenu()}}>{item.title}</Link>
+                    );
+                  })
+                }
                 <div className='menu-footer'>
                   <div className='site-nav-menu-footer-container'>
                     <footer className='site-nav-menu-footer'>
-                      <div className='footer-sections'>
-                        <h2 className='footer-title'><Link to='/'>Knas hemma</Link></h2>
-                        <div className='footer-contact'>
-                          <address className='footer-address'>
-                            <p>
-                              Anna Sabelström<br />
-                              Nationell Projektledare<br />
-                              <a href='tel:+46709466643'>070-946 66 43</a><br />
-                              <a href='mailto:anna@knashemma.se'>anna@knashemma.se</a>
-                            </p>
-                          </address>
-                          <div className='footer-social'>
-                              <ul>
-                                <li><a href='https://www.facebook.com/knashemma/'>Facebook</a></li>
-                                <li><a href='#' onBlur={() => {this.closeMenu()}}>Instagram</a></li>
-                              </ul> 
-                          </div>
+                      {this.state.menuOpen &&
+                        <div className='footer-sections'>
+                            <h2 className='footer-title'><Link to='/'>Knas hemma</Link></h2>
+                            <div className='footer-contact'>
+                              <address className='footer-address'>
+                                <p>
+                                  Anna Sabelström<br />
+                                  Nationell Projektledare<br />
+                                  <a href='tel:+46709466643'>070-946 66 43</a><br />
+                                  <a href='mailto:anna@knashemma.se'>anna@knashemma.se</a>
+                                </p>
+                              </address>
+                              <div className='footer-social'>
+                                  <ul>
+                                    <li><a href='https://www.facebook.com/knashemma/'>Facebook</a></li>
+                                    <li><a href='https://www.instagram.com/knashemma/' onBlur={() => {this.closeMenu()}}>Instagram</a></li>
+                                  </ul> 
+                              </div>
+                            </div>
                         </div>
-                      </div>
+                      }
                     </footer>
                   </div>
                 </div>        

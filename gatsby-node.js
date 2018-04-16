@@ -71,9 +71,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
           if (fileNode != null) {
             // Find ImageSharp node corresponding to the File node
             const imageSharpNodeId = fileNode.children.find((n) => n.endsWith('>> ImageSharp'));
-            const imageSharpNode = getNodes().find(n => {if (n.id === imageSharpNodeId) { console.log(n);return n;}}); 
-            console.log(fileNode.children);
-            createParentChildLink({ parent: node, child: imageSharpNode});
+            const imageSharpNode = getNodes().find(n => {if (n.id === imageSharpNodeId) {return n;}}); 
+            //createParentChildLink({ parent: node, child: imageSharpNode});
           
             sideImages.push({relativePath: sideItem.sideItemImage, absolutePath: imageAbsolutePath, imageNode: imageSharpNode, id: fileNode.children.find((n, index) => {
 

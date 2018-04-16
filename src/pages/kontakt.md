@@ -3,21 +3,6 @@ templateKey: page
 title: Kontakta oss!
 uid: kontakt
 mainBody: |-
-  # Kontakt
-
-  **Ring oss:** [070-946 66 43](tel:+0709466643)\
-  **Mejla oss:** <mailto:info@knashemma.se>
-
-  ## Följ och Gilla oss här:
-
-  [Facebook](https://www.facebook.com)\
-  [Twitter](https://www.twitter.com)\
-  [Instagram](https://www.instagram.com)
-
-  ## Med stöd av/Loggor:
-
-  [Allmänna Arvsfonden](#)\
-  [BOiU](#)
 sideItems:
   - sideItemBackgroundColor: '#efb741'
     sideItemBody: |-
@@ -25,14 +10,30 @@ sideItems:
 
       **Andreas Svensson**\
       Ordförande i Knas hemma\
-      <mailto:andreas@knashemma.se>
+      [andreas@knashemma.se](mailto:andreas@knashemma.se)
 
       **Emiliya Larsson**\
       Projektledare\
-      [emiliya@knashemma.se](emiliya@knashemma.se)
+      [emiliya@knashemma.se](mailto:emiliya@knashemma.se)
 
       **Anna Sabelström**\
       Verksamhetsledare\
-      [anna@knashemma.se](anna@knashemma.se)
+      [anna@knashemma.se](mailto:anna@knashemma.se)
 ---
+
+# Kontakt
+
+**Ring oss:** [070-946 66 43](tel:+0709466643)\
+**Mejla oss:** <mailto:info@knashemma.se>
+
+## Följ och Gilla oss här:
+
+[Facebook](https://www.facebook.com/knashemma)\
+[Twitter](https://www.twitter.com/knashemma)\
+[Instagram](https://www.instagram.com/knashemma)
+
+## Med stöd av/Loggor:
+
+[Allmänna Arvsfonden](http://www.arvsfonden.se/)\
+[BOiU](https://boiu.se/)
 
