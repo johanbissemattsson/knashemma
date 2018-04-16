@@ -19,7 +19,6 @@ sideItems:
       Verksamhetsledare\
       [anna@knashemma.se](mailto:anna@knashemma.se)
 ---
-
 # Kontakt
 
 **Ring oss:** [070-946 66 43](tel:+0709466643)\
@@ -31,8 +30,7 @@ sideItems:
 [Twitter](https://www.twitter.com/knashemma)\
 [Instagram](https://www.instagram.com/knashemma)
 
-## Med stöd av/Loggor:
+## Med stöd av:
 
 [Allmänna Arvsfonden](http://www.arvsfonden.se/)\
 [BOiU](https://boiu.se/)
-
