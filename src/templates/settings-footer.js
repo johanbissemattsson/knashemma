@@ -1,4 +1,5 @@
 import React from 'react';
+import NotFoundPage from '../pages/404';
 
 export const FooterSettingsTemplate = ({id}) => {
   return (

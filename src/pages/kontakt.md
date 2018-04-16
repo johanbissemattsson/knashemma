@@ -2,7 +2,6 @@
 templateKey: page
 title: Kontakta oss!
 uid: kontakt
-mainBody: |-
 sideItems:
   - sideItemBackgroundColor: '#efb741'
     sideItemBody: |-
