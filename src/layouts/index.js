@@ -33,9 +33,7 @@ TemplateWrapper.propTypes = {
   children: PropTypes.func,
 };
 
-export const allQuery = graphql`
-  query AllQuery {
-    seo: markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
+/*    seo: markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
       frontmatter {
         metaInformation {
           metaDescription
@@ -43,6 +41,9 @@ export const allQuery = graphql`
         }
       }
     },
+  */
+export const allQuery = graphql`
+  query AllQuery {
     footer: markdownRemark(frontmatter: {templateKey: {eq: "settings-footer"}}) {
       html
     },
