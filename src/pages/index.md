@@ -60,8 +60,7 @@ sections:
 footerImage: /media/uploads/banner.jpg
 footerImageAlt: En sidfotsbild
 metaInformation:
-  - metaKeywords: >-
-      knas, hemma, ideell, ungdomsföreing, nationell, ungdomar, ungdom, unga
-      vuxna, familjehem, HVB-hem
+  metaDescription: hej
+  metaKeywords: knas, hemma, ideell, ungdomsföreing, nationell, ungdomar, ungdom, unga, vuxna, familjehem, HVB-hem
 ---
  
