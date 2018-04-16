@@ -28,7 +28,7 @@
     "react-burger-menu": "^2.3.0",
     "react-helmet": "^5.2.0",
     "react-redux": "^5.0.7",
-    "react-slick": "^0.21.0",
+    "react-slick": "^0.23.1",
     "redux": "^3.7.2",
     "remark": "^9.0.0",
     "remark-html": "^7.0.0",
