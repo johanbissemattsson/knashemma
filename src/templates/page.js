@@ -15,7 +15,7 @@ export const PageTemplate = ({ title, content, contentComponent, sideItems, imag
     <div className='page-container'>
       <Helmet
         title={title + ' | Knas Hemma'}
-        meta={metaInformation && [
+        meta={[
             { name: 'description', content: metaInformation.metaDescription && metaInformation.metaDescription.length && metaInformation.metaDescription },
             { name: 'keywords', content: metaInformation.metaKeywords && metaInformation.metaKeywords.length && metaInformation.metaKeywords }
           ]}        
