@@ -8,12 +8,18 @@ import ImageSlider from '../components/ImageSlider';
 
 import Content, { HTMLContent } from '../components/Content';
 
-export const PageTemplate = ({ title, content, contentComponent, sideItems, imageSlider }) => {
+export const PageTemplate = ({ title, content, contentComponent, sideItems, imageSlider, metaInformation }) => {
   const PageContent = contentComponent || Content;
   const convertMarkdownToHtml = ((markdownString) => Remark().use(html).processSync(markdownString.replace(/\\/g, '  '), ((err, file) => err ? {contents: '' } : file)).contents);
     return (
     <div className='page-container'>
-      <Helmet title={title + ' | Knas Hemma'} />
+      <Helmet
+        title={title + ' | Knas Hemma'}
+        meta={metaInformation && [
+            { name: 'description', content: metaInformation.metaDescription && metaInformation.metaDescription },
+            { name: 'keywords', content: metaInformation.metaKeywords && metaInformation.metaKeywords }
+          ]}        
+      />
       <article className='page'>
         {imageSlider && <ImageSlider images={imageSlider}/>}
           <div className='content'>
@@ -49,8 +55,6 @@ export const PageTemplate = ({ title, content, contentComponent, sideItems, imag
   );
 }
 
-/*className={'nav-button hamburger hamburger--squeeze ' + (this.state.menuOpen ? 'is-active' : '')}*/
-
 export default ({ data }) => {
   const { markdownRemark: page, fields, content} = data;
   return (
@@ -60,6 +64,7 @@ export default ({ data }) => {
       content={page.html}
       sideItems={page.frontmatter.sideItems}
       imageSlider={page.frontmatter.imageSlider}
+      metaInformation={page.frontmatter.metaInformation}
     />
   );
 }
@@ -88,6 +93,10 @@ export const PageQuery = graphql`
           sideItemBody
           sideItemBackgroundColor
           sideItemImage
+        }
+        metaInformation {
+          metaDescription
+          metaKeywords
         }
       }
     }
