@@ -22,7 +22,11 @@ module.exports = {
         }
       }
     },
-    'gatsby-plugin-nprogress',
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        color: '#28ffff'
+      }},
     {
       resolve: 'gatsby-source-filesystem',
       options: {
