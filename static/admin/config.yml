@@ -24,8 +24,7 @@ collections:
       - {label: 'Meta information (for SEO)', name: 'metaInformation', widget: 'object', fields: [
           {label: 'Meta page description', name: 'metaDescripton', widget: 'string'},
           {label: 'Meta page keywords', name: 'metaKeywords', widget: 'string'}
-        ]
-      }
+        ]}
       - {label: 'Header images', name: 'imageSlider', widget: 'list', required: false, fields: [
           {label: 'Image', name: 'imageSliderImage', widget: 'image', required: false},
           {label: 'Image alt text', name: 'imageSliderImageAlt', widget: 'string', required: false},
@@ -66,7 +65,7 @@ collections:
       - {label: 'Meta information (for SEO)', name: 'metaInformation', widget: 'object', fields: [
           {label: 'Meta page description', name: 'metaDescripton', widget: 'string'},
           {label: 'Meta page keywords', name: 'metaKeywords', widget: 'string'}
-        ]
+        ]}
       - {label: 'Header images', name: 'imageSlider', widget: 'list', fields: [
           {label: 'Image', name: 'imageSliderImage', widget: 'image'},
           {label: 'Image alt text', name: 'imageSliderImageAlt', widget: 'string'},
