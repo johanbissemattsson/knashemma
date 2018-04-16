@@ -12,7 +12,6 @@ import 'slick-carousel/slick/slick.css';
 export default class TemplateWrapper extends Component {
   render() {
     const { children, data} = this.props;
-    console.log(data);
     return (
       <div className='site-container'>
         <Helmet

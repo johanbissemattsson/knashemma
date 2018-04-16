@@ -52,7 +52,7 @@ exports.createPages = ({ boundActionCreators, graphql}) => {
 exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
   const { createNodeField, createParentChildLink } = boundActionCreators;
   if (node.internal.type === `allImageSharp`) {
-    console.log('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
+    console.log('allImageSharp');
   }
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode });
