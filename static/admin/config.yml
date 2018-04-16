@@ -21,9 +21,10 @@ collections:
       - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'page'}
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'UID', name: 'uid', widget: 'string', pattern: ['^[a-zA-Z0-9_-]*$', 'Cannot have special characters']}
-      - {label: 'Meta information (for SEO)', name: 'metaInformation', widget: 'object', fields: 
-        - {label: 'Meta page description', name: 'metaDescripton', widget: 'string'}
-        - {label: 'Meta page keywords', name: 'metaKeywords', widget: 'string'}
+      - {label: 'Meta information (for SEO)', name: 'metaInformation', widget: 'object', fields: [
+          {label: 'Meta page description', name: 'metaDescripton', widget: 'string'},
+          {label: 'Meta page keywords', name: 'metaKeywords', widget: 'string'}
+        ]
       }
       - {label: 'Header images', name: 'imageSlider', widget: 'list', required: false, fields: [
           {label: 'Image', name: 'imageSliderImage', widget: 'image', required: false},
@@ -62,9 +63,10 @@ collections:
     fields:
       - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page'}
       - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Meta information (for SEO)', name: 'metaInformation', widget: 'object', fields: 
-        - {label: 'Meta page description', name: 'metaDescripton', widget: 'string'}
-        - {label: 'Meta page keywords', name: 'metaKeywords', widget: 'string'}      
+      - {label: 'Meta information (for SEO)', name: 'metaInformation', widget: 'object', fields: [
+          {label: 'Meta page description', name: 'metaDescripton', widget: 'string'},
+          {label: 'Meta page keywords', name: 'metaKeywords', widget: 'string'}
+        ]
       - {label: 'Header images', name: 'imageSlider', widget: 'list', fields: [
           {label: 'Image', name: 'imageSliderImage', widget: 'image'},
           {label: 'Image alt text', name: 'imageSliderImageAlt', widget: 'string'},
@@ -92,17 +94,6 @@ collections:
           - label: 'Address field'
             name: 'body'
             widget: 'markdown'
-      - label: 'SEO'
-        name: 'seo'
-        file: 'src/settings/seo.md'
-        fields:
-          - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'settings-seo'}
-          - label: 'Meta page description'
-            name: 'description'
-            widget: 'string'
-          - label: 'Meta page keywords/tags (comma-separated)'
-            name: 'keywords'
-            widget: 'string'
       - label: 'Navigation'
         name: 'navigation'
         file: 'src/settings/navigation.md'

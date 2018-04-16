@@ -18,8 +18,8 @@ export default class TemplateWrapper extends Component {
         <Helmet
           title='Knas Hemma'
           meta={[
-            { name: 'description', content: data.seo.frontmatter.description },
-            { name: 'keywords', content: data.seo.frontmatter.keywords },
+            { name: 'description', content: data.seo.frontmatter.metaInformation && data.seo.frontmatter.metaInformation.metaDescription && 'Knas hemma är en ideell ungdomsförening som arbetar nationellt. Den främsta målgruppen för Knas hemma är ungdomar och unga vuxna i åldrarna ca 13-30 år, som antingen bor i eller har bott i familjehem, HVB-hem, eller annat boende för samhällsplacerade barn eller unga.'},
+            { name: 'keywords', content: data.seo.frontmatter.metaInformation && data.seo.frontmatter.metaInformation.metaKeywords && 'knas, hemma, ideell, ungdomsföreing, nationell, ungdomar, ungdom, unga vuxna, familjehem, HVB-hem' },
           ]}
         />
         <Header navItems={data.nav.frontmatter.navMenu}/>
@@ -36,10 +36,12 @@ TemplateWrapper.propTypes = {
 
 export const allQuery = graphql`
   query AllQuery {
-    seo: markdownRemark(frontmatter: {templateKey: {eq: "settings-seo"}}) {
+    seo: markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
       frontmatter {
-        description
-        keywords
+        metaInformation {
+          metaDescription
+          metaKeywords
+        }
       }
     },
     footer: markdownRemark(frontmatter: {templateKey: {eq: "settings-footer"}}) {
