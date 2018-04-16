@@ -16,7 +16,7 @@ export default class TemplateWrapper extends Component {
       <div className='site-container'>
         <Helmet
           title='Knas Hemma'
-          meta={data.seo.frontmatter.metaInformation && [
+          meta={data.seo && data.seo.frontmatter.metaInformation && [
             { name: 'description', content: data.seo.frontmatter.metaInformation.metaDescription && 'Knas hemma är en ideell ungdomsförening som arbetar nationellt. Den främsta målgruppen för Knas hemma är ungdomar och unga vuxna i åldrarna ca 13-30 år, som antingen bor i eller har bott i familjehem, HVB-hem, eller annat boende för samhällsplacerade barn eller unga.'},
             { name: 'keywords', content: data.seo.frontmatter.metaInformation.metaKeywords && 'knas, hemma, ideell, ungdomsföreing, nationell, ungdomar, ungdom, unga vuxna, familjehem, HVB-hem' },
           ]}
