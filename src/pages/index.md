@@ -57,10 +57,11 @@ sections:
     sectionFeaturedImage: /media/uploads/Startsidebild04.jpg
     sectionHeader: Delaktighet och rättigheter
     sectionLink: delaktighet-och-rattigheter
-footerImage: /media/uploads/banner.jpg
-footerImageAlt: En sidfotsbild
+footerImage:    
+  footerImageSrc: /media/uploads/banner.jpg
+  footerImageAlt: En sidfotsbild
 metaInformation:
-  metaDescripton: >-
+  metaDescription: >-
     Knas hemma är en ideell ungdomsförening som arbetar nationellt. Den främsta
     målgruppen för Knas hemma är ungdomar och unga vuxna i åldrarna ca 13-30 år,
     som antingen bor i eller har bott i familjehem, HVB-hem, eller annat boende

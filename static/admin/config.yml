@@ -74,10 +74,12 @@ collections:
           {label: 'Link', name: 'sectionLink', widget: 'relation', collection: 'pages', searchFields: ['uid', 'title'], valueField: 'uid', required: false},
           {label: 'Content', name: 'sectionBody', widget: 'markdown', required: false},
         ]}
-      - {label: 'Footer image', name: 'footerImage', widget: image, required: false}
-      - {label: 'Footer image alt text', name: 'footerImageAlt', widget: string, required: false}
+      - {label: 'Footer Image', name: 'footerImage', widget: 'object', collapsed: true, required: false, fields: [
+        {label: 'Footer image', name: 'footerImageSrc', widget: image, required: false}
+        {label: 'Footer image alt text', name: 'footerImageAlt', widget: string, required: false}        
+      ]}        
       - {label: 'Meta information (for SEO)', name: 'metaInformation', widget: 'object', collapsed: true, required: true, fields: [
-          {label: 'Meta page description', name: 'metaDescripton', widget: 'string', required: true},
+          {label: 'Meta page description', name: 'metaDescription', widget: 'string', required: true},
           {label: 'Meta page keywords', name: 'metaKeywords', widget: 'string', required: true}
         ]}      
   - name: 'settings'

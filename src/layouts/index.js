@@ -16,7 +16,10 @@ export default class TemplateWrapper extends Component {
       <div className='site-container'>
         <Helmet
           title='Knas Hemma'
-
+          meta={data.seo && data.seo.frontmatter.metaInformation && [
+            { name: 'description', content: data.seo.frontmatter.metaInformation.metaDescription },
+            { name: 'keywords', content: data.seo.frontmatter.metaInformation.metaKeywords}
+          ]}
         />
         <Header navItems={data.nav.frontmatter.navMenu}/>
         {children()}
@@ -30,7 +33,9 @@ TemplateWrapper.propTypes = {
   children: PropTypes.func,
 };
 
-/*    seo: markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
+export const allQuery = graphql`
+  query AllQuery {
+    seo: markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
       frontmatter {
         metaInformation {
           metaDescription
@@ -38,9 +43,6 @@ TemplateWrapper.propTypes = {
         }
       }
     },
-  */
-export const allQuery = graphql`
-  query AllQuery {
     footer: markdownRemark(frontmatter: {templateKey: {eq: "settings-footer"}}) {
       html
     },

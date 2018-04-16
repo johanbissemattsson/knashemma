@@ -36,7 +36,7 @@ export const IndexPageTemplate = ( { content, contentComponent, title, sections,
         </div>
         {footerImage &&
           <div className='footer-image'>
-            <img src={footerImage.img} alt={footerImage.alt}/>
+            <img src={footerImage.footerImageSrc} alt={footerImage.footerImageAlt}/>
           </div>
         }
       </article>
@@ -53,7 +53,7 @@ export default ({ data }) => {
       sections={post.frontmatter.sections}
       content={post.html}
       imageSlider={post.frontmatter.imageSlider}
-      footerImage={{img: post.frontmatter.footerImage, alt: post.frontmatter.footerImageAlt }}
+      footerImage={post.frontmatter.footerImage}
       contentComponent={HTMLContent}
     />
   );
@@ -76,8 +76,10 @@ export const IndexPageQuery = graphql`
           sectionBody
           sectionFeaturedImage
         }
-        footerImage
-        footerImageAlt
+        footerImage {
+          footerImageSrc
+          footerImageAlt
+        }
       }
     }
   }
