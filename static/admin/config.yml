@@ -21,10 +21,6 @@ collections:
       - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'page'}
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'UID', name: 'uid', widget: 'string', pattern: ['^[a-zA-Z0-9_-]*$', 'Cannot have special characters']}
-      - {label: 'Meta information (for SEO)', name: 'metaInformation', widget: 'object', collapsed: true, required: false, fields: [
-          {label: 'Meta page description', name: 'metaDescripton', widget: 'string', required: false},
-          {label: 'Meta page keywords', name: 'metaKeywords', widget: 'string', required: false}
-        ]}
       - {label: 'Header images', name: 'imageSlider', widget: 'list', required: false, fields: [
           {label: 'Image', name: 'imageSliderImage', widget: 'image', required: false},
           {label: 'Image alt text', name: 'imageSliderImageAlt', widget: 'string', required: false},
@@ -50,6 +46,10 @@ collections:
                 {label: 'Grey', value: '#abc1a5'},
             ]}
         ]
+      - {label: 'Meta information (for SEO)', name: 'metaInformation', widget: 'object', collapsed: true, required: false, fields: [
+          {label: 'Meta page description', name: 'metaDescripton', widget: 'string', required: false},
+          {label: 'Meta page keywords', name: 'metaKeywords', widget: 'string', required: false}
+        ]}        
   - name: 'index-page'
     label: 'Index'
     folder: 'src/pages'
@@ -62,10 +62,6 @@ collections:
     fields:
       - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page'}
       - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Meta information (for SEO)', name: 'metaInformation', widget: 'object', collapsed: true, required: false, fields: [
-          {label: 'Meta page description', name: 'metaDescripton', widget: 'string', required: false},
-          {label: 'Meta page keywords', name: 'metaKeywords', widget: 'string', required: false}
-        ]}
       - {label: 'Header images', name: 'imageSlider', widget: 'list', fields: [
           {label: 'Image', name: 'imageSliderImage', widget: 'image'},
           {label: 'Image alt text', name: 'imageSliderImageAlt', widget: 'string'},
@@ -79,7 +75,11 @@ collections:
           {label: 'Content', name: 'sectionBody', widget: 'markdown', required: false},
         ]}
       - {label: 'Footer image', name: 'footerImage', widget: image, required: false}
-      - {label: 'Footer image alt text', name: 'footerImageAlt', widget: string, required: false} 
+      - {label: 'Footer image alt text', name: 'footerImageAlt', widget: string, required: false}
+      - {label: 'Meta information (for SEO)', name: 'metaInformation', widget: 'object', collapsed: true, required: false, fields: [
+          {label: 'Meta page description', name: 'metaDescripton', widget: 'string', required: false},
+          {label: 'Meta page keywords', name: 'metaKeywords', widget: 'string', required: false}
+        ]}      
   - name: 'settings'
     label: 'Settings'
     editor:
