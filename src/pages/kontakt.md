@@ -37,12 +37,12 @@ metaInformation:
 
 <div class='small-logo'>
 <a href='http://www.arvsfonden.se/'>
-<img src='/uploads/tacksamhet.jpg' alt='testbild'/>
+<img src='/uploads/arvsfonden-logotyp-rgb-svart.png' alt='testbild'/>
 </a>
 </div>
 <div class='small-logo'>
-<a href='https://boiu.se/>
-<img src='/uploads/tacksamhet.jpg' alt='testbild'/>
+<a href='https://boiu.se/'>
+<img src='/uploads/arvsfonden-logotyp-rgb-svart.png' alt='testbild'/>
 </a>
 </div>
 
