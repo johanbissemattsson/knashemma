@@ -721,5 +721,6 @@ h3 {
 }
 
 .small-logo {
-  max-width: 180px;
+  max-width: 96px;
+  margin-bottom: 1.5em;
 }
