@@ -19,7 +19,7 @@ sideItems:
       Verksamhetsledare\
       [anna@knashemma.se](mailto:anna@knashemma.se)
 metaInformation:
-  metaDescripton: Kontakta eller följ oss på Knas hemma
+  metaDescription: Kontakta oss på Knas hemma eller följ oss på Facebook eller Instagram.
   metaKeywords: 'Ring, mejla, Allmänna Arvsfonden, BOiU'
 ---
 # Kontakt
