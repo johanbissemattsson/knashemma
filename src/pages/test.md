@@ -37,5 +37,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet sed nib
 ```
 Ett kodblock
 ```
-
-<img src='/uploads/tacksamhet.jpg' alt='testbild' className='no-auto-width'/>
+<div class='no-auto-width-container>
+<img src='/uploads/tacksamhet.jpg' alt='testbild'/>
+</div>
