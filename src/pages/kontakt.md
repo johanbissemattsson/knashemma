@@ -42,7 +42,7 @@ metaInformation:
 </div>
 <div class='small-logo'>
 <a href='https://boiu.se/'>
-<img src='/uploads/arvsfonden-logotyp-rgb-svart.png' alt='testbild'/>
+<img src='/uploads/boio-logo.png' alt='testbild'/>
 </a>
 </div>
 
