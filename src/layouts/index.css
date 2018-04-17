@@ -714,5 +714,8 @@ h3 {
 .social-icon:hover {
   opacity: 0.875;
   transform: scale(1.125);
+}
 
+.gatsby-resp-iframe-wrapper {
+  margin: 1.5em 0;
 }
