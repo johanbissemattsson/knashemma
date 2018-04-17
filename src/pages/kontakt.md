@@ -35,5 +35,14 @@ metaInformation:
 
 ## Med stöd av:
 
-[Allmänna Arvsfonden](http://www.arvsfonden.se/)\
-[BOiU](https://boiu.se/)
+<div class='small-logo'>
+<a href='http://www.arvsfonden.se/'>
+<img src='/uploads/tacksamhet.jpg' alt='testbild'/>
+</a>
+</div>
+<div class='small-logo'>
+<a href='https://boiu.se/>
+<img src='/uploads/tacksamhet.jpg' alt='testbild'/>
+</a>
+</div>
+
