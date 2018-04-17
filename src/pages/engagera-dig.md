@@ -41,6 +41,7 @@ Såhär går det till.
 * För att bli ambassadör får du gå en utbildning i barnets rättigheter och ledarskap.
 * För att bli ambassadör ska du vara en förebild för andra barn och ungdomar.
 
+
 Läs mer om våra [ambassadörer](/ambassadorer)
 
 ## Stödmedlemmar och sponsring:
