@@ -35,14 +35,17 @@ metaInformation:
 
 ## Med stöd av:
 
+![](/media/uploads/arvsfonden-logotyp-rgb-svart.png)
+
+![](/media/uploads/boiu-logo.png)
+
 <div class='small-logo'>
 <a href='https://www.arvsfonden.se/'>
-<img src='media/uploads/arvsfonden-logotyp-rgb-svart.png' alt='Arvsfonden'/>
+<img src='/media/uploads/arvsfonden-logotyp-rgb-svart.png' alt='Arvsfonden'/>
 </a>
 </div>
 <div class='small-logo'>
 <a href='https://boiu.se/'>
-<img src='/static/media/uploads/boio-logo.png' alt='BOiU'/>
+<img src='/media/uploads/boiu-logo.png' alt='BOiU'/>
 </a>
 </div>
-
