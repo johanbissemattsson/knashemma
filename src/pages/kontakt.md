@@ -35,10 +35,6 @@ metaInformation:
 
 ## Med stöd av:
 
-![null](/media/uploads/arvsfonden-logotyp-rgb-svart.png)
-
-![null](/media/uploads/boiu-logo.png)
-
 <div class='small-logo'>
 <a href='https://www.arvsfonden.se/'>
 <img src='/uploads/arvsfonden-logotyp-rgb-svart.png' alt='Arvsfonden'/>
