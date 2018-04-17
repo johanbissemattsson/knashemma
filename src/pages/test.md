@@ -38,4 +38,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet sed nib
 Ett kodblock
 ```
 
-<img src='/media/uploads/tacksamhet.jpg' alt='testbild' />
+<img src='/uploads/tacksamhet.jpg' alt='testbild' class='no-auto-width'/>
