@@ -36,4 +36,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet sed nib
 
 ```
 Ett kodblock lorem upsum ad est dolores
+![Detta är en bild](/media/uploads/tacksamhet.jpg)
 ```
