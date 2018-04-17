@@ -8,7 +8,6 @@ sideItems:
       ## Detta är en sidoruta
 
       En sidoruta som det går att ändra färg på, eller ha bilder i.
-    sideItemImage: 
 ---
 # Engagera dig
 
@@ -30,20 +29,19 @@ Såhär går det till.
 ## Varför medlem?
 
 * Du stöttar vårt arbete och hjälper på så vis andra barn och ungdomar i
-Sverige.
+  Sverige.
 * Du har möjlighet att bli invald i styrelsen och får komma på årsmöten.
 * Du får minst en grundläggande utbildning i barnets rättigheter, om du vill.
 * Du får lära känna andra med liknande erfarenheter som du själv.
 * Du får komma med idéer och förslag på hur Knas hemma kan utvecklas.
 
-
 ## Ambassadör (medlem och engagerad):
 
-* För att bli ambassadör måste du bli medlem och vara mellan 18 år till 30 år. 
+* För att bli ambassadör måste du bli medlem och vara mellan 18 år till 30 år.
 * För att bli ambassadör får du gå en utbildning i barnets rättigheter och ledarskap.
 * För att bli ambassadör ska du vara en förebild för andra barn och ungdomar.
 
-  Läs mer om våra [ambassadörer](/ambassadorer)
+Läs mer om våra [ambassadörer](/ambassadorer)
 
 ## Stödmedlemmar och sponsring:
 
