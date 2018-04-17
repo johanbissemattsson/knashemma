@@ -35,5 +35,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet sed nib
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet sed nibh sed venenatis. Phasellus bibendum, turpis non egestas, risus ipsum tincidunt quam, bibendum suscipit sapien enim.
 
 ```
-Ett kodblock lorem upsum ad est dolores
+Ett kodblock
 ```
