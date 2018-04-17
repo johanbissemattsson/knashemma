@@ -13,13 +13,17 @@ export const PageTemplate = ({ title, content, contentComponent, sideItems, imag
   const convertMarkdownToHtml = ((markdownString) => Remark().use(html).processSync(markdownString.replace(/\\/g, '  '), ((err, file) => err ? {contents: '' } : file)).contents);
     return (
     <div className='page-container'>
-      <Helmet
+      {metaInformation && metaInformation.metaDescription && metaInformation.metaDescription.length && metaInformation.metaKeywords && metaInformation.metaKeywords.length ? 
+        <Helmet
         title={title + ' | Knas Hemma'}
         meta={[
-            metaInformation && metaInformation.metaDescription && metaInformation.metaDescription.length && { name: 'description', content: metaInformation.metaDescription },
-            metaInformation && metaInformation.metaKeywords && metaInformation.metaKeywords.length && { name: 'keywords', content: metaInformation.metaKeywords }
+            { name: 'description', content: metaInformation.metaDescription },
+            { name: 'keywords', content: metaInformation.metaKeywords }
           ]}        
       />
+      :
+        <Helmet title={title + ' | Knas Hemma'} /> 
+      }
       <article className='page'>
         {imageSlider && <ImageSlider images={imageSlider}/>}
           <div className='content'>
