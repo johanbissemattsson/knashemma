@@ -32,7 +32,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet sed nib
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet sed nibh sed venenatis. Phasellus bibendum, turpis non egestas, risus ipsum tincidunt quam, bibendum suscipit sapien enim.
 
-`video: https://www.youtube.com/embed/2Xc9gXyf2G4`
+`video: https://youtu.be/D-UmfqFjpl0`
 
 ```
 Ett kodblock lorem upsum ad est dolores
