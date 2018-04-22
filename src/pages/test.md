@@ -38,4 +38,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet sed nib
 Ett kodblock
 ```
 
-![Utbildning](/media/uploads/utbildning.jpg)
+![Utbildning](/uploads/utbildning.jpg)
