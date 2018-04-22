@@ -87,7 +87,9 @@ class Header extends React.Component {
                               <div className='footer-social'>
                                   <ul>
                                     <li><a href='https://www.facebook.com/knashemma/'>Facebook</a></li>
-                                    <li><a href='https://www.instagram.com/knashemma/' onBlur={() => {this.closeMenu()}}>Instagram</a></li>
+                                    <li><a href='https://www.instagram.com/knashemma/'>Instagram</a></li>
+                                    <li><a href='https://www.twitter.com/knashemma/' onBlur={() => {this.closeMenu()}}>Twitter</a></li>
+
                                   </ul> 
                               </div>
                             </div>

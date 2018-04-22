@@ -4,6 +4,7 @@ import Remark from 'remark';
 import html from 'remark-html';
 
 import ImageSlider from '../components/ImageSlider';
+import SocialFeed from '../components/SocialFeed';
 import Content, { HTMLContent } from '../components/Content';
 
 export const IndexPageTemplate = ( { content, contentComponent, title, sections, imageSlider, footerImage }) => {
@@ -39,6 +40,7 @@ export const IndexPageTemplate = ( { content, contentComponent, title, sections,
             <img src={footerImage.footerImageSrc} alt={footerImage.footerImageAlt}/>
           </div>
         }
+        <SocialFeed/>
       </article>
     </div>    
   );

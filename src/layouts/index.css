@@ -124,7 +124,7 @@ img {
   }
 
   .index.page {
-    padding: 1.236842105263158em 0 4.947368421052632em 0;
+    padding: 1.236842105263158em 0 2.473684210526316em 0;
   }
 }
 .site-footer,
@@ -205,7 +205,7 @@ img {
   }
 
   .footer-address {
-    margin-bottom: 1.236842105263158em;
+    margin-bottom: 0.618421052631579em;
   }
 
   .footer-title {
@@ -664,7 +664,7 @@ h3 {
 
 @media only screen and (min-width: 720px) {
   .footer-image {
-    margin-top: 2.473684210526316em;
+    margin: 2.473684210526316em 0;
   }
 }
 
@@ -672,7 +672,7 @@ h3 {
 .footer-social-icons-container {
   flex: 1;
   padding: 0;
-  margin-top: 1em;
+  margin-top: 0.618421052631579em;
   margin-left: -1.15%;
 }
 
@@ -705,11 +705,27 @@ h3 {
 }
 
 .social-icon {
-  width: 48px;
-  height: 48px;
-  margin-right: 0.5em;
+  width: 42px;
+  height: 42px;
+  margin-right: 0.25em;
   transition: transform 0.25s cubic-bezier(0.69, -0.5, 0.27, 1.5);
 }
+
+@media only screen and (min-width: 768px) {
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+@media only screen and (min-width: 960px) {
+  .social-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
 
 .social-icon:hover {
   opacity: 0.875;
@@ -723,4 +739,72 @@ h3 {
 .small-logo {
   max-width: 96px;
   margin-bottom: 1.5em;
+}
+
+.social-feed {
+  display: none;
+}
+
+.social-feed-item .fb-page {
+  background: #eaefe8;
+}
+
+@media only screen and (min-width: 768px) {
+  .social-feed {
+    display: flex;
+    margin: 1.236842105263158em 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .social-feed {
+    margin: 1.236842105263158em 0 4.947368421052632em 0;
+  }
+  .social-feed section {
+    margin-bottom: 2.473684210526316em;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .social-feed {
+    margin: 1.236842105263158em 0 7.421052631578948em 0;
+  }
+  .social-feed section {
+    margin-bottom: 7.421052631578948em;
+  }
+}
+
+
+.social-feed section {
+  flex: 1;
+  margin: 0 2.3%;
+  max-width: 47.7%;
+  height: 480px;
+}
+
+.social-feed h3 {
+  font-size: 1.17em;
+}
+
+.social-feed section:first-child {
+  margin-left: 0;
+}
+
+.social-feed section:last-child {
+  margin-right: 0;
+}
+
+.social-feed .instafeed__item {
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: 1.15%;
+}
+
+.social-feed .instafeed__item:nth-child(even) {
+  padding-left: 1.15%;
+}
+
+.social-feed .instafeed__item:nth-child(odd) {
+  padding-right: 1.15%;
 }
