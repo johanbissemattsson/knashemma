@@ -1,7 +1,6 @@
 ---
 templateKey: settings-footer
-title: SettingsFooter
-navcontact: hejsvejs
+navcontact: "070-946 66 43\r\\\ninfo@knashemma.se"
 ---
 Anna Sabelström  
 Nationell Projektledare  
