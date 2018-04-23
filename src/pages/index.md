@@ -33,14 +33,12 @@ sections:
     sectionHeader: Ambassadörer
     sectionLink: ambassadorer
   - sectionBody: >-
-      Tillsammans med olika aktörer, erbjuder vi ett samskapande för att stärka
-      barns och ungas röster och delaktighet. Det kan handla om att ta fram nya
-      arbetssätt för ökad delaktighet och tillgänglighet (via sociala medier),
-      ingå i referensgrupper och projekt utifrån unga människors egna
-      perspektiv, i statliga rapporter, ge input på textmaterial samt via våra
-      föreläsningar och utbildningspaket för socialtjänst, på
-      familjehemsutbildningar, på universitet och högskolor etc. Vi kommer gärna
-      och föreläser och inspirerar er!\
+      Knas hemma erbjuder ett samskapande för att stärka barns och ungas röster
+      samt delaktighet. Vi tar fram nya arbetsmetoder för ökad delaktighet och
+      tillgänglighet, ingår i referensgrupper, rapporter, ger input på
+      textmaterial samt via våra föreläsningar och utbildningspaket för
+      socialtjänst, på familjehemsutbildningar, på universitet och högskolor
+      etc. Vi kommer gärna och föreläser och inspirerar er!\
 
       [Läs mer](anlita-knas-hemma)
     sectionFeaturedImage: /media/uploads/Startsidebild03.jpg
@@ -57,9 +55,9 @@ sections:
     sectionFeaturedImage: /media/uploads/Startsidebild04.jpg
     sectionHeader: Delaktighet och rättigheter
     sectionLink: delaktighet-och-rattigheter
-footerImage:    
-  footerImageSrc: /media/uploads/banner.jpg
+footerImage:
   footerImageAlt: En sidfotsbild
+  footerImageSrc: /media/uploads/banner.jpg
 metaInformation:
   metaDescription: >-
     Knas hemma är en ideell ungdomsförening som arbetar nationellt. Den främsta
