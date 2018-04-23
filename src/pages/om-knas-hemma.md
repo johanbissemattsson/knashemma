@@ -3,7 +3,7 @@ templateKey: page
 title: Om Knas hemma
 uid: om-knas-hemma
 imageSlider:
-  - imageSliderImage: /media/uploads/Startsidebild02.jpg
+  - imageSliderImage: /media/uploads/ambassadorer.png
     imageSliderImageAlt: Om Knas hemma
     imageSliderImageLink: ''
 sideItems:
@@ -14,30 +14,29 @@ sideItems:
       Knas hemma tror att:
 
 
-      * unga människor kan hjälpa varandra.
+      * barn och ungdomar kan hjälpa varandra.
 
-      * unga människor är en viktig samhällsgrupp som bidrar till
+      * barn och ungdomar är en viktig samhällsgrupp som bidrar till
       samhällsförändring och demokratiutveckling.
 
-      * unga människor behöver uttrycka sina erfarenheter och upplevelser i
-      olika former och på olika sätt. alla perspektiv behövs i ett samhälle –
+      * barn och ungdomar behöver uttrycka sina erfarenheter och upplevelser i
+      olika former och på olika sätt. Alla perspektiv behövs i ett samhälle –
       både positiva och negativa perspektiv.
 
-      * unga kan bidra till att stärka barns och ungas position i samhället och
-      att förändra dagens lagar, förhållningssätt eller arbetsmetoder på längre
-      sikt.
+      * barn och ungdomar kan bidra till att stärka barns och ungas position i
+      samhället och kan förändra dagens lagar, förhållningssätt eller
+      arbetsmetoder på längre sikt.
     sideItemImage: ''
   - sideItemImage: /media/uploads/utbildning.jpg
     sideItemImageAlt: Hej
 metaInformation:
-  metaDescripton: ''
   metaKeywords: ''
 ---
 # Om Knas hemma
 
 Knas hemma är en ungdomsdriven ideell förening som arbetar och finns nationellt. Vi som är med i Knas hemma är ungdomar och unga vuxna i åldrarna ca 13 - 30 år, som antingen bor i eller har bott i familjehem, HVB-hem, eller annat boende för samhällsplacerade barn eller unga. Knas hemma arbetar med att förändra samhället genom att påverka, utbilda och sprida kunskap om barn och ungdomar med erfarenhet av placeringar.
 
-Knas hemma startades som ett projekt med stöd från Allmänna arvsfonden 2013 på Barnombudet i Uppsala (BOiU). Vi ville ta reda på om ungdomar i Sverige ville vara med och skapa en ny barnrättsorganisation för att göra det bättre för barn och ungdomar som bor i olika placeringar. Idag är Knas hemma en ideell förening där styrelsen består av ungdomsambassadörer och övriga medlemmar i Knas hemma. Knas hemma har en tydlig barnrättsgrund där unga människor självmant väljer att engagera sig och blir medlemmar. Vi har en Senior Advisory-grupp som består av professionella yrkesverksamma personer som bidrar till föreningens utveckling och kunskap.
+Knas hemma startades som ett projekt med stöd från Allmänna arvsfonden 2013 på Barnombudet i Uppsala (BOiU). Vi ville ta reda på om ungdomar i Sverige ville vara med och skapa en ny barnrättsorganisation för att göra det bättre för barn och ungdomar som bor i olika placeringar. Idag är Knas hemma en ideell förening där styrelsen består av ungdomsambassadörer och övriga medlemmar i Knas hemma. Knas hemma har en tydlig barnrättsgrund där unga människor självmant väljer att engagera sig och blir medlemmar. Vi har en rådgivande grupp som består av professionella yrkesverksamma personer som bidrar till föreningens utveckling och kunskap.
 
 ## Knas hemma arbetar med att:
 
@@ -59,19 +58,15 @@ Vår vision och målsättning är att barn och unga ska få kunskap om barnets r
 
 * Vi hjälper inte vuxna, familjer eller enskilda barn och unga i utredningar eller specifika "problem".
 * Vi går aldrig in och medlar i eventuella konflikter mellan barn- och unga, familjer eller andra parter.
-* Vi anser oss inte vara en brukarförening. Vi är en ungdomsrättsorganisation.
 
 ## Etisk policy
 
-* Vår värdegrund baseras på alla människors lika värde och allas rätt till frihet, demokrati och social trygghet. vi anser att alla ska behandlas lika
-  oavsett kön, ålder, hudfärg, sexuell läggning, kroppslig funktionsförmåga, livssituation eller bakgrund.
+* Vår värdegrund baseras på alla människors lika värde och allas rätt till frihet, demokrati och social trygghet. vi anser att alla ska behandlas lika oavsett kön, ålder, hudfärg, sexuell läggning, kroppslig funktionsförmåga, livssituation eller bakgrund.
 * Vårt arbeta genomsyras av FN:s konvention om barnets rättigheter. Vi strävar efter att arbeta och utvecklas långsiktigt och med ett hållbarhetsperspektiv.
-* Vi agerar aldrig utan att vi först fått medgivande av dig som deltar i Knas hemma (detta berör t.ex. publicering av egna produktioner samt bilder på
-  nätet).
+* Vi agerar aldrig utan att vi först fått medgivande av dig som deltar i Knas hemma (detta berör t.ex. publicering av egna produktioner samt bilder på nätet).
 * Vi samarbetar gärna men med förutsättning att ni delar samma värdegrunder och perspektiv som beskrivs här.
-* Valet av anonymitet och sekretess diskuteras i samråd med de unga som är medlemmar i Knas hemma.
-* Vi månar och värnar om alla ungdomar som är delaktiga i Knas hemma.
-* Etiska problem och frågeställningar som eventuellt uppstår diskuteras kontinuerligt i vår Senior Advisory-grupp.
+* Valet av anonymitet och sekretess diskuteras i samråd med de ungdomar som är medlemmar i Knas hemma.
+* Vi månar och värnar om alla medlemmar som är delaktiga i Knas hemma.
+* Etiska problem och frågeställningar som eventuellt uppstår diskuteras kontinuerligt i vår rådgivande grupp.
 * Vi anser att barn- och unga är aktiva aktörer i samhället och med stor autonomi, vilket genomsyrar vår barn- och ungdomssyn.
-* Om en ungdom befinner sig i en svår situation i livet och mår väldigt dåligt, kommer vi att hänvisa personen vidare till andra hjälporganisation och
-  kontakter.
+* Om en ungdom befinner sig i en svår situation i livet och mår väldigt dåligt, kommer vi att hänvisa personen vidare till andra hjälporganisation och kontakter.
