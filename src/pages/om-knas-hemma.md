@@ -31,6 +31,7 @@ sideItems:
     sideItemImage: /media/uploads/utbildning.jpg
     sideItemImageAlt: utbildning
   - sideItemImage: /media/uploads/kampanj33hem.jpg
+  - sideItemImage: /media/uploads/byggerenfamilj.jpg
 metaInformation:
   metaKeywords: ''
 ---
