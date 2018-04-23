@@ -504,6 +504,10 @@ h3 {
   margin-top: 0;
 }
 
+.footer-address .side-item-content > *:first-child {
+  margin-top: 0 !important;
+}
+
 .page .side-item-content > *:last-child {
   margin-bottom: 0.618421052631579em;
 }
@@ -808,4 +812,34 @@ h3 {
 
 .social-feed .instafeed__item:nth-child(odd) {
   padding-right: 1.15%;
+}
+
+.portrait-item {
+  display: flex;
+  flex-direction: column;
+  margin: 1.236842105263158em 0;
+}
+
+.portrait-item .portrait-photo {
+  width: 96px;
+  min-width: 48px;
+  margin-bottom: 0.618421052631579em;
+
+}
+
+.portrait-item .portrait-photo img {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 480px) {
+  .portrait-item {
+    margin: 0;
+    flex-direction: row;
+  }
+
+  .portrait-item .portrait-photo {
+    margin: 0 0.618421052631579em 1.236842105263158em 0;
+    width: 96px;
+    min-width: 48px;
+  }
 }

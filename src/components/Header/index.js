@@ -41,7 +41,6 @@ class Header extends React.Component {
   render () {
     const PageContent = HTMLContent || Content;
     const convertMarkdownToHtml = ((markdownString) => Remark().use(html).processSync(markdownString.replace(/\\/g, '  '), ((err, file) => err ? {contents: '' } : file)).contents);
-    console.log(this.props);
     return (        
       <div className='site-header-container'>
         <header className='site-header'>

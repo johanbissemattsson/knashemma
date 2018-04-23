@@ -7,23 +7,36 @@ sideItems:
     sideItemBody: |-
       ## Vi som jobbar på Knas hemma är:
 
-      ![Andreas Svensson](/media/uploads/portratt.png)
-
-      **Andreas Svensson**\
-      Ordförande i Knas hemma\
-      <mailto:andreas@knashemma.se>
-
-      ![Emiliya Larsson](/media/uploads/portratt.png)
-
-      **Emiliya Larsson**\
-      Projektledare\
-      <mailto:emiliya@knashemma.se>
-
-      ![Anna Sabelström](/media/uploads/portratt.png)
-
-      **Anna Sabelström**\
-      Verksamhetsledare\
-      <mailto:anna@knashemma.se>
+      <div class='portrait-item'>
+        <div class='portrait-photo'>
+          <img src='/media/uploads/portratt.png' alt='Andreas Svensson'/>
+        </div>
+        <div>        
+          <strong>Andreas Svensson</strong><br />
+          Ordförande i Knas hemma<br />
+          <a href='mailto:andreas@knashemma.se'/>andreas@knashemma.se</a>
+        </div>        
+      </div>
+      <div class='portrait-item'>
+        <div class='portrait-photo'>
+          <img src='/media/uploads/portratt.png' alt='Emiliya Larsson'/>
+        </div>
+        <div>        
+          <strong>Emiliya Larsson</strong><br />
+          Projektledare<br />
+          <a href='mailto:emiliya@knashemma.se'/>emiliya@knashemma.se</a>
+          </div>
+      </div>
+      <div class='portrait-item'>
+        <div class='portrait-photo'>
+          <img src='/media/uploads/portratt.png' alt='Anna Sabelström'/>
+        </div>
+        <div>
+          <strong>Anna Sabelström</strong><br />
+          Verksamhetsledare<br />
+          <a href='mailto:anna@knashemma.se'/>anna@knashemma.se</a>
+        </div>
+      </div>
 metaInformation:
   metaDescription: Kontakta oss på Knas hemma eller följ oss på Facebook eller Instagram.
   metaKeywords: 'Ring, mejla, Allmänna Arvsfonden, BOiU'
