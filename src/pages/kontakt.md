@@ -29,7 +29,7 @@ sideItems:
       </div>
       <div class='portrait-item'>
         <div class='portrait-photo'>
-          <img src='/media/uploads/portratt.png' alt='Anna Sabelström'/>
+          <img src='/media/uploads/kontaktanna 2.jpg' alt='Anna Sabelström'/>
         </div>
         <div>
           <strong>Anna Sabelström</strong><br />
