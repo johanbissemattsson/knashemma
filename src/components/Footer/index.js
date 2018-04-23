@@ -3,13 +3,11 @@ import Link from 'gatsby-link';
 import Remark from 'remark';
 import html from 'remark-html';
 
-
 import Content, { HTMLContent } from '../Content';
 
 const Footer = ({content}) => { 
   const PageContent = HTMLContent || Content;
   const convertMarkdownToHtml = ((markdownString) => Remark().use(html).processSync(markdownString.replace(/\\/g, '  '), ((err, file) => err ? {contents: '' } : file)).contents);
-
   return (
   <div className='site-footer-container'>
     <footer className='site-footer'>

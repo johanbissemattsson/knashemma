@@ -20,12 +20,14 @@ export const FooterSettingsQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
+      frontmatter {
+        title
+        navcontact
+      }
       fields {
         slug
       }
     }
   }
 `
-
-
 

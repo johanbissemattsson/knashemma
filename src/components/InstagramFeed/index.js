@@ -19,15 +19,13 @@ export default class InstagramFeed extends React.Component {
             resolution='standard_resolution'
             sortBy='most-recent'
             target='instafeedtarget'
-            template={`<a href='#' class='instafeed__item'><img class='instafeed__item__background' src='{{image}}' /></a>`}
+            template={`<a href='{{link}}' target='_blank' class='instafeed__item'><img class='instafeed__item__background' src='{{image}}' /></a>`}
             userId='self'
-            clientId='298ccf519e8647e69255af88314b9d41'
-            accessToken='1580545576.298ccf5.87492f0b908f48aaabee433fa0061dce'
+            clientId='ccc66f7bacf34ace96812bf36bec48dd'
+            accessToken='539167653.ccc66f7.56551ac67e534375bb415ea7c4cca64b'
           />
         </div>
       </div>
     );
   }
 }
-
-/*            template={`<a href='{{link}}' target='_blank' class='instafeed__item'><img class='instafeed__item__background' src='{{image}}' /></a>`}*/

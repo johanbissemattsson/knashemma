@@ -3,9 +3,12 @@ import Link from 'gatsby-link';
 import { slide as Menu } from 'react-burger-menu';
 import { connect, dispatch} from 'react-redux';
 import { canUseDOM } from 'exenv';
+import Remark from 'remark';
+import html from 'remark-html';
 
 import { TOGGLE_IMAGESLIDERS } from '../../actionTypes';
 import Footer from '../Footer';
+import Content, { HTMLContent } from '../Content';
 
 class Header extends React.Component {
   constructor(props, context) {
@@ -36,6 +39,9 @@ class Header extends React.Component {
   }
 
   render () {
+    const PageContent = HTMLContent || Content;
+    const convertMarkdownToHtml = ((markdownString) => Remark().use(html).processSync(markdownString.replace(/\\/g, '  '), ((err, file) => err ? {contents: '' } : file)).contents);
+    console.log(this.props);
     return (        
       <div className='site-header-container'>
         <header className='site-header'>
@@ -77,19 +83,13 @@ class Header extends React.Component {
                             <h2 className='footer-title'><Link to='/'>Knas hemma</Link></h2>
                             <div className='footer-contact'>
                               <address className='footer-address'>
-                                <p>
-                                  Anna Sabelström<br />
-                                  Nationell Projektledare<br />
-                                  <a href='tel:+46709466643'>070-946 66 43</a><br />
-                                  <a href='mailto:anna@knashemma.se'>anna@knashemma.se</a>
-                                </p>
+                              <PageContent className='side-item-content'  content={convertMarkdownToHtml(this.props.contact)}/>
                               </address>
                               <div className='footer-social'>
                                   <ul>
                                     <li><a href='https://www.facebook.com/knashemma/'>Facebook</a></li>
                                     <li><a href='https://www.instagram.com/knashemma/'>Instagram</a></li>
                                     <li><a href='https://www.twitter.com/knashemma/' onBlur={() => {this.closeMenu()}}>Twitter</a></li>
-
                                   </ul> 
                               </div>
                             </div>
@@ -106,7 +106,7 @@ class Header extends React.Component {
     );
   }
 }
-
+/*content={convertMarkdownToHtml(this.props.contact)}*/
 const styles = {};
 
 const mapStateToProps = state => ({

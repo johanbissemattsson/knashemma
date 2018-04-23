@@ -21,7 +21,7 @@ export default class TemplateWrapper extends Component {
             { name: 'keywords', content: data.seo.frontmatter.metaInformation.metaKeywords}
           ]}
         />
-        <Header navItems={data.nav.frontmatter.navMenu}/>
+        <Header navItems={data.nav.frontmatter.navMenu} contact={data.footer.frontmatter.navcontact}/>
         {children()}
         <Footer content={data.footer}/>
       </div>
@@ -44,6 +44,10 @@ export const allQuery = graphql`
       }
     },
     footer: markdownRemark(frontmatter: {templateKey: {eq: "settings-footer"}}) {
+      frontmatter {
+        title
+        navcontact
+      }
       html
     },
     nav: markdownRemark(frontmatter: {templateKey: {eq: "settings-navigation"}}) {
@@ -54,6 +58,5 @@ export const allQuery = graphql`
         }
       }
     },
-
   }
 `
