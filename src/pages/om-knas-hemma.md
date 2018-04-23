@@ -27,9 +27,10 @@ sideItems:
       samhället och kan förändra dagens lagar, förhållningssätt eller
       arbetsmetoder på längre sikt.
     sideItemImage: ''
-  - sideItemBody: '![#33hem](/media/uploads/kampanj33hem.jpg)'
+  - sideItemBody: ''
     sideItemImage: /media/uploads/utbildning.jpg
     sideItemImageAlt: utbildning
+  - sideItemImage: /media/uploads/kampanj33hem.jpg
 metaInformation:
   metaKeywords: ''
 ---
