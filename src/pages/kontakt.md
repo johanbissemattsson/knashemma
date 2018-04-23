@@ -9,7 +9,7 @@ sideItems:
 
       <div class='portrait-item'>
         <div class='portrait-photo'>
-          <img src='/media/uploads/andreas2.jpg' alt='Andreas Svensson'/>
+          <img src='/media/uploads/andreas.jpg' alt='Andreas Svensson'/>
         </div>
         <div>        
           <strong>Andreas Svensson</strong><br />
