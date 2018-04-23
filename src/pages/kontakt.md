@@ -9,7 +9,7 @@ sideItems:
 
       <div class='portrait-item'>
         <div class='portrait-photo'>
-          <img src='/media/uploads/portratt.png' alt='Andreas Svensson'/>
+          <img src='/media/uploads/andreas2.jpg' alt='Andreas Svensson'/>
         </div>
         <div>        
           <strong>Andreas Svensson</strong><br />
@@ -19,7 +19,7 @@ sideItems:
       </div>
       <div class='portrait-item'>
         <div class='portrait-photo'>
-          <img src='/media/uploads/portratt.png' alt='Emiliya Larsson'/>
+          <img src='/media/uploads/kontaktemiliya.jpg' alt='Emiliya Larsson'/>
         </div>
         <div>        
           <strong>Emiliya Larsson</strong><br />

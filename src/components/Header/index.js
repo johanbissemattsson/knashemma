@@ -82,7 +82,9 @@ class Header extends React.Component {
                             <h2 className='footer-title'><Link to='/'>Knas hemma</Link></h2>
                             <div className='footer-contact'>
                               <address className='footer-address'>
-                              <PageContent className='side-item-content'  content={convertMarkdownToHtml(this.props.contact)}/>
+                              {this.props.contact && this.props.contact.length && 
+                                <PageContent className='side-item-content'  content={convertMarkdownToHtml(this.props.contact)}/>
+                              }
                               </address>
                               <div className='footer-social'>
                                   <ul>

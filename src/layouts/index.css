@@ -821,7 +821,7 @@ h3 {
 }
 
 .portrait-item .portrait-photo {
-  width: 96px;
+  width: 100%;
   min-width: 48px;
   margin-bottom: 0.618421052631579em;
 
@@ -831,15 +831,19 @@ h3 {
   margin-top: 0;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 512px) {
   .portrait-item {
     margin: 0;
     flex-direction: row;
   }
 
   .portrait-item .portrait-photo {
-    margin: 0 0.618421052631579em 1.236842105263158em 0;
-    width: 96px;
+    margin: 0 1.236842105263158em 1.236842105263158em 0;
+    width: 192px;
     min-width: 48px;
+  }
+
+  .portrait-item:first-of-type {
+    margin-top: 1.236842105263158em;
   }
 }
