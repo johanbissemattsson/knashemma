@@ -9,6 +9,7 @@ sideItems:
 
       En sidoruta som det går att ändra färg på, eller ha bilder i.
     sideItemImage: /media/uploads/waterfal.jpg
+  - sideItemImage: /media/uploads/grafitti.jpg
 ---
 
 # Knas hemma
