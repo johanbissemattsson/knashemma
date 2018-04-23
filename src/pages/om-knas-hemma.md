@@ -32,6 +32,7 @@ sideItems:
     sideItemImageAlt: utbildning
   - sideItemImage: /media/uploads/kampanj33hem.jpg
   - sideItemImage: /media/uploads/byggerenfamilj.jpg
+  - sideItemImage: /media/uploads/khbildarforening.jpg
 metaInformation:
   metaKeywords: ''
 ---
