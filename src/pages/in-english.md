@@ -8,7 +8,7 @@ sideItems:
       ## Detta är en sidoruta
 
       En sidoruta som det går att ändra färg på, eller ha bilder i.
-    sideItemImage: 
+    sideItemImage: /media/uploads/waterfal.jpg
 ---
 
 # Knas hemma
