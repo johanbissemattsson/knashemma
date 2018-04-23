@@ -22,11 +22,8 @@ sections:
     sectionLink: om-knas-hemma
   - sectionBody: >-
       Knas hemma startades 2013 som ett projekt (Allmänna arvsfonden) på
-      Barnombudet i Uppsala. Vi ville ta reda på om ungdomar i Sverige ville
-      vara med och skapa en ny barnrättsorganisation för att göra det bättre för
-      barn och ungdomar som bor i olika placeringar. Idag är Knas hemma en
-      ideell förening där styrelsen består av ungdomsambassadörer och medlemmar
-      i Knas hemma.\
+      Barnombudet i Uppsala. Idag är Knas hemma en ideell förening där styrelsen
+      består av unga vuxna och medlemmar i Knas hemma.\
 
       [Läs mer](ambassadorer)
     sectionFeaturedImage: /media/uploads/Startsidebild02.jpg
