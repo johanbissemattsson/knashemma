@@ -11,6 +11,7 @@ sideItems:
     sideItemImage: /media/uploads/embella.jpg
   - sideItemImage: /media/uploads/solleftea.jpg
   - sideItemImage: /media/uploads/ronjaojesper.jpg
+  - sideItemImage: /media/uploads/khspelar.jpg
 ---
 
 # Anlita Knas hemma
