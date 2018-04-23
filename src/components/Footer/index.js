@@ -15,7 +15,7 @@ const Footer = ({content}) => {
         <h2 className='footer-title'><Link to='/'>Knas hemma</Link></h2>
         <div className='footer-contact'>
           <address className='footer-address'>
-            {content && content.length && 
+            {content.html && content.html.length &&
               <PageContent content={convertMarkdownToHtml(content.html)} />
             }
           </address>
