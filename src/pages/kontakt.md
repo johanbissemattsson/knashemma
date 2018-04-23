@@ -7,13 +7,19 @@ sideItems:
     sideItemBody: |-
       ## Vi som jobbar på Knas hemma är:
 
+      ![Andreas Svensson](/media/uploads/portratt.png)
+
       **Andreas Svensson**\
       Ordförande i Knas hemma\
       <mailto:andreas@knashemma.se>
 
+      ![Emiliya Larsson](/media/uploads/portratt.png)
+
       **Emiliya Larsson**\
       Projektledare\
       <mailto:emiliya@knashemma.se>
+
+      ![Anna Sabelström](/media/uploads/portratt.png)
 
       **Anna Sabelström**\
       Verksamhetsledare\
