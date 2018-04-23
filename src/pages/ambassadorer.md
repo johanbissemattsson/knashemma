@@ -8,9 +8,8 @@ sideItems:
       ## Detta är en sidoruta
 
       En sidoruta som det går att ändra färg på, eller ha bilder i.
-    sideItemImage: 
+    sideItemImage: /media/uploads/khhelbild1.jpg
 ---
-
 # Ambassadörer
 
 Knas hemma bär på många livsberättelser, både positiva och negativa
@@ -31,5 +30,4 @@ både våra positiva och mindre bra erfarenheter har vi därför gått en
 utbildning i barnets rättigheter och ledarskap för att sprida kunskap och
 inspirera. Vi kommer gärna till er och delar med oss av våra erfarenheter,
 utbildar i delaktighet och genom att skapa nya sätt att mötas på kan vi
-tillsammans skapa innehåll och goda samarbeten.
-
+tillsammans skapa en bättre värld för dagens placerade barn och ungdomar.
