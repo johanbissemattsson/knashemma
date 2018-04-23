@@ -9,7 +9,8 @@ sideItems:
 
       En sidoruta som det går att ändra färg på, eller ha bilder i.
     sideItemImage: /media/uploads/omknashemma.jpg
-  - sideItemImage: /media/uploads/positivt.jpg
+  - sideItemBackgroundColor: '#abc1a5'
+    sideItemImage: /media/uploads/positivt.jpg
 ---
 # Engagera dig
 
