@@ -11,7 +11,7 @@ sideItems:
       Ordförande i Knas hemma\
       <mailto:andreas@knashemma.se>
 
-      ![](/media/uploads/_andreas.jpg)
+      ![null](/media/uploads/andreas.jpg)
 
       **Emiliya Larsson**\
       Projektledare\
