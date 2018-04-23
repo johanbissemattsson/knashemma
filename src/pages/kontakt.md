@@ -9,15 +9,17 @@ sideItems:
 
       **Andreas Svensson**\
       Ordförande i Knas hemma\
-      [andreas@knashemma.se](mailto:andreas@knashemma.se)
+      <mailto:andreas@knashemma.se>
+
+      ![](/media/uploads/_andreas.jpg)
 
       **Emiliya Larsson**\
       Projektledare\
-      [emiliya@knashemma.se](mailto:emiliya@knashemma.se)
+      <mailto:emiliya@knashemma.se>
 
       **Anna Sabelström**\
       Verksamhetsledare\
-      [anna@knashemma.se](mailto:anna@knashemma.se)
+      <mailto:anna@knashemma.se>
 metaInformation:
   metaDescription: Kontakta oss på Knas hemma eller följ oss på Facebook eller Instagram.
   metaKeywords: 'Ring, mejla, Allmänna Arvsfonden, BOiU'
