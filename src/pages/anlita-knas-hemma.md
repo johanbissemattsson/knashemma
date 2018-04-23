@@ -12,8 +12,8 @@ sideItems:
   - sideItemImage: /media/uploads/solleftea.jpg
   - sideItemImage: /media/uploads/ronjaojesper.jpg
   - sideItemImage: /media/uploads/khspelar.jpg
+  - sideItemImage: /media/uploads/forelasning.jpg
 ---
-
 # Anlita Knas hemma
 
 Knas hemma är en ungdomsdriven ideell förening som arbetar och finns nationellt. Vi som är med i Knas hemma är ungdomar och unga vuxna i åldrarna
@@ -27,6 +27,7 @@ självmant väljer att engagera sig och blir medlemmar. Vi har en Senior Advisor
 till föreningens utveckling och kunskap.
 
 ## Knas hemma arbetar med att:
+
 * Informera och utbilda placerade barn och ungdomar om deras rättigheter, så att de själva kan påverka och vara med och bestämma.
 * Lyfta fram barns och ungas egna perspektiv och erfarenheter av placering i familjehem och HVB-hem och arbeta för barns och ungas delaktighet i samhället.
 * Utbilda nya medlemmar i barnets rättigheter och stärka dem genom delaktighet i organisationen.
@@ -52,14 +53,14 @@ lösningar och agerar utifrån dem.
 ## Etisk policy
 
 * Vår värdegrund baseras på alla människors lika värde och allas rätt till frihet, demokrati och social trygghet. vi anser att alla ska behandlas lika
-oavsett kön, ålder, hudfärg, sexuell läggning, kroppslig funktionsförmåga, livssituation eller bakgrund.
+  oavsett kön, ålder, hudfärg, sexuell läggning, kroppslig funktionsförmåga, livssituation eller bakgrund.
 * Vårt arbeta genomsyras av FN:s konvention om barnets rättigheter. vi strävar efter att arbeta och utvecklas långsiktigt och med ett hållbarhetsperspektiv.
 * Vi agerar aldrig utan att vi först fått medgivande av dig som deltar i Knas hemma (detta berör t.ex. publicering av egna produktioner samt bilder på
-nätet).
+  nätet).
 * Vi samarbetar gärna men med förutsättning att ni delar samma värdegrunder och perspektiv som beskrivs här.
 * Valet av anonymitet och sekretess diskuteras i samråd med de unga som är medlemmar i Knas hemma.
 * Vi månar och värnar om alla ungdomar som är delaktiga i Knas hemma.
-* Etiska problem och frågeställningar som eventuellt uppstår diskuteras kontinuerligt i vår Senior Advisory-grupp.
-* Vi anser att barn- och unga är aktiva aktörer i samhället och med stor autonomi, vilket genomsyrar vår barn- och ungdomssyn.
+* Etiska problem och frågeställningar som eventuellt uppstår diskuteras kontinuerligt i vår rådgivande grupp.
+* Vi anser att barn- och ungdomar är aktiva aktörer i samhället och med stor autonomi, vilket genomsyrar vår barn- och ungdomssyn.
 * Om en ungdom befinner sig i en svår situation i livet och mår väldigt dåligt, kommer vi att hänvisa personen vidare till andra hjälporganisation och
-kontakter.
+  kontakter.
