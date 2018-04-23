@@ -38,5 +38,3 @@ Vår vision och målsättning är att barn och unga ska få kunskap om barnets r
 
 * Vi hjälper inte vuxna, familjer eller enskilda barn och ungdomar i utredningar eller specifika "problem".
 * Vi går aldrig in och medlar i eventuella konflikter mellan barn- och ungdomar, familjer eller andra parter.
-
-![](/media/uploads/forelasning.jpg)
