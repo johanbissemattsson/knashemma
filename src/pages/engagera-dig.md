@@ -8,14 +8,11 @@ sideItems:
       ## Detta är en sidoruta
 
       En sidoruta som det går att ändra färg på, eller ha bilder i.
+    sideItemImage: /media/uploads/omknashemma.jpg
 ---
 # Engagera dig
 
-Du som antingen bor i, eller har erfarenhet av att bo i familjehem, jourhem, HVB-hem eller annan institution kan bli medlem och engagerar dig i vårt arbete runt om i Sverige. 
-
-Knas hemma behöver alltid nya krafter, perspektiv och idéer för att kunna påverka, inspirera och förändra myndigheter och samhället. Du får möjlighet att dela dina upplevelser och lära känna oss som har liknande erfarenheter.
-
-Du bestämmer själv vad du vill göra, hur mycket du vill engagera dig och att bli medlem är ett sätt att stötta det vi arbetar för och då behöver vi ännu fler som tror på samma sak.
+Du som antingen bor i, eller har erfarenhet av att bo i familjehem, jourhem, HVB-hem eller annan institution kan bli medlem i Knas hemma och engagerar dig i vårt arbete runt om i Sverige. 
 
 Såhär går det till.
 
@@ -41,7 +38,6 @@ Såhär går det till.
 * För att bli ambassadör får du gå en utbildning i barnets rättigheter och ledarskap.
 * För att bli ambassadör ska du vara en förebild för andra barn och ungdomar.
 
-
 Läs mer om våra [ambassadörer](/ambassadorer)
 
 ## Stödmedlemmar och sponsring:
@@ -49,4 +45,3 @@ Läs mer om våra [ambassadörer](/ambassadorer)
 * Personer äldre än 30 år kan bli stödmedlemmar utan rösträtt på årsmöte. 
 * För företagssponsring och övrig sponsring – [kontakta oss här](/kontakt).
 * För att bli medlem, skicka ett [mejl](mailto:info@knashemma.se) till oss idag.
-* Årsavgiften kostar ?: Swisha oss redan idag.
