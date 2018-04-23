@@ -20,4 +20,6 @@ Denna metod kallar vi _Byt perspektiv_ och är ett gruppdynamiskt spel, en metod
 
 Knas hemma har implementerat _Byt perspektiv_ i 22 olika kommuner i Sverige och vi utbildar socialtjänsten, socionomstudenter och andra aktörer i metoden.
 
+Vi sitter inne på mycket kunskap och kommer gärna ut till er och föreläser om delaktighet, rättigheter och delar erfarenheter från våra tidigare placeringar. Vi fördelar våra uppdrag till våra ambassadörer utifrån bakgrund, kunskap och geografisk placering i landet.
+
 Läs mer under Anlita Knas hemma
