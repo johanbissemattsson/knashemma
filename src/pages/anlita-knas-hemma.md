@@ -39,15 +39,3 @@ Vår vision och målsättning är att barn och unga ska få kunskap om barnets r
 
 * Vi hjälper inte vuxna, familjer eller enskilda barn och ungdomar i utredningar eller specifika "problem".
 * Vi går aldrig in och medlar i eventuella konflikter mellan barn- och ungdomar, familjer eller andra parter.
-
-## Etisk policy
-
-* Vår värdegrund baseras på alla människors lika värde och allas rätt till frihet, demokrati och social trygghet. vi anser att alla ska behandlas lika oavsett kön, ålder, hudfärg, sexuell läggning, kroppslig funktionsförmåga, livssituation eller bakgrund.
-* Vårt arbeta genomsyras av FN:s konvention om barnets rättigheter. vi strävar efter att arbeta och utvecklas långsiktigt och med ett hållbarhetsperspektiv.
-* Vi agerar aldrig utan att vi först fått medgivande av dig som deltar i Knas hemma (detta berör t.ex. publicering av egna produktioner samt bilder på nätet).
-* Vi samarbetar gärna men med förutsättning att ni delar samma värdegrunder och perspektiv som beskrivs här.
-* Valet av anonymitet och sekretess diskuteras i samråd med de unga som är medlemmar i Knas hemma.
-* Vi månar och värnar om alla ungdomar som är delaktiga i Knas hemma.
-* Etiska problem och frågeställningar som eventuellt uppstår diskuteras kontinuerligt i vår rådgivande grupp.
-* Vi anser att barn- och ungdomar är aktiva aktörer i samhället och med stor autonomi, vilket genomsyrar vår barn- och ungdomssyn.
-* Om en ungdom befinner sig i en svår situation i livet och mår väldigt dåligt, kommer vi att hänvisa personen vidare till andra hjälporganisation och kontakter.
