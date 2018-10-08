@@ -43,7 +43,7 @@ metaInformation:
 ---
 # Kontakt
 
-**Ring oss:** [070-946 66 43](tel:+0709466643)\
+**Ring oss:** [070-946 66 43](tel:+0709466643) \
 **Mejla oss:** <mailto:info@knashemma.se>
 
 ## Följ och Gilla oss här:
