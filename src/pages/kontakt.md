@@ -12,7 +12,7 @@ sideItems:
           <img src='/media/uploads/andreas.jpg' alt='Andreas Svensson'/>
         </div>
         <div>        
-          <strong>Andreas Svensson</strong><br />
+          <strong>Andreas Zheng Svensson</strong><br />
           Ordförande i Knas hemma<br />
           <a href='mailto:andreas@knashemma.se'/>andreas@knashemma.se</a>
         </div>        
