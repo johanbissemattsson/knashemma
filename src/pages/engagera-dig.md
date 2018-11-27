@@ -46,4 +46,4 @@ Läs mer om våra [ambassadörer](/ambassadorer)
 
 * Personer äldre än 30 år kan bli stödmedlemmar utan rösträtt på årsmöte. 
 * För företagssponsring och övrig sponsring – [kontakta oss här](/kontakt).
-* För att bli medlem, skicka ett [mejl](mailto:info@knashemma.se) till oss idag.
+* För att bli medlem, skicka ett [mejl](mailto:info@knashemma.se) till oss idag och berätta lite om din bakgrund och dina erfarenheter av placeringar mm.
