@@ -46,6 +46,8 @@ metaInformation:
 **Ring oss:** [070-946 66 43](tel:+0709466643) \
 **Mejla oss:** <mailto:info@knashemma.se>
 
+**Swisha oss:** 123 500 20 27
+
 ## Följ och Gilla oss här:
 
 [Facebook](https://www.facebook.com/knashemma)\
