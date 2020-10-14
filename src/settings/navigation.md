@@ -15,7 +15,5 @@ navMenu:
     title: Kontakt
   - link: in-english
     title: Knas Hemma in English
-  - link: ungdomsstodjare-projektutvecklare-till-knas-hemma
-    title: Ungdomsstodjare/projektutvecklare
 ---
 
