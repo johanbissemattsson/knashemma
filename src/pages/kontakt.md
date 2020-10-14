@@ -53,11 +53,3 @@ metaInformation:
 [Facebook](https://www.facebook.com/knashemma)\
 [Twitter](https://www.twitter.com/knashemma)\
 [Instagram](https://www.instagram.com/knashemma)
-
-## Med stöd av:
-
-<div class='small-logo'>
-<a href='https://www.arvsfonden.se/'>
-<img src='/uploads/arvsfonden-logotyp-rgb-svart.png' alt='Arvsfonden'/>
-</a>
-</div>
