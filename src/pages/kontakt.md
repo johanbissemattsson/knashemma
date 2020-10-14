@@ -39,7 +39,7 @@ sideItems:
       </div>
 metaInformation:
   metaDescription: Kontakta oss på Knas hemma eller följ oss på Facebook eller Instagram.
-  metaKeywords: 'Ring, mejla, Allmänna Arvsfonden, BOiU'
+  metaKeywords: 'Ring, mejla, Allmänna Arvsfonden'
 ---
 # Kontakt
 
@@ -59,10 +59,5 @@ metaInformation:
 <div class='small-logo'>
 <a href='https://www.arvsfonden.se/'>
 <img src='/uploads/arvsfonden-logotyp-rgb-svart.png' alt='Arvsfonden'/>
-</a>
-</div>
-<div class='small-logo'>
-<a href='https://boiu.se/'>
-<img src='/uploads/boiu-logo.png' alt='BOiU'/>
 </a>
 </div>
