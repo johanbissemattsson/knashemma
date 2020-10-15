@@ -55,7 +55,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
     console.log('allImageSharp');
   }
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode });
+    const slug = createFilePath({ node, getNode }).replace(/å/g, 'a').replace(/Å/g, 'a').replace(/ä/g, 'a').replace(/Ä/g, 'a').replace(/ö/g, 'o').replace(/Ö/g, 'o');
+
     const sideImages = new Array();
     //const sideImageSharpNodesId = new Array();
 
