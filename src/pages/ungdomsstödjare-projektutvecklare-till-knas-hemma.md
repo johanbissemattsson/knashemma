@@ -3,6 +3,8 @@ templateKey: page
 title: Ungdomsstödjare/projektutvecklare till Knas Hemma
 uid: ungdomsstodjare-projektutvecklare-till-knas-hemma
 ---
+![](/media/uploads/khstopfixinglove.png)
+
 # Ungdomsstödjare/projektutvecklare till Knas Hemma
 
 Vill du vara med och göra skillnad på riktigt? Vi gör barns & ungas röster hörda och ser till att deras behov tas på allvar. Tillsammans med oss får du arbeta för att ingen någonsin ska glömmas bort. 
