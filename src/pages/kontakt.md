@@ -9,16 +9,6 @@ sideItems:
 
       <div class='portrait-item'>
         <div class='portrait-photo'>
-          <img src='/media/uploads/andreas.jpg' alt='Andreas Svensson'/>
-        </div>
-        <div>        
-          <strong>Andreas Zheng Svensson</strong><br />
-          Ordförande i Knas hemma<br />
-          <a href='mailto:andreas@knashemma.se'/>andreas@knashemma.se</a>
-        </div>        
-      </div>
-      <div class='portrait-item'>
-        <div class='portrait-photo'>
           <img src='/media/uploads/kontaktemiliya.jpg' alt='Emiliya Larsson'/>
         </div>
         <div>        
