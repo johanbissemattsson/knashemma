@@ -13,7 +13,7 @@ sideItems:
         </div>
         <div>        
           <strong>Emiliya Larsson</strong><br />
-          Projektledare<br />
+          Projektledare Rätt-ish hemma!<br />
           <a href='mailto:emiliya@knashemma.se'/>emiliya@knashemma.se</a>
           </div>
       </div>
